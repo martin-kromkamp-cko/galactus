@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Processing.Configuration.Currencies;
 using Processing.Configuration.Infra.Data;
+using Processing.Configuration.Infra.Data.Processing;
 
 namespace Processing.Configuration.Api.GraphQL;
 

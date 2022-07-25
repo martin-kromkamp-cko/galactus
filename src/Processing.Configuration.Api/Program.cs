@@ -1,9 +1,8 @@
-using Microsoft.EntityFrameworkCore;
 using Processing.Configuration;
 using Processing.Configuration.Api.GraphQL;
 using Processing.Configuration.Api.GraphQL.Types;
 using Processing.Configuration.Infra;
-using Processing.Configuration.Infra.Data;
+using Processing.Configuration.Infra.Data.Processing;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,8 +29,10 @@ builder.Services.AddGraphQLServer()
 // Services
 builder.Services.AddCore(builder.Configuration);
 builder.Services.AddInfra(builder.Configuration);
+builder.Services.AddAuditing(builder.Configuration);
 
 var app = builder.Build();
+app.AddApiAuditing();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

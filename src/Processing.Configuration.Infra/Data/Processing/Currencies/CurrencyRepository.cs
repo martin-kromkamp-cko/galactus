@@ -1,6 +1,6 @@
 using Processing.Configuration.Currencies;
 
-namespace Processing.Configuration.Infra.Data.Currencies;
+namespace Processing.Configuration.Infra.Data.Processing.Currencies;
 
 public class CurrencyRepository : ICurrencyRepository
 {

@@ -3,7 +3,7 @@ using EntityFrameworkCore.ChangeEvents;
 using Microsoft.EntityFrameworkCore;
 using Processing.Configuration.Currencies;
 
-namespace Processing.Configuration.Infra.Data;
+namespace Processing.Configuration.Infra.Data.Processing;
 
 public class ProcessingContext : DbContext
 {
