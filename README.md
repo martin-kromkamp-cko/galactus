@@ -66,3 +66,7 @@ To apply the migrations
 ```shell
 dotnet ef database update -p src/Processing.Configuration.Infra -s src/Processing.Configuration.Api/
 ```
+
+## Auditing
+
+All API level requests that potentially modify data are audited and written to to the `audit_event` table.
