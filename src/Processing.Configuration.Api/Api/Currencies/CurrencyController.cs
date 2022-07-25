@@ -14,6 +14,16 @@ public class CurrencyController : ControllerBase
     {
         _currencyService = currencyService;
     }
+
+    [HttpGet("{code}")]
+    public async Task<IActionResult> GetCurrencyByCode(string code, CancellationToken cancellationToken)
+    {
+        var currency = await _currencyService.GetByCodeAsync(code, cancellationToken);
+
+        return currency is null
+            ? NotFound()
+            : Ok(CurrencyResponse.From(currency));
+    }
     
     [HttpPost]
     public async Task<IActionResult> CreateCurrency([FromBody]CurrencyRequest request, CancellationToken cancellationToken)
@@ -25,16 +35,6 @@ public class CurrencyController : ControllerBase
             ServiceResult<Currency>.ValidationError validation => BadRequest(validation.Errors),
             ServiceResult<Currency>.InternalError error => Problem()
         };
-    }
-
-    [HttpGet("{code}")]
-    public async Task<IActionResult> GetCurrencyByCode(string code, CancellationToken cancellationToken)
-    {
-        var currency = await _currencyService.GetByCodeAsync(code, cancellationToken);
-
-        return currency is null
-            ? NotFound()
-            : Ok(CurrencyResponse.From(currency));
     }
 
     [HttpDelete("{code}")]
