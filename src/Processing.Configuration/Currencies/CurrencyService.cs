@@ -28,12 +28,12 @@ internal class CurrencyService : ICurrencyService
         return currency;
     }
 
-    public async Task<Currency> AddAsync(Currency currency, CancellationToken cancellationToken)
+    public async Task<ResponseOfT<Currency>> AddAsync(Currency currency, CancellationToken cancellationToken)
     {
         var validationResult = await _currencyValidator.ValidateAsync(currency, cancellationToken);
         if (!validationResult.IsValid)
         {
-            return null;
+            return ResponseOfT<Currency>.FromValidationResult(validationResult);
         }
 
         // If currency already exists but is inactive only activated it again
@@ -42,27 +42,27 @@ internal class CurrencyService : ICurrencyService
         {
             if (existingCurrency.IsActive)
             {
-                return existingCurrency;
+                return ResponseOfT<Currency>.FromResponse(currency);
             }
             
             existingCurrency.ToggleActive();
             await _currencyRepository.UpdateAsync(existingCurrency, cancellationToken);
 
-            return existingCurrency;
+            return ResponseOfT<Currency>.FromResponse(currency);
         }
         
         var newCurrency = await _currencyRepository.AddAsync(currency, cancellationToken);
-        return newCurrency;
+        return ResponseOfT<Currency>.FromResponse(currency);
     }
 
-    public async Task<Currency> DisableAsync(Currency currency, CancellationToken cancellationToken)
+    public async Task<ResponseOfT<Currency>> DisableAsync(Currency currency, CancellationToken cancellationToken)
     {
         if (!currency.IsActive)
-            return currency;
+            return ResponseOfT<Currency>.FromResponse(currency);
         
         currency.ToggleActive();
         var updatedCurrency = await _currencyRepository.UpdateAsync(currency, cancellationToken);
 
-        return updatedCurrency;
+        return ResponseOfT<Currency>.FromResponse(currency);;
     }
 }

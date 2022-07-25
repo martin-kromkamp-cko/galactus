@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Diagnostics;
 using Processing.Configuration.Currencies;
 
 namespace Processing.Configuration.Api.Api.Currencies;
@@ -16,9 +17,11 @@ public class CurrencyController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateCurrency([FromBody]CurrencyRequest request, CancellationToken cancellationToken)
     {
-        var currency = await _currencyService.AddAsync(request.To(), cancellationToken);
+        var response = await _currencyService.AddAsync(request.To(), cancellationToken);
+        if (response.HasErrors())
+            return BadRequest(response.Errors);
 
-        return Ok(CurrencyResponse.From(currency));
+        return Ok(CurrencyResponse.From(response.Response!));
     }
 
     [HttpGet("{code}")]
@@ -38,8 +41,10 @@ public class CurrencyController : ControllerBase
         if (currency is null)
             return NotFound();
         
-        var deletedCurrency = await _currencyService.DisableAsync(currency, cancellationToken);
+        var response = await _currencyService.DisableAsync(currency, cancellationToken);
+        if (response.HasErrors())
+            return BadRequest(response.Errors);
 
-        return Ok(CurrencyResponse.From(deletedCurrency));
+        return Ok(CurrencyResponse.From(response.Response!));
     }
 }
