@@ -7,6 +7,8 @@ public class CurrencyValidator : AbstractValidator<Currency>
     public CurrencyValidator()
     {
         RuleFor(x => x.Code)
+            .NotEmpty()
+            .WithErrorCode(Errors.CodeRequired)
             .Length(3)
             .WithErrorCode(Errors.CodeMustBeOfLength);
 
@@ -19,15 +21,16 @@ public class CurrencyValidator : AbstractValidator<Currency>
             .WithErrorCode(Errors.NameRequired);
 
         RuleFor(x => x.Number)
-            .GreaterThan(0)
-            .WithErrorCode(Errors.NumberGreater);
+            .ExclusiveBetween(0, 1000)
+            .WithErrorCode(Errors.NumberMustBeBetween);
     }
 
     public static class Errors
     {
+        public static string CodeRequired = "code_required";
         public static string CodeMustBeOfLength = "code_must_be_of_length_3";
         public static string CountryRequired = "country_required";
         public static string NameRequired = "name_required";
-        public static string NumberGreater = "number_must_be_greater_than_0";
+        public static string NumberMustBeBetween = "number_must_be_between_0_and_1000_exclusive";
     }
 }
