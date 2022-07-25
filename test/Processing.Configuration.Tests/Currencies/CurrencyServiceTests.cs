@@ -36,8 +36,7 @@ public class CurrencyServiceTests
         var response = await _currencyService.AddAsync(newCurrency, CancellationToken.None);
 
         // Then
-        response.HasErrors().Should().BeTrue();
-        response.Response.Should().BeNull();
+        response.Should().BeOfType<ServiceResult<Currency>.ValidationError>();
         Mock.Get(_currencyRepository)
             .Verify(x => x.AddAsync(newCurrency, CancellationToken.None),
                 Times.Never);
@@ -62,8 +61,7 @@ public class CurrencyServiceTests
         var response = await _currencyService.AddAsync(newCurrency, CancellationToken.None);
 
         // Then
-        response.HasErrors().Should().BeFalse();
-        response.Response.Should().NotBeNull();
+        response.Should().BeOfType<ServiceResult<Currency>.Success>();
         Mock.Get(_currencyRepository)
             .Verify(x => x.AddAsync(newCurrency, CancellationToken.None),
                 Times.Once);
@@ -89,8 +87,7 @@ public class CurrencyServiceTests
         var response = await _currencyService.AddAsync(newCurrency, CancellationToken.None);
 
         // Then
-        response.HasErrors().Should().BeFalse();
-        response.Response.Should().NotBeNull();
+        response.Should().BeOfType<ServiceResult<Currency>.Success>();
         Mock.Get(_currencyRepository)
             .Verify(x => x.UpdateAsync(newCurrency, CancellationToken.None),
                 Times.Once);
@@ -115,8 +112,7 @@ public class CurrencyServiceTests
         var response = await _currencyService.AddAsync(newCurrency, CancellationToken.None);
 
         // Then
-        response.HasErrors().Should().BeFalse();
-        response.Response.Should().NotBeNull();
+        response.Should().BeOfType<ServiceResult<Currency>.Success>();
         
         Mock.Get(_currencyRepository)
             .Verify(x => x.UpdateAsync(newCurrency, CancellationToken.None),
@@ -145,8 +141,7 @@ public class CurrencyServiceTests
         var response = await _currencyService.DisableAsync(currency, CancellationToken.None);
 
         // Then
-        response.HasErrors().Should().BeFalse();
-        response.Response.Should().NotBeNull();
+        response.Should().BeOfType<ServiceResult<Currency>.Success>();
         
         Mock.Get(_currencyRepository)
             .Verify(x => x.UpdateAsync(currency, CancellationToken.None),
@@ -173,8 +168,7 @@ public class CurrencyServiceTests
         var response = await _currencyService.DisableAsync(currency, CancellationToken.None);
 
         // Then
-        response.HasErrors().Should().BeFalse();
-        response.Response.Should().NotBeNull();
+        response.Should().BeOfType<ServiceResult<Currency>.Success>();
         
         Mock.Get(_currencyRepository)
             .Verify(x => x.UpdateAsync(currency, CancellationToken.None),

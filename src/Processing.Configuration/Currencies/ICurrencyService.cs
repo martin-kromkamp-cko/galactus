@@ -24,7 +24,7 @@ public interface ICurrencyService
     /// <param name="currency">The currency.</param>
     /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>The <see cref="Currency"/>.</returns>
-    Task<ResponseOfT<Currency>> AddAsync(Currency currency, CancellationToken cancellationToken);
+    Task<ServiceResult<Currency>> AddAsync(Currency currency, CancellationToken cancellationToken);
 
     /// <summary>
     /// Disables a <see cref="Currency"/>.
@@ -32,5 +32,5 @@ public interface ICurrencyService
     /// <param name="currency">The currency.</param>
     /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>The disabled <see cref="Currency"/>.</returns>
-    Task<ResponseOfT<Currency>> DisableAsync(Currency currency, CancellationToken cancellationToken);
+    Task<ServiceResult<Currency>> DisableAsync(Currency currency, CancellationToken cancellationToken);
 }

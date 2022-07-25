@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Components.Server;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Diagnostics;
 using Processing.Configuration.Currencies;
@@ -18,10 +19,12 @@ public class CurrencyController : ControllerBase
     public async Task<IActionResult> CreateCurrency([FromBody]CurrencyRequest request, CancellationToken cancellationToken)
     {
         var response = await _currencyService.AddAsync(request.To(), cancellationToken);
-        if (response.HasErrors())
-            return BadRequest(response.Errors);
-
-        return Ok(CurrencyResponse.From(response.Response!));
+        return response switch
+        {
+            ServiceResult<Currency>.Success currency => Ok(CurrencyResponse.From(currency.Result)),
+            ServiceResult<Currency>.ValidationError validation => BadRequest(validation.Errors),
+            ServiceResult<Currency>.InternalError error => Problem()
+        };
     }
 
     [HttpGet("{code}")]
@@ -37,14 +40,16 @@ public class CurrencyController : ControllerBase
     [HttpDelete("{code}")]
     public async Task<IActionResult> DisableCurrency(string code, CancellationToken cancellationToken)
     {
-        var currency = await _currencyService.GetByCodeAsync(code, cancellationToken);
-        if (currency is null)
+        var existingCurrency = await _currencyService.GetByCodeAsync(code, cancellationToken);
+        if (existingCurrency is null)
             return NotFound();
         
-        var response = await _currencyService.DisableAsync(currency, cancellationToken);
-        if (response.HasErrors())
-            return BadRequest(response.Errors);
-
-        return Ok(CurrencyResponse.From(response.Response!));
+        var response = await _currencyService.DisableAsync(existingCurrency, cancellationToken);
+        return response switch
+        {
+            ServiceResult<Currency>.Success currency => Ok(CurrencyResponse.From(currency.Result)),
+            ServiceResult<Currency>.ValidationError validation => BadRequest(validation.Errors),
+            ServiceResult<Currency>.InternalError error => Problem()
+        };
     }
 }

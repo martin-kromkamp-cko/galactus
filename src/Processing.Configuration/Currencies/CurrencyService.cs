@@ -28,12 +28,12 @@ internal class CurrencyService : ICurrencyService
         return currency;
     }
 
-    public async Task<ResponseOfT<Currency>> AddAsync(Currency currency, CancellationToken cancellationToken)
+    public async Task<ServiceResult<Currency>> AddAsync(Currency currency, CancellationToken cancellationToken)
     {
         var validationResult = await _currencyValidator.ValidateAsync(currency, cancellationToken);
         if (!validationResult.IsValid)
         {
-            return ResponseOfT<Currency>.FromValidationResult(validationResult);
+            return ServiceResult<Currency>.FromValidationResult(validationResult);
         }
 
         // If currency already exists but is inactive only activated it again
@@ -42,27 +42,27 @@ internal class CurrencyService : ICurrencyService
         {
             if (existingCurrency.IsActive)
             {
-                return ResponseOfT<Currency>.FromResponse(currency);
+                return ServiceResult<Currency>.FromResult(currency);
             }
             
             existingCurrency.ToggleActive();
             await _currencyRepository.UpdateAsync(existingCurrency, cancellationToken);
 
-            return ResponseOfT<Currency>.FromResponse(currency);
+            return ServiceResult<Currency>.FromResult(currency);
         }
         
         var newCurrency = await _currencyRepository.AddAsync(currency, cancellationToken);
-        return ResponseOfT<Currency>.FromResponse(currency);
+        return ServiceResult<Currency>.FromResult(currency);
     }
 
-    public async Task<ResponseOfT<Currency>> DisableAsync(Currency currency, CancellationToken cancellationToken)
+    public async Task<ServiceResult<Currency>> DisableAsync(Currency currency, CancellationToken cancellationToken)
     {
         if (!currency.IsActive)
-            return ResponseOfT<Currency>.FromResponse(currency);
+            return ServiceResult<Currency>.FromResult(currency);
         
         currency.ToggleActive();
         var updatedCurrency = await _currencyRepository.UpdateAsync(currency, cancellationToken);
 
-        return ResponseOfT<Currency>.FromResponse(currency);;
+        return ServiceResult<Currency>.FromResult(currency);
     }
 }
