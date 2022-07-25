@@ -9,8 +9,8 @@ public static class IServiceCollectionExtensions
 {
     public static IServiceCollection AddCore(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddSingleton<IValidator<Currency>, CurrencyValidator>();
-        services.AddSingleton<ICurrencyService, CurrencyService>();
+        services.AddScoped<IValidator<Currency>, CurrencyValidator>();
+        services.AddScoped<ICurrencyService, CurrencyService>();
 
         return services;
     }

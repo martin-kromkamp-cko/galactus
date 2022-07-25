@@ -1,41 +1,33 @@
-using Microsoft.EntityFrameworkCore;
 using Processing.Configuration.Currencies;
 
 namespace Processing.Configuration.Infra.Data.Currencies;
 
 public class CurrencyRepository : ICurrencyRepository
 {
-    private readonly IDbContextFactory<ProcessingContext> _dbContextFactory;
+    private readonly ProcessingContext _dbContext;
 
-    public CurrencyRepository(IDbContextFactory<ProcessingContext> dbContextFactory)
+    public CurrencyRepository(ProcessingContext dbContext)
     {
-        _dbContextFactory = dbContextFactory;
+        _dbContext = dbContext;
     }
 
     public IQueryable<Currency> All()
     {
-        var ctx = _dbContextFactory.CreateDbContext();
-
-        return ctx.Currencies;
+        return _dbContext.Currencies;
     }
 
     public async Task<Currency> AddAsync(Currency currency, CancellationToken cancellationToken)
     {
-        var ctx = await _dbContextFactory.CreateDbContextAsync(cancellationToken);
-        
-        var newCurrency = await ctx.Currencies.AddAsync(currency, cancellationToken);
-        await ctx.SaveChangesAsync(cancellationToken);
+        var newCurrency = await _dbContext.Currencies.AddAsync(currency, cancellationToken);
+        await _dbContext.SaveChangesAsync(cancellationToken);
 
         return newCurrency.Entity;
     }
 
     public async Task<Currency> UpdateAsync(Currency currency, CancellationToken cancellationToken)
     {
-        var ctx = await _dbContextFactory.CreateDbContextAsync(cancellationToken);
-
-        // ctx.Set<Currency>().Attach(currency);
-        ctx.Update(currency);
-        await ctx.SaveChangesAsync(cancellationToken);
+        _dbContext.Update(currency);
+        await _dbContext.SaveChangesAsync(cancellationToken);
 
         return currency;
     }

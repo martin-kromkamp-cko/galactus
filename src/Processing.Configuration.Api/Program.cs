@@ -7,18 +7,6 @@ using Processing.Configuration.Infra.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// DbContext
-builder.Services.AddPooledDbContextFactory<ProcessingContext>(cfg =>
-{
-    cfg.UseNpgsql(builder.Configuration.GetConnectionString(nameof(ProcessingContext)),
-        pg =>
-        {
-            pg.EnableRetryOnFailure(2);
-        })
-        .UseSnakeCaseNamingConvention();
-    cfg.EnableDetailedErrors();
-});
-
 // Api
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
