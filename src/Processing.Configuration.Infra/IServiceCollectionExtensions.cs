@@ -1,3 +1,4 @@
+using EntityFrameworkCore.ChangeEvents;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,6 +21,7 @@ public static class IServiceCollectionExtensions
                     })
                 .UseSnakeCaseNamingConvention();
             cfg.EnableDetailedErrors();
+            cfg.UseChangeEvents();
         });
 
         services.AddScoped(svc => svc.GetRequiredService<IDbContextFactory<ProcessingContext>>().CreateDbContext());

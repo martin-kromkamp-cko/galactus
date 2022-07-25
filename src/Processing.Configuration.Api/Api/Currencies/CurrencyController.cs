@@ -32,7 +32,7 @@ public class CurrencyController : ControllerBase
         return response switch
         {
             ServiceResult<Currency>.Success currency => Ok(CurrencyResponse.From(currency.Result)),
-            ServiceResult<Currency>.ValidationError validation => BadRequest(validation.Errors),
+            ServiceResult<Currency>.ValidationError validation => BadRequest(validation.Errors.Select(e => e.Error)),
             ServiceResult<Currency>.InternalError error => Problem()
         };
     }
@@ -48,7 +48,7 @@ public class CurrencyController : ControllerBase
         return response switch
         {
             ServiceResult<Currency>.Success currency => Ok(CurrencyResponse.From(currency.Result)),
-            ServiceResult<Currency>.ValidationError validation => BadRequest(validation.Errors),
+            ServiceResult<Currency>.ValidationError validation => BadRequest(validation.Errors.Select(e => e.Error)),
             ServiceResult<Currency>.InternalError error => Problem()
         };
     }

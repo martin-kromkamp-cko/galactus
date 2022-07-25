@@ -1,4 +1,5 @@
 using System.Reflection;
+using EntityFrameworkCore.ChangeEvents;
 using Microsoft.EntityFrameworkCore;
 using Processing.Configuration.Currencies;
 
@@ -16,5 +17,8 @@ public class ProcessingContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetAssembly(typeof(ProcessingContext)));
+        
+        // Add change event model.
+        modelBuilder.AddChangeEvents<ChangeEvent>();
     }
 }
