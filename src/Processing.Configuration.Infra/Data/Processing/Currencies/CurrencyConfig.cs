@@ -11,6 +11,10 @@ public class CurrencyConfig : IEntityTypeConfiguration<Currency>
         builder.ToTable("currency");
         
         builder.HasKey(x => x.Id);
+
+        builder.HasIndex(x => x.ExternalId)
+            .IsUnique();
+
         builder.HasIndex(x => x.Code)
             .IsUnique();
         

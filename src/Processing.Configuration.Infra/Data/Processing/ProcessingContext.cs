@@ -2,6 +2,7 @@ using System.Reflection;
 using EntityFrameworkCore.ChangeEvents;
 using Microsoft.EntityFrameworkCore;
 using Processing.Configuration.Currencies;
+using Processing.Configuration.Schemes;
 
 namespace Processing.Configuration.Infra.Data.Processing;
 
@@ -13,6 +14,8 @@ public class ProcessingContext : DbContext
     }
 
     public DbSet<Currency> Currencies { get; set; }
+    
+    public DbSet<CardScheme> CardSchemes { get; set; }
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

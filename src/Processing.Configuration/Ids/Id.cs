@@ -140,7 +140,7 @@ internal sealed class Id : IEquatable<Id>
         }
     }
 
-    public override string? ToString()
+    public override string ToString()
     {
         return Value;
     }

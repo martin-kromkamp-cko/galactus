@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Options;
 using Processing.Configuration.Api.GraphQL.Types;
 
 namespace Processing.Configuration.Api.GraphQL;
@@ -9,6 +10,13 @@ public class QueryType : ObjectType<Query>
         descriptor
             .Field(f => f.Currencies(default!))
             .Type<CurrencyType>()
+            .UsePaging(options: new() { DefaultPageSize = 10, MaxPageSize = 50 })
+            .UseFiltering()
+            .UseSorting();
+        
+        descriptor
+            .Field(f => f.CardSchemes(default!))
+            .Type<CardSchemeType>()
             .UsePaging(options: new() { DefaultPageSize = 10, MaxPageSize = 50 })
             .UseFiltering()
             .UseSorting();
