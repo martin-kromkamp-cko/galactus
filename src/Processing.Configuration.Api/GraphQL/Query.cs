@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Processing.Configuration.Currencies;
 using Processing.Configuration.Infra.Data;
 using Processing.Configuration.Infra.Data.Processing;
+using Processing.Configuration.MerchantCategoryCodes;
 using Processing.Configuration.Schemes;
 
 namespace Processing.Configuration.Api.GraphQL;
@@ -16,5 +17,10 @@ public class Query
     public IQueryable<CardScheme> CardSchemes([Service] IDbContextFactory<ProcessingContext> dbContextFactory)
     {
         return dbContextFactory.CreateDbContext().CardSchemes;
+    }
+    
+    public IQueryable<MerchantCategoryCode> MerchantCategoryCodes([Service] IDbContextFactory<ProcessingContext> dbContextFactory)
+    {
+        return dbContextFactory.CreateDbContext().MerchantCategoryCodes;
     }
 }

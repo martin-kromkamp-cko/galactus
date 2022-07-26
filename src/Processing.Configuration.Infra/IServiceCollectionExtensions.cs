@@ -11,6 +11,8 @@ using Processing.Configuration.Infra.Data;
 using Processing.Configuration.Infra.Data.Auditing;
 using Processing.Configuration.Infra.Data.Processing;
 using Processing.Configuration.Infra.Data.Processing.Currencies;
+using Processing.Configuration.Infra.Data.Processing.MerchantCategoryCodes;
+using Processing.Configuration.MerchantCategoryCodes;
 using Processing.Configuration.Schemes;
 
 namespace Processing.Configuration.Infra;
@@ -42,8 +44,10 @@ public static class IServiceCollectionExtensions
         });
 
         services.AddScoped(svc => svc.GetRequiredService<IDbContextFactory<ProcessingContext>>().CreateDbContext());
+        
         services.AddScoped<ICurrencyRepository, CurrencyRepository>();
         services.AddScoped<ICardSchemeRepository, CardSchemeRepository>();
+        services.AddScoped<IMerchantCategoryCodeRepository, MerchantCategoryCodeRepository>();
 
         return services;
     }

@@ -149,7 +149,7 @@ public class CardSchemeServiceTests
     }
     
     [Fact]
-    public async Task GivenDisabledCurrencyWhenDisablingShouldReturn()
+    public async Task GivenDisabledCardSchemeWhenDisablingShouldReturn()
     {
         // Given
         var cardScheme = CardScheme.Create("Visa");
