@@ -38,5 +38,8 @@ public class ProcessorConfig : IEntityTypeConfiguration<Processor>
 
         builder.HasMany(x => x.Services)
             .WithOne();
+
+        builder.HasOne(x => x.ProcessingChannel)
+            .WithMany(x => x.Processors);
     }
 }

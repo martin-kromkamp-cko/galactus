@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Options;
 using Processing.Configuration.Api.GraphQL.Types;
+using Processing.Configuration.ProcessingChannels;
 
 namespace Processing.Configuration.Api.GraphQL;
 
@@ -31,6 +32,13 @@ public class QueryType : ObjectType<Query>
         descriptor
             .Field(f => f.Processors(default!))
             .Type<ProcessorType>()
+            .UsePaging(options: new() { DefaultPageSize = 10, MaxPageSize = 50 })
+            .UseFiltering()
+            .UseSorting();
+        
+        descriptor
+            .Field(f => f.ProcessingChannels(default!))
+            .Type<ProcessingChannelType>()
             .UsePaging(options: new() { DefaultPageSize = 10, MaxPageSize = 50 })
             .UseFiltering()
             .UseSorting();

@@ -33,7 +33,7 @@ public class CurrencyType : ObjectType<Currency>
             .Name("number");
         
         descriptor.Field(x => x.Processors)
-            .Type<ProcessorType>()
+            .Type<ListType<ProcessorType>>()
             .Name("processors");
     }
 }

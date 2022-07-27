@@ -3,6 +3,7 @@ using EntityFrameworkCore.ChangeEvents;
 using Microsoft.EntityFrameworkCore;
 using Processing.Configuration.Currencies;
 using Processing.Configuration.MerchantCategoryCodes;
+using Processing.Configuration.ProcessingChannels;
 using Processing.Configuration.Processors;
 using Processing.Configuration.Schemes;
 
@@ -22,6 +23,8 @@ public class ProcessingContext : DbContext
     public DbSet<MerchantCategoryCode> MerchantCategoryCodes { get; set; }
     
     public DbSet<Processor> Processors { get; set; }
+    
+    public DbSet<ProcessingChannel> ProcessingChannels { get; set; }
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

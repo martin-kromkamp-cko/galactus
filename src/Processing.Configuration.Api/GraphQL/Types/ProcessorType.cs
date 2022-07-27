@@ -19,11 +19,7 @@ public class ProcessorType : ObjectType<Processor>
         descriptor.Field(x => x.Description)
             .Type<StringType>()
             .Name("description");
-        
-        descriptor.Field(x => x.Description)
-            .Type<StringType>()
-            .Name("description");
-        
+
         descriptor.Field(x => x.AcquirerId)
             .Type<StringType>()
             .Name("acquirer_id");
@@ -33,11 +29,11 @@ public class ProcessorType : ObjectType<Processor>
             .Name("merchant_category_code");
         
         descriptor.Field(x => x.Currencies)
-            .Type<CurrencyType>()
+            .Type<ListType<CurrencyType>>()
             .Name("currencies");
         
         descriptor.Field(x => x.Schemes)
-            .Type<CardSchemeType>()
+            .Type<ListType<CardSchemeType>>()
             .Name("schemes");
         
         descriptor.Field(x => x.DynamicDescriptor)
@@ -49,7 +45,7 @@ public class ProcessorType : ObjectType<Processor>
             .Name("dynamic_descriptor_prefix");
         
         descriptor.Field(x => x.Services)
-            .Type<CkoServiceType>()
+            .Type<ListType<CkoServiceType>>()
             .Name("services");
         
         descriptor.Field(x => x.ProviderKey)

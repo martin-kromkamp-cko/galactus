@@ -1,5 +1,6 @@
 using Processing.Configuration.Currencies;
 using Processing.Configuration.MerchantCategoryCodes;
+using Processing.Configuration.ProcessingChannels;
 using Processing.Configuration.Schemes;
 
 namespace Processing.Configuration.Processors;
@@ -10,7 +11,7 @@ public class Processor : EntityBase
     { }
 
     internal Processor(string acquirerId, string description, MerchantCategoryCode merchantCategoryCode, ICollection<Currency> currencies, ICollection<CardScheme> schemes, bool dynamicDescriptor, string dynamicDescriptorPrefix, ICollection<CkoService> services, string providerKey, string mode) 
-        : base(Ids.Id.NewId("pc").ToString())
+        : base(Ids.Id.NewId("pr").ToString())
     {
         AcquirerId = acquirerId;
         Description = description;
@@ -42,7 +43,7 @@ public class Processor : EntityBase
     /// <summary>
     /// Gets the <see cref="Currency"/>.
     /// </summary>
-    public virtual ICollection<Currency> Currencies { get; private set; }
+    public virtual ICollection<Currency>? Currencies { get; private set; }
     
     /// <summary>
     /// Gets the acceptor.
@@ -52,7 +53,7 @@ public class Processor : EntityBase
     /// <summary>
     /// Gets the <see cref="CardScheme"/>.
     /// </summary>
-    public virtual ICollection<CardScheme> Schemes { get; private set; }
+    public virtual ICollection<CardScheme>? Schemes { get; private set; }
     
     /// <summary>
     /// Gets the dynamic descriptor.
@@ -85,6 +86,11 @@ public class Processor : EntityBase
     /// Gets the features.
     /// </summary>
     // public IDictionary<string, string[]?>? Features { get; private set; }
+
+    /// <summary>
+    /// Gets the <see cref="ProcessingChannel"/>.
+    /// </summary>
+    public virtual ProcessingChannel ProcessingChannel { get; private set; }
     
     public static Processor Create(string acquirerId, string description, MerchantCategoryCode merchantCategoryCode, ICollection<Currency> currencies, ICollection<CardScheme> schemes, bool dynamicDescriptor, string dynamicDescriptorPrefix, ICollection<CkoService> services, string providerKey, string mode)
     {

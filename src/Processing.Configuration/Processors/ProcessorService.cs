@@ -35,8 +35,8 @@ public class ProcessorService : IProcessorService
             return ServiceResult<Processor>.FromResult(processor);
         
         processor.ToggleActive();
-        var updatedScheme = await _processorRepository.UpdateAsync(processor, cancellationToken);
+        var updatedProcessor = await _processorRepository.UpdateAsync(processor, cancellationToken);
 
-        return ServiceResult<Processor>.FromResult(updatedScheme);
+        return ServiceResult<Processor>.FromResult(updatedProcessor);
     }
 }

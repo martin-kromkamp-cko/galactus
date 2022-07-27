@@ -8,12 +8,11 @@ namespace Processing.Configuration.Currencies;
 /// </summary>
 public class Currency : EntityBase
 {
-    internal Currency()
-    {
-    }
+    public Currency()
+    { }
 
-    public Currency(string externalId, string country, string name, string code, int number) 
-        : base(externalId)
+    public Currency(string country, string name, string code, int number) 
+        : base(Ids.Id.NewId("curr").ToString())
     {
         Country = country;
         Name = name;
@@ -48,6 +47,6 @@ public class Currency : EntityBase
 
     public static Currency Create(string country, string name, string code, int number)
     {
-        return new(Ids.Id.NewId("curr").Value, country, name, code, number);
+        return new(country, name, code, number);
     }
 }
