@@ -31,5 +31,9 @@ public class CurrencyType : ObjectType<Currency>
         descriptor.Field(x => x.Number)
             .Type<IntType>()
             .Name("number");
+        
+        descriptor.Field(x => x.Processors)
+            .Type<ProcessorType>()
+            .Name("processors");
     }
 }

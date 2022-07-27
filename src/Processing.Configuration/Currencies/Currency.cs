@@ -1,3 +1,5 @@
+using Processing.Configuration.Processors;
+
 namespace Processing.Configuration.Currencies;
 
 /// <summary>
@@ -38,6 +40,11 @@ public class Currency : EntityBase
     /// Gets the number of this <see cref="Currency"/>.
     /// </summary>
     public int Number { get; private set; }
+    
+    /// <summary>
+    /// Gets the <see cref="Processor"/> referencing this <see cref="Currency"/>.
+    /// </summary>
+    public virtual ICollection<Processor> Processors { get; private set; }
 
     public static Currency Create(string country, string name, string code, int number)
     {

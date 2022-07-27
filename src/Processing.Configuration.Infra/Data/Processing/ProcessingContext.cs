@@ -3,6 +3,7 @@ using EntityFrameworkCore.ChangeEvents;
 using Microsoft.EntityFrameworkCore;
 using Processing.Configuration.Currencies;
 using Processing.Configuration.MerchantCategoryCodes;
+using Processing.Configuration.Processors;
 using Processing.Configuration.Schemes;
 
 namespace Processing.Configuration.Infra.Data.Processing;
@@ -19,6 +20,8 @@ public class ProcessingContext : DbContext
     public DbSet<CardScheme> CardSchemes { get; set; }
     
     public DbSet<MerchantCategoryCode> MerchantCategoryCodes { get; set; }
+    
+    public DbSet<Processor> Processors { get; set; }
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

@@ -6,14 +6,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Processing.Configuration.Currencies;
-using Processing.Configuration.Infra.Data;
 using Processing.Configuration.Infra.Data.Auditing;
 using Processing.Configuration.Infra.Data.Processing;
-using Processing.Configuration.Infra.Data.Processing.Currencies;
-using Processing.Configuration.Infra.Data.Processing.MerchantCategoryCodes;
-using Processing.Configuration.MerchantCategoryCodes;
-using Processing.Configuration.Schemes;
 
 namespace Processing.Configuration.Infra;
 
@@ -21,18 +15,9 @@ public static class IServiceCollectionExtensions
 {
     public static IServiceCollection AddInfra(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddDbContext<AuditContext>(cfg =>
-        {
-            cfg.UseNpgsql(configuration.GetConnectionString(nameof(AuditContext)),
-                    pg =>
-                    {
-                        pg.EnableRetryOnFailure(1);
-                    })
-                .UseSnakeCaseNamingConvention();
-        });
-        
         services.AddPooledDbContextFactory<ProcessingContext>(cfg =>
         {
+            cfg.UseLazyLoadingProxies();
             cfg.UseNpgsql(configuration.GetConnectionString(nameof(ProcessingContext)),
                     pg =>
                     {
@@ -44,16 +29,24 @@ public static class IServiceCollectionExtensions
         });
 
         services.AddScoped(svc => svc.GetRequiredService<IDbContextFactory<ProcessingContext>>().CreateDbContext());
-        
-        services.AddScoped<ICurrencyRepository, CurrencyRepository>();
-        services.AddScoped<ICardSchemeRepository, CardSchemeRepository>();
-        services.AddScoped<IMerchantCategoryCodeRepository, MerchantCategoryCodeRepository>();
+
+        services.AddScoped(typeof(IEntityRepository<>), typeof(EntityRepository<>));
 
         return services;
     }
 
     public static IServiceCollection AddAuditing(this IServiceCollection services, IConfiguration configuration)
     {
+        services.AddDbContext<AuditContext>(cfg =>
+        {
+            cfg.UseNpgsql(configuration.GetConnectionString(nameof(AuditContext)),
+                    pg =>
+                    {
+                        pg.EnableRetryOnFailure(1);
+                    })
+                .UseSnakeCaseNamingConvention();
+        });
+        
         Audit.Core.Configuration.Setup()
             .UsePostgreSql(config => config
                 .ConnectionString(configuration.GetConnectionString(nameof(AuditContext)))

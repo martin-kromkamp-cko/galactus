@@ -33,7 +33,7 @@ public class CurrencyConfig : IEntityTypeConfiguration<Currency>
         builder.Property(x => x.CreatedOn)
             .HasDefaultValueSql("now()");
         
-        builder.Property(x => x.CreatedOn)
+        builder.Property(x => x.UpdatedOn)
             .IsRequired()
             .HasDefaultValueSql("now()");
     }

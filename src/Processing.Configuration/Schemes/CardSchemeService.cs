@@ -6,9 +6,9 @@ namespace Processing.Configuration.Schemes;
 internal class CardSchemeService : ICardSchemeService
 {
     private readonly IValidator<CardScheme> _cardSchemeValidator;
-    private readonly ICardSchemeRepository _cardSchemeRepository;
+    private readonly IEntityRepository<CardScheme> _cardSchemeRepository;
 
-    public CardSchemeService(ICardSchemeRepository cardSchemeRepository, IValidator<CardScheme> cardSchemeValidator)
+    public CardSchemeService(IEntityRepository<CardScheme> cardSchemeRepository, IValidator<CardScheme> cardSchemeValidator)
     {
         _cardSchemeRepository = cardSchemeRepository;
         _cardSchemeValidator = cardSchemeValidator;

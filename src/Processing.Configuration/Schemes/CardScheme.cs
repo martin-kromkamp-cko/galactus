@@ -1,3 +1,5 @@
+using Processing.Configuration.Processors;
+
 namespace Processing.Configuration.Schemes;
 
 public class CardScheme : EntityBase
@@ -15,6 +17,11 @@ public class CardScheme : EntityBase
     /// Gets the <see cref="CardScheme"/>.
     /// </summary>
     public string Scheme { get; set; }
+    
+    /// <summary>
+    /// Gets the <see cref="Processor"/> that reference this <see cref="CardScheme"/>
+    /// </summary>
+    public virtual ICollection<Processor> Processors { get; private set; }
 
     /// <summary>
     /// Create a new <see cref="CardScheme"/>

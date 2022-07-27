@@ -1,21 +1,18 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Processing.Configuration.Schemes;
+using Processing.Configuration.Processors;
 
-namespace Processing.Configuration.Infra.Data.Processing.CardSchemes;
+namespace Processing.Configuration.Infra.Data.Processing.Processors;
 
-public class CardSchemeConfig : IEntityTypeConfiguration<CardScheme>
+public class CkoServiceConfig : IEntityTypeConfiguration<CkoService>
 {
-    public void Configure(EntityTypeBuilder<CardScheme> builder)
+    public void Configure(EntityTypeBuilder<CkoService> builder)
     {
-        builder.ToTable("card_scheme");
+        builder.ToTable("cko_service");
         
         builder.HasKey(x => x.Id);
-        
+
         builder.HasIndex(x => x.ExternalId)
-            .IsUnique();
-        
-        builder.HasIndex(x => x.Scheme)
             .IsUnique();
 
         builder.Property(x => x.IsActive)

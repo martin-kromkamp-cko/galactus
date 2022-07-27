@@ -1,3 +1,5 @@
+using Processing.Configuration.Processors;
+
 namespace Processing.Configuration.MerchantCategoryCodes;
 
 public class MerchantCategoryCode : EntityBase
@@ -21,6 +23,11 @@ public class MerchantCategoryCode : EntityBase
     /// Gets the code of this <see cref="MerchantCategoryCode"/>.
     /// </summary>
     public int Code { get; private set; }
+    
+    /// <summary>
+    /// Gets the <see cref="Processor"/> that reference this <see cref="MerchantCategoryCode"/>.
+    /// </summary>
+    public virtual ICollection<Processor> Processors { get; private set; }
 
     /// <summary>
     /// Create a new <see cref="MerchantCategoryCode"/>.

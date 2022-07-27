@@ -6,9 +6,9 @@ namespace Processing.Configuration.Currencies;
 internal class CurrencyService : ICurrencyService
 {
     private readonly IValidator<Currency> _currencyValidator;
-    private readonly ICurrencyRepository _currencyRepository;
+    private readonly IEntityRepository<Currency> _currencyRepository;
 
-    public CurrencyService(ICurrencyRepository currencyRepository, IValidator<Currency> currencyValidator)
+    public CurrencyService(IEntityRepository<Currency> currencyRepository, IValidator<Currency> currencyValidator)
     {
         _currencyRepository = currencyRepository;
         _currencyValidator = currencyValidator;

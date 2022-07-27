@@ -6,9 +6,9 @@ namespace Processing.Configuration.MerchantCategoryCodes;
 public class MerchantCategoryCodeService : IMerchantCategoryCodeService
 {
     private readonly IValidator<MerchantCategoryCode> _validator;
-    private readonly IMerchantCategoryCodeRepository _merchantCategoryCodeRepository;
+    private readonly IEntityRepository<MerchantCategoryCode> _merchantCategoryCodeRepository;
 
-    public MerchantCategoryCodeService(IValidator<MerchantCategoryCode> validator, IMerchantCategoryCodeRepository merchantCategoryCodeRepository)
+    public MerchantCategoryCodeService(IValidator<MerchantCategoryCode> validator, IEntityRepository<MerchantCategoryCode> merchantCategoryCodeRepository)
     {
         _validator = validator;
         _merchantCategoryCodeRepository = merchantCategoryCodeRepository;

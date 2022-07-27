@@ -27,5 +27,12 @@ public class QueryType : ObjectType<Query>
             .UsePaging(options: new() { DefaultPageSize = 10, MaxPageSize = 50 })
             .UseFiltering()
             .UseSorting();
+        
+        descriptor
+            .Field(f => f.Processors(default!))
+            .Type<ProcessorType>()
+            .UsePaging(options: new() { DefaultPageSize = 10, MaxPageSize = 50 })
+            .UseFiltering()
+            .UseSorting();
     }
 }

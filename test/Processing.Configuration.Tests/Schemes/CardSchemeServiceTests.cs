@@ -10,13 +10,13 @@ namespace Processing.Configuration.Tests.Schemes;
 public class CardSchemeServiceTests
 {
     private readonly IValidator<CardScheme> _cardSchemeValidator;
-    private readonly ICardSchemeRepository _cardSchemeRepository;
+    private readonly IEntityRepository<CardScheme> _cardSchemeRepository;
 
     private readonly ICardSchemeService _cardSchemeService;
 
     public CardSchemeServiceTests()
     {
-        _cardSchemeRepository = Mock.Of<ICardSchemeRepository>();
+        _cardSchemeRepository = Mock.Of<IEntityRepository<CardScheme>>();
         _cardSchemeValidator = Mock.Of<IValidator<CardScheme>>();
 
         _cardSchemeService = new CardSchemeService(_cardSchemeRepository, _cardSchemeValidator);
