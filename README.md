@@ -58,13 +58,15 @@ Galactus is build on top of a relation database (PostgreSQL) and is leveraging E
 To add migrations after model changes
 
 ``` shell
-dotnet ef migrations add [MIGRATION_NAME] -p src/Processing.Configuration.Infra -s src/Processing.Configuration.Api/
+dotnet ef migrations add [MIGRATION_NAME] -p src/Processing.Configuration.Infra -s src/Processing.Configuration.Api/ --context AuditContext
+dotnet ef migrations add [MIGRATION_NAME] -p src/Processing.Configuration.Infra -s src/Processing.Configuration.Api/ --context ProcessingContext
 ```
 
 To apply the migrations
 
 ```shell
-dotnet ef database update -p src/Processing.Configuration.Infra -s src/Processing.Configuration.Api/
+dotnet ef database update -p src/Processing.Configuration.Infra -s src/Processing.Configuration.Api/  --context AuditContext
+dotnet ef database update -p src/Processing.Configuration.Infra -s src/Processing.Configuration.Api/  --context ProcessingContext
 ```
 
 ## Auditing
