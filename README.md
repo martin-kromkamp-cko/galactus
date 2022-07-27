@@ -93,3 +93,4 @@ docker-compose up -d
 
 The following data can be seeded;
 - [Currencies](_data/import_currencies.sh)
+- [Card schemes](_data/import_schemes.sh)

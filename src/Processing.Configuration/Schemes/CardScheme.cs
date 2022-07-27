@@ -4,7 +4,7 @@ namespace Processing.Configuration.Schemes;
 
 public class CardScheme : EntityBase
 {
-    internal CardScheme()
+    public CardScheme()
     { }
 
     internal CardScheme(string scheme) 
@@ -14,9 +14,9 @@ public class CardScheme : EntityBase
     }
 
     /// <summary>
-    /// Gets the <see cref="CardScheme"/>.
+    /// Gets the scheme name of the <see cref="CardScheme"/>.
     /// </summary>
-    public string Scheme { get; set; }
+    public string Scheme { get; private set; }
     
     /// <summary>
     /// Gets the <see cref="Processor"/> that reference this <see cref="CardScheme"/>
