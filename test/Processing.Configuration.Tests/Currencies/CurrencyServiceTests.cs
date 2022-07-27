@@ -26,7 +26,7 @@ public class CurrencyServiceTests
     public async Task GivenInvalidCurrencyWhenAddingShouldReturnProblem()
     {
         // Given
-        var newCurrency = Currency.Create("United Kingdom", "Pound Sterling", "GBP", 826);
+        var newCurrency = Currency.Create("Pound Sterling", "GBP", 826);
 
         Mock.Get(_currencyValidator)
             .Setup(x => x.ValidateAsync(newCurrency, CancellationToken.None))
@@ -46,7 +46,7 @@ public class CurrencyServiceTests
     public async Task GivenNewCurrencyWhenAddingShouldAdd()
     {
         // Given
-        var newCurrency = Currency.Create("United Kingdom", "Pound Sterling", "GBP", 826);
+        var newCurrency = Currency.Create("Pound Sterling", "GBP", 826);
         var existingCurrencies = new Currency[] { }.BuildMock();
 
         Mock.Get(_currencyValidator)
@@ -71,7 +71,7 @@ public class CurrencyServiceTests
     public async Task GivenDisabledCurrencyWhenAddingShouldEnable()
     {
         // Given
-        var newCurrency = Currency.Create("United Kingdom", "Pound Sterling", "GBP", 826);
+        var newCurrency = Currency.Create("Pound Sterling", "GBP", 826);
         newCurrency.ToggleActive();
         var existingCurrencies = new[] { newCurrency }.BuildMock();
 
@@ -97,7 +97,7 @@ public class CurrencyServiceTests
     public async Task GivenEnabledCurrencyWhenAddingShouldReturn()
     {
         // Given
-        var newCurrency = Currency.Create("United Kingdom", "Pound Sterling", "GBP", 826);
+        var newCurrency = Currency.Create("Pound Sterling", "GBP", 826);
         var existingCurrencies = new[] { newCurrency }.BuildMock();
 
         Mock.Get(_currencyValidator)
@@ -126,7 +126,7 @@ public class CurrencyServiceTests
     public async Task GivenEnabledCurrencyWhenDisablingShouldUpdate()
     {
         // Given
-        var currency = Currency.Create("United Kingdom", "Pound Sterling", "GBP", 826);
+        var currency = Currency.Create("Pound Sterling", "GBP", 826);
         var existingCurrencies = new[] { currency }.BuildMock();
 
         Mock.Get(_currencyValidator)
@@ -152,7 +152,7 @@ public class CurrencyServiceTests
     public async Task GivenDisabledCurrencyWhenDisablingShouldReturn()
     {
         // Given
-        var currency = Currency.Create("United Kingdom", "Pound Sterling", "GBP", 826);
+        var currency = Currency.Create("Pound Sterling", "GBP", 826);
         currency.ToggleActive();
         var existingCurrencies = new[] { currency }.BuildMock();
 

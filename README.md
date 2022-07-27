@@ -72,3 +72,24 @@ dotnet ef database update -p src/Processing.Configuration.Infra -s src/Processin
 ## Auditing
 
 All API level requests that potentially modify data are audited and written to to the `audit_event` table.
+
+## Local Development
+
+To start local development you need the following
+- [.net 6.x SDK](https://dotnet.microsoft.com/en-us/download)
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+- Favorite editor/IDE
+  - [Visual Studio (Code)](https://dotnet.microsoft.com/en-us/platform/tools)
+  - [Jetbrains Rider](https://www.jetbrains.com/rider/)
+  - [Anything that support Omnisharp](https://www.omnisharp.net/#integrations)
+
+To run Galactus locally bring up the Docker stack
+``` shell
+docker-compose up -d
+```
+
+### Seeding data
+
+The following data can be seeded;
+- [Currencies](_data/import_currencies.sh)

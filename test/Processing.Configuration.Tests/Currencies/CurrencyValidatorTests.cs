@@ -12,27 +12,7 @@ public class CurrencyValidatorTests
     {
         _validator = new CurrencyValidator();
     }
-    
-    [Theory]
-    [InlineData(null, false)]
-    [InlineData("", false)]
-    [InlineData("United Kingdom", true)]
-    public async Task GivenCountryWhenValidationShouldReturn(string country, bool isValid)
-    {
-        // Given
-        var currency = Currency.Create(country, "Pound Sterling", "GBP", 826);
-        
-        // When
-        var result = await _validator.ValidateAsync(currency, CancellationToken.None);
-        
-        // Then
-        result.IsValid.Should().Be(isValid);
-        if (!result.IsValid)
-        {
-            result.Errors.First().ErrorCode.Should().Be(CurrencyValidator.Errors.CountryRequired);
-        }
-    }
-    
+
     [Theory]
     [InlineData(null, false)]
     [InlineData("", false)]
@@ -40,7 +20,7 @@ public class CurrencyValidatorTests
     public async Task GivenNameWhenValidationShouldReturn(string name, bool isValid)
     {
         // Given
-        var currency = Currency.Create("United Kingdom", name, "GBP", 826);
+        var currency = Currency.Create(name, "GBP", 826);
         
         // When
         var result = await _validator.ValidateAsync(currency, CancellationToken.None);
@@ -62,7 +42,7 @@ public class CurrencyValidatorTests
     public async Task GivenCodeWhenValidationShouldReturn(string? code, bool isValid)
     {
         // Given
-        var currency = Currency.Create("United Kingdom", "Pound Sterling", code, 826);
+        var currency = Currency.Create("Pound Sterling", code, 826);
         
         // When
         var result = await _validator.ValidateAsync(currency, CancellationToken.None);
@@ -87,7 +67,7 @@ public class CurrencyValidatorTests
     public async Task GivenNumberWhenValidationShouldReturn(int number, bool isValid)
     {
         // Given
-        var currency = Currency.Create("United Kingdom", "Pound Sterling", "GBP", number);
+        var currency = Currency.Create("Pound Sterling", "GBP", number);
         
         // When
         var result = await _validator.ValidateAsync(currency, CancellationToken.None);

@@ -17,10 +17,7 @@ public class CurrencyConfig : IEntityTypeConfiguration<Currency>
 
         builder.HasIndex(x => x.Code)
             .IsUnique();
-        
-        builder.Property(x => x.Country)
-            .IsRequired();
-        
+
         builder.Property(x => x.Name)
             .IsRequired();
         

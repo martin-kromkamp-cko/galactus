@@ -11,19 +11,13 @@ public class Currency : EntityBase
     public Currency()
     { }
 
-    public Currency(string country, string name, string code, int number) 
+    public Currency(string name, string code, int number) 
         : base(Ids.Id.NewId("curr").ToString())
     {
-        Country = country;
         Name = name;
         Code = code;
         Number = number;
     }
-
-    /// <summary>
-    /// Gets the country this <see cref="Currency"/> belongs to.
-    /// </summary>
-    public string Country { get; private set; }
 
     /// <summary>
     /// Gets the name of this <see cref="Currency"/>.
@@ -45,8 +39,8 @@ public class Currency : EntityBase
     /// </summary>
     public virtual ICollection<Processor> Processors { get; private set; }
 
-    public static Currency Create(string country, string name, string code, int number)
+    public static Currency Create(string name, string code, int number)
     {
-        return new(country, name, code, number);
+        return new(name, code, number);
     }
 }

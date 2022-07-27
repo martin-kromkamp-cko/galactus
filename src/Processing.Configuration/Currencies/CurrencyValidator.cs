@@ -11,10 +11,6 @@ public class CurrencyValidator : AbstractValidator<Currency>
             .WithErrorCode(Errors.CodeRequired)
             .Length(3)
             .WithErrorCode(Errors.CodeMustBeOfLength);
-
-        RuleFor(x => x.Country)
-            .NotEmpty()
-            .WithErrorCode(Errors.CountryRequired);
         
         RuleFor(x => x.Name)
             .NotEmpty()

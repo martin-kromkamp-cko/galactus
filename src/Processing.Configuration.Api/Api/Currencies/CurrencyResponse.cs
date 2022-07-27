@@ -7,11 +7,6 @@ public class CurrencyResponse
     public string ExternalId { get; set; }
 
     public bool IsActive { get; set; }
-    
-    /// <summary>
-    /// Gets the country this <see cref="Currency"/> belongs to.
-    /// </summary>
-    public string Country { get; set; }
 
     /// <summary>
     /// Gets the name of this <see cref="Currency"/>.
@@ -34,7 +29,6 @@ public class CurrencyResponse
         {
             ExternalId = currency.ExternalId,
             IsActive = currency.IsActive,
-            Country = currency.Country,
             Code = currency.Code,
             Name = currency.Name,
             Number = currency.Number,

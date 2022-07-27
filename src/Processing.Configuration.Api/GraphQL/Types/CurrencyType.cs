@@ -15,11 +15,7 @@ public class CurrencyType : ObjectType<Currency>
         descriptor.Field(x => x.IsActive)
             .Type<BooleanType>()
             .Name("is_active");
-        
-        descriptor.Field(x => x.Country)
-            .Type<StringType>()
-            .Name("country");
-        
+
         descriptor.Field(x => x.Name)
             .Type<StringType>()
             .Name("name");
