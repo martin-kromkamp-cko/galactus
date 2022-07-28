@@ -1,0 +1,322 @@
+{"name":"Andorran Peseta","code":"ADP","number":20,"withdrawalDate":"2003-07"}
+{"name":"UAE Dirham","code":"AED","number":784,"withdrawalDate":null}
+{"name":"Afghani","code":"AFA","number":4,"withdrawalDate":"2003-01"}
+{"name":"Afghani","code":"AFN","number":971,"withdrawalDate":null}
+{"name":"Old Lek","code":"ALK","number":8,"withdrawalDate":"1989-12"}
+{"name":"Lek","code":"ALL","number":8,"withdrawalDate":null}
+{"name":"Armenian Dram","code":"AMD","number":51,"withdrawalDate":null}
+{"name":"Netherlands Antillean Guilder","code":"ANG","number":532,"withdrawalDate":null}
+{"name":"Netherlands Antillean Guilder","code":"ANG","number":532,"withdrawalDate":"2010-10"}
+{"name":"Kwanza","code":"AOA","number":973,"withdrawalDate":null}
+{"name":"Kwanza","code":"AOK","number":24,"withdrawalDate":"1991-03"}
+{"name":"New Kwanza","code":"AON","number":24,"withdrawalDate":"2000-02"}
+{"name":"Kwanza Reajustado","code":"AOR","number":982,"withdrawalDate":"2000-02"}
+{"name":"Austral","code":"ARA","number":32,"withdrawalDate":"1992-01"}
+{"name":"Peso Argentino","code":"ARP","number":32,"withdrawalDate":"1985-07"}
+{"name":"Argentine Peso","code":"ARS","number":32,"withdrawalDate":null}
+{"name":"Peso","code":"ARY","number":32,"withdrawalDate":"1989 to 1990"}
+{"name":"Schilling","code":"ATS","number":40,"withdrawalDate":"2002-03"}
+{"name":"Australian Dollar","code":"AUD","number":36,"withdrawalDate":null}
+{"name":"Aruban Florin","code":"AWG","number":533,"withdrawalDate":null}
+{"name":"Azerbaijan Manat","code":"AYM","number":945,"withdrawalDate":"2005-10"}
+{"name":"Azerbaijanian Manat","code":"AZM","number":31,"withdrawalDate":"2005-12"}
+{"name":"Azerbaijan Manat","code":"AZN","number":944,"withdrawalDate":null}
+{"name":"Dinar","code":"BAD","number":70,"withdrawalDate":"1998-07"}
+{"name":"Convertible Mark","code":"BAM","number":977,"withdrawalDate":null}
+{"name":"Barbados Dollar","code":"BBD","number":52,"withdrawalDate":null}
+{"name":"Taka","code":"BDT","number":50,"withdrawalDate":null}
+{"name":"Convertible Franc","code":"BEC","number":993,"withdrawalDate":"1990-03"}
+{"name":"Belgian Franc","code":"BEF","number":56,"withdrawalDate":"2002-03"}
+{"name":"Financial Franc","code":"BEL","number":992,"withdrawalDate":"1990-03"}
+{"name":"Lev A/52","code":"BGJ","number":100,"withdrawalDate":"1989 to 1990"}
+{"name":"Lev A/62","code":"BGK","number":100,"withdrawalDate":"1989 to 1990"}
+{"name":"Lev","code":"BGL","number":100,"withdrawalDate":"2003-11"}
+{"name":"Bulgarian Lev","code":"BGN","number":975,"withdrawalDate":null}
+{"name":"Bahraini Dinar","code":"BHD","number":48,"withdrawalDate":null}
+{"name":"Burundi Franc","code":"BIF","number":108,"withdrawalDate":null}
+{"name":"Bermudian Dollar","code":"BMD","number":60,"withdrawalDate":null}
+{"name":"Brunei Dollar","code":"BND","number":96,"withdrawalDate":null}
+{"name":"Boliviano","code":"BOB","number":68,"withdrawalDate":null}
+{"name":"Peso boliviano","code":"BOP","number":68,"withdrawalDate":"1987-02"}
+{"name":"Mvdol","code":"BOV","number":984,"withdrawalDate":null}
+{"name":"Cruzeiro","code":"BRB","number":76,"withdrawalDate":"1986-03"}
+{"name":"Cruzado","code":"BRC","number":76,"withdrawalDate":"1989-02"}
+{"name":"Cruzeiro","code":"BRE","number":76,"withdrawalDate":"1993-03"}
+{"name":"Brazilian Real","code":"BRL","number":986,"withdrawalDate":null}
+{"name":"New Cruzado","code":"BRN","number":76,"withdrawalDate":"1990-03"}
+{"name":"Cruzeiro Real","code":"BRR","number":987,"withdrawalDate":"1994-07"}
+{"name":"Bahamian Dollar","code":"BSD","number":44,"withdrawalDate":null}
+{"name":"Ngultrum","code":"BTN","number":64,"withdrawalDate":null}
+{"name":"Kyat","code":"BUK","number":104,"withdrawalDate":"1990-02"}
+{"name":"Pula","code":"BWP","number":72,"withdrawalDate":null}
+{"name":"Belarusian Ruble","code":"BYB","number":112,"withdrawalDate":"2001-01"}
+{"name":"Belarusian Ruble","code":"BYN","number":933,"withdrawalDate":null}
+{"name":"Belarusian Ruble","code":"BYR","number":974,"withdrawalDate":"2017-01"}
+{"name":"Belize Dollar","code":"BZD","number":84,"withdrawalDate":null}
+{"name":"Canadian Dollar","code":"CAD","number":124,"withdrawalDate":null}
+{"name":"Congolese Franc","code":"CDF","number":976,"withdrawalDate":null}
+{"name":"WIR Franc (for electronic)","code":"CHC","number":948,"withdrawalDate":"2004-11"}
+{"name":"WIR Euro","code":"CHE","number":947,"withdrawalDate":null}
+{"name":"Swiss Franc","code":"CHF","number":756,"withdrawalDate":null}
+{"name":"WIR Franc","code":"CHW","number":948,"withdrawalDate":null}
+{"name":"Unidad de Fomento","code":"CLF","number":990,"withdrawalDate":null}
+{"name":"Chilean Peso","code":"CLP","number":152,"withdrawalDate":null}
+{"name":"Yuan Renminbi","code":"CNY","number":156,"withdrawalDate":null}
+{"name":"Colombian Peso","code":"COP","number":170,"withdrawalDate":null}
+{"name":"Unidad de Valor Real","code":"COU","number":970,"withdrawalDate":null}
+{"name":"Costa Rican Colon","code":"CRC","number":188,"withdrawalDate":null}
+{"name":"Serbian Dinar","code":"CSD","number":891,"withdrawalDate":"2006-10"}
+{"name":"Krona A/53","code":"CSJ","number":203,"withdrawalDate":"1989 to 1990"}
+{"name":"Koruna","code":"CSK","number":200,"withdrawalDate":"1993-03"}
+{"name":"Peso Convertible","code":"CUC","number":931,"withdrawalDate":null}
+{"name":"Cuban Peso","code":"CUP","number":192,"withdrawalDate":null}
+{"name":"Cabo Verde Escudo","code":"CVE","number":132,"withdrawalDate":null}
+{"name":"Cyprus Pound","code":"CYP","number":196,"withdrawalDate":"2008-01"}
+{"name":"Czech Koruna","code":"CZK","number":203,"withdrawalDate":null}
+{"name":"Mark der DDR","code":"DDM","number":278,"withdrawalDate":"1990-07 to 1990-09"}
+{"name":"Deutsche Mark","code":"DEM","number":276,"withdrawalDate":"2002-03"}
+{"name":"Djibouti Franc","code":"DJF","number":262,"withdrawalDate":null}
+{"name":"Danish Krone","code":"DKK","number":208,"withdrawalDate":null}
+{"name":"Dominican Peso","code":"DOP","number":214,"withdrawalDate":null}
+{"name":"Algerian Dinar","code":"DZD","number":12,"withdrawalDate":null}
+{"name":"Sucre","code":"ECS","number":218,"withdrawalDate":"2000-09"}
+{"name":"Unidad de Valor Constante (UVC)","code":"ECV","number":983,"withdrawalDate":"2000-09"}
+{"name":"Kroon","code":"EEK","number":233,"withdrawalDate":"2011-01"}
+{"name":"Egyptian Pound","code":"EGP","number":818,"withdrawalDate":null}
+{"name":"Nakfa","code":"ERN","number":232,"withdrawalDate":null}
+{"name":"Spanish Peseta","code":"ESA","number":996,"withdrawalDate":"1978 to 1981"}
+{"name":"\"A\" Account (convertible Peseta Account)","code":"ESB","number":995,"withdrawalDate":"1994-12"}
+{"name":"Spanish Peseta","code":"ESP","number":724,"withdrawalDate":"2002-03"}
+{"name":"Ethiopian Birr","code":"ETB","number":230,"withdrawalDate":null}
+{"name":"Euro","code":"EUR","number":978,"withdrawalDate":null}
+{"name":"Euro","code":"EUR","number":978,"withdrawalDate":"2006-10"}
+{"name":"Markka","code":"FIM","number":246,"withdrawalDate":"2002-03"}
+{"name":"Fiji Dollar","code":"FJD","number":242,"withdrawalDate":null}
+{"name":"Falkland Islands Pound","code":"FKP","number":238,"withdrawalDate":null}
+{"name":"French Franc","code":"FRF","number":250,"withdrawalDate":"1999-01"}
+{"name":"French Franc","code":"FRF","number":250,"withdrawalDate":"2002-03"}
+{"name":"Pound Sterling","code":"GBP","number":826,"withdrawalDate":null}
+{"name":"Georgian Coupon","code":"GEK","number":268,"withdrawalDate":"1995-10"}
+{"name":"Lari","code":"GEL","number":981,"withdrawalDate":null}
+{"name":"Cedi","code":"GHC","number":288,"withdrawalDate":"2008-01"}
+{"name":"Ghana Cedi","code":"GHP","number":939,"withdrawalDate":"2007-06"}
+{"name":"Ghana Cedi","code":"GHS","number":936,"withdrawalDate":null}
+{"name":"Gibraltar Pound","code":"GIP","number":292,"withdrawalDate":null}
+{"name":"Dalasi","code":"GMD","number":270,"withdrawalDate":null}
+{"name":"Syli","code":"GNE","number":324,"withdrawalDate":"1989-12"}
+{"name":"Guinean Franc","code":"GNF","number":324,"withdrawalDate":null}
+{"name":"Syli","code":"GNS","number":324,"withdrawalDate":"1986-02"}
+{"name":"Ekwele","code":"GQE","number":226,"withdrawalDate":"1986-06"}
+{"name":"Drachma","code":"GRD","number":300,"withdrawalDate":"2002-03"}
+{"name":"Quetzal","code":"GTQ","number":320,"withdrawalDate":null}
+{"name":"Guinea Escudo","code":"GWE","number":624,"withdrawalDate":"1978 to 1981"}
+{"name":"Guinea-Bissau Peso","code":"GWP","number":624,"withdrawalDate":"1997-05"}
+{"name":"Guyana Dollar","code":"GYD","number":328,"withdrawalDate":null}
+{"name":"Hong Kong Dollar","code":"HKD","number":344,"withdrawalDate":null}
+{"name":"Lempira","code":"HNL","number":340,"withdrawalDate":null}
+{"name":"Croatian Dinar","code":"HRD","number":191,"withdrawalDate":"1995-01"}
+{"name":"Croatian Kuna","code":"HRK","number":191,"withdrawalDate":"2015-06"}
+{"name":"Kuna","code":"HRK","number":191,"withdrawalDate":null}
+{"name":"Gourde","code":"HTG","number":332,"withdrawalDate":null}
+{"name":"Forint","code":"HUF","number":348,"withdrawalDate":null}
+{"name":"Rupiah","code":"IDR","number":360,"withdrawalDate":null}
+{"name":"Rupiah","code":"IDR","number":360,"withdrawalDate":"2002-07"}
+{"name":"Irish Pound","code":"IEP","number":372,"withdrawalDate":"2002-03"}
+{"name":"Pound","code":"ILP","number":376,"withdrawalDate":"1978 to 1981"}
+{"name":"Old Shekel","code":"ILR","number":376,"withdrawalDate":"1989 to 1990"}
+{"name":"New Israeli Sheqel","code":"ILS","number":376,"withdrawalDate":null}
+{"name":"Indian Rupee","code":"INR","number":356,"withdrawalDate":null}
+{"name":"Iraqi Dinar","code":"IQD","number":368,"withdrawalDate":null}
+{"name":"Iranian Rial","code":"IRR","number":364,"withdrawalDate":null}
+{"name":"Old Krona","code":"ISJ","number":352,"withdrawalDate":"1989 to 1990"}
+{"name":"Iceland Krona","code":"ISK","number":352,"withdrawalDate":null}
+{"name":"Italian Lira","code":"ITL","number":380,"withdrawalDate":"2002-03"}
+{"name":"Jamaican Dollar","code":"JMD","number":388,"withdrawalDate":null}
+{"name":"Jordanian Dinar","code":"JOD","number":400,"withdrawalDate":null}
+{"name":"Yen","code":"JPY","number":392,"withdrawalDate":null}
+{"name":"Kenyan Shilling","code":"KES","number":404,"withdrawalDate":null}
+{"name":"Som","code":"KGS","number":417,"withdrawalDate":null}
+{"name":"Riel","code":"KHR","number":116,"withdrawalDate":null}
+{"name":"Comorian Franc ","code":"KMF","number":174,"withdrawalDate":null}
+{"name":"North Korean Won","code":"KPW","number":408,"withdrawalDate":null}
+{"name":"Won","code":"KRW","number":410,"withdrawalDate":null}
+{"name":"Kuwaiti Dinar","code":"KWD","number":414,"withdrawalDate":null}
+{"name":"Cayman Islands Dollar","code":"KYD","number":136,"withdrawalDate":null}
+{"name":"Tenge","code":"KZT","number":398,"withdrawalDate":null}
+{"name":"Pathet Lao Kip","code":"LAJ","number":418,"withdrawalDate":"1979-12"}
+{"name":"Lao Kip","code":"LAK","number":418,"withdrawalDate":null}
+{"name":"Lebanese Pound","code":"LBP","number":422,"withdrawalDate":null}
+{"name":"Sri Lanka Rupee","code":"LKR","number":144,"withdrawalDate":null}
+{"name":"Liberian Dollar","code":"LRD","number":430,"withdrawalDate":null}
+{"name":"Loti","code":"LSL","number":426,"withdrawalDate":null}
+{"name":"Loti","code":"LSM","number":426,"withdrawalDate":"1985-05"}
+{"name":"Lithuanian Litas","code":"LTL","number":440,"withdrawalDate":"2014-12"}
+{"name":"Talonas","code":"LTT","number":440,"withdrawalDate":"1993-07"}
+{"name":"Luxembourg Convertible Franc","code":"LUC","number":989,"withdrawalDate":"1990-03"}
+{"name":"Luxembourg Franc","code":"LUF","number":442,"withdrawalDate":"2002-03"}
+{"name":"Luxembourg Financial Franc","code":"LUL","number":988,"withdrawalDate":"1990-03"}
+{"name":"Latvian Lats","code":"LVL","number":428,"withdrawalDate":"2014-01"}
+{"name":"Latvian Ruble","code":"LVR","number":428,"withdrawalDate":"1994-12"}
+{"name":"Libyan Dinar","code":"LYD","number":434,"withdrawalDate":null}
+{"name":"Moroccan Dirham","code":"MAD","number":504,"withdrawalDate":null}
+{"name":"Moldovan Leu","code":"MDL","number":498,"withdrawalDate":null}
+{"name":"Malagasy Ariary","code":"MGA","number":969,"withdrawalDate":null}
+{"name":"Malagasy Franc","code":"MGF","number":450,"withdrawalDate":"2004-12"}
+{"name":"Denar","code":"MKD","number":807,"withdrawalDate":null}
+{"name":"Mali Franc","code":"MLF","number":466,"withdrawalDate":"1984-11"}
+{"name":"Kyat","code":"MMK","number":104,"withdrawalDate":null}
+{"name":"Tugrik","code":"MNT","number":496,"withdrawalDate":null}
+{"name":"Pataca","code":"MOP","number":446,"withdrawalDate":null}
+{"name":"Ouguiya","code":"MRO","number":478,"withdrawalDate":"2017-12"}
+{"name":"Ouguiya","code":"MRU","number":929,"withdrawalDate":null}
+{"name":"Maltese Lira","code":"MTL","number":470,"withdrawalDate":"2008-01"}
+{"name":"Maltese Pound","code":"MTP","number":470,"withdrawalDate":"1983-06"}
+{"name":"Mauritius Rupee","code":"MUR","number":480,"withdrawalDate":null}
+{"name":"Maldive Rupee","code":"MVQ","number":462,"withdrawalDate":"1989-12"}
+{"name":"Rufiyaa","code":"MVR","number":462,"withdrawalDate":null}
+{"name":"Kwacha","code":"MWK","number":454,"withdrawalDate":"2016-02"}
+{"name":"Malawi Kwacha","code":"MWK","number":454,"withdrawalDate":null}
+{"name":"Mexican Peso","code":"MXN","number":484,"withdrawalDate":null}
+{"name":"Mexican Peso","code":"MXP","number":484,"withdrawalDate":"1993-01"}
+{"name":"Mexican Unidad de Inversion (UDI)","code":"MXV","number":979,"withdrawalDate":null}
+{"name":"Malaysian Ringgit","code":"MYR","number":458,"withdrawalDate":null}
+{"name":"Mozambique Escudo","code":"MZE","number":508,"withdrawalDate":"1978 to 1981"}
+{"name":"Mozambique Metical","code":"MZM","number":508,"withdrawalDate":"2006-06"}
+{"name":"Mozambique Metical","code":"MZN","number":943,"withdrawalDate":null}
+{"name":"Namibia Dollar","code":"NAD","number":516,"withdrawalDate":null}
+{"name":"Naira","code":"NGN","number":566,"withdrawalDate":null}
+{"name":"Cordoba","code":"NIC","number":558,"withdrawalDate":"1990-10"}
+{"name":"Cordoba Oro","code":"NIO","number":558,"withdrawalDate":null}
+{"name":"Netherlands Guilder","code":"NLG","number":528,"withdrawalDate":"2002-03"}
+{"name":"Norwegian Krone","code":"NOK","number":578,"withdrawalDate":null}
+{"name":"Nepalese Rupee","code":"NPR","number":524,"withdrawalDate":null}
+{"name":"New Zealand Dollar","code":"NZD","number":554,"withdrawalDate":null}
+{"name":"Rial Omani","code":"OMR","number":512,"withdrawalDate":null}
+{"name":"Balboa","code":"PAB","number":590,"withdrawalDate":null}
+{"name":"Sol","code":"PEH","number":604,"withdrawalDate":"1989 to 1990"}
+{"name":"Inti","code":"PEI","number":604,"withdrawalDate":"1991-07"}
+{"name":"Nuevo Sol ","code":"PEN","number":604,"withdrawalDate":"2015-12"}
+{"name":"Sol","code":"PEN","number":604,"withdrawalDate":null}
+{"name":"Sol","code":"PES","number":604,"withdrawalDate":"1986-02"}
+{"name":"Kina","code":"PGK","number":598,"withdrawalDate":null}
+{"name":"Philippine Peso","code":"PHP","number":608,"withdrawalDate":null}
+{"name":"Pakistan Rupee","code":"PKR","number":586,"withdrawalDate":null}
+{"name":"Zloty","code":"PLN","number":985,"withdrawalDate":null}
+{"name":"Zloty","code":"PLZ","number":616,"withdrawalDate":"1997-01"}
+{"name":"Portuguese Escudo","code":"PTE","number":620,"withdrawalDate":"2002-03"}
+{"name":"Guarani","code":"PYG","number":600,"withdrawalDate":null}
+{"name":"Qatari Rial","code":"QAR","number":634,"withdrawalDate":null}
+{"name":"Rhodesian Dollar","code":"RHD","number":716,"withdrawalDate":"1978 to 1981"}
+{"name":"Leu A/52","code":"ROK","number":642,"withdrawalDate":"1989 to 1990"}
+{"name":"Old Leu","code":"ROL","number":642,"withdrawalDate":"2005-06"}
+{"name":"New Romanian Leu ","code":"RON","number":946,"withdrawalDate":"2015-06"}
+{"name":"Romanian Leu","code":"RON","number":946,"withdrawalDate":null}
+{"name":"Serbian Dinar","code":"RSD","number":941,"withdrawalDate":null}
+{"name":"Russian Ruble","code":"RUB","number":643,"withdrawalDate":null}
+{"name":"Russian Ruble","code":"RUR","number":810,"withdrawalDate":"1993-01"}
+{"name":"Russian Ruble","code":"RUR","number":810,"withdrawalDate":"1993-10"}
+{"name":"Russian Ruble","code":"RUR","number":810,"withdrawalDate":"1993-12"}
+{"name":"Russian Ruble","code":"RUR","number":810,"withdrawalDate":"1994-04"}
+{"name":"Russian Ruble","code":"RUR","number":810,"withdrawalDate":"1994-05"}
+{"name":"Russian Ruble","code":"RUR","number":810,"withdrawalDate":"1994-06"}
+{"name":"Russian Ruble","code":"RUR","number":810,"withdrawalDate":"1994-07"}
+{"name":"Russian Ruble","code":"RUR","number":810,"withdrawalDate":"1994-08"}
+{"name":"Russian Ruble","code":"RUR","number":810,"withdrawalDate":"1995-05"}
+{"name":"Russian Ruble","code":"RUR","number":810,"withdrawalDate":"2004-01"}
+{"name":"Rwanda Franc","code":"RWF","number":646,"withdrawalDate":null}
+{"name":"Saudi Riyal","code":"SAR","number":682,"withdrawalDate":null}
+{"name":"Solomon Islands Dollar","code":"SBD","number":90,"withdrawalDate":null}
+{"name":"Seychelles Rupee","code":"SCR","number":690,"withdrawalDate":null}
+{"name":"Sudanese Dinar","code":"SDD","number":736,"withdrawalDate":"2007-07"}
+{"name":"Sudanese Pound","code":"SDG","number":938,"withdrawalDate":null}
+{"name":"Sudanese Pound","code":"SDG","number":938,"withdrawalDate":"2012-09"}
+{"name":"Sudanese Pound","code":"SDP","number":736,"withdrawalDate":"1998-06"}
+{"name":"Swedish Krona","code":"SEK","number":752,"withdrawalDate":null}
+{"name":"Singapore Dollar","code":"SGD","number":702,"withdrawalDate":null}
+{"name":"Saint Helena Pound","code":"SHP","number":654,"withdrawalDate":null}
+{"name":"Tolar","code":"SIT","number":705,"withdrawalDate":"2007-01"}
+{"name":"Slovak Koruna","code":"SKK","number":703,"withdrawalDate":"2009-01"}
+{"name":"Leone","code":"SLL","number":694,"withdrawalDate":null}
+{"name":"Somali Shilling","code":"SOS","number":706,"withdrawalDate":null}
+{"name":"Surinam Dollar","code":"SRD","number":968,"withdrawalDate":null}
+{"name":"Surinam Guilder","code":"SRG","number":740,"withdrawalDate":"2003-12"}
+{"name":"South Sudanese Pound","code":"SSP","number":728,"withdrawalDate":null}
+{"name":"Dobra","code":"STD","number":678,"withdrawalDate":"2017-12"}
+{"name":"Dobra","code":"STN","number":930,"withdrawalDate":null}
+{"name":"Rouble","code":"SUR","number":810,"withdrawalDate":"1990-12"}
+{"name":"El Salvador Colon","code":"SVC","number":222,"withdrawalDate":null}
+{"name":"Syrian Pound","code":"SYP","number":760,"withdrawalDate":null}
+{"name":"Lilangeni","code":"SZL","number":748,"withdrawalDate":null}
+{"name":"Lilangeni","code":"SZL","number":748,"withdrawalDate":"2018-08"}
+{"name":"Baht","code":"THB","number":764,"withdrawalDate":null}
+{"name":"Tajik Ruble","code":"TJR","number":762,"withdrawalDate":"2001-04"}
+{"name":"Somoni","code":"TJS","number":972,"withdrawalDate":null}
+{"name":"Turkmenistan Manat","code":"TMM","number":795,"withdrawalDate":"2009-01"}
+{"name":"Turkmenistan New Manat","code":"TMT","number":934,"withdrawalDate":null}
+{"name":"Tunisian Dinar","code":"TND","number":788,"withdrawalDate":null}
+{"name":"Pa'anga","code":"TOP","number":776,"withdrawalDate":null}
+{"name":"Timor Escudo","code":"TPE","number":626,"withdrawalDate":"2002-11"}
+{"name":"Old Turkish Lira","code":"TRL","number":792,"withdrawalDate":"2005-12"}
+{"name":"New Turkish Lira","code":"TRY","number":949,"withdrawalDate":"2009-01"}
+{"name":"Turkish Lira","code":"TRY","number":949,"withdrawalDate":null}
+{"name":"Trinidad and Tobago Dollar","code":"TTD","number":780,"withdrawalDate":null}
+{"name":"New Taiwan Dollar","code":"TWD","number":901,"withdrawalDate":null}
+{"name":"Tanzanian Shilling","code":"TZS","number":834,"withdrawalDate":null}
+{"name":"Hryvnia","code":"UAH","number":980,"withdrawalDate":null}
+{"name":"Karbovanet","code":"UAK","number":804,"withdrawalDate":"1996-09"}
+{"name":"Uganda Shilling","code":"UGS","number":800,"withdrawalDate":"1987-05"}
+{"name":"Old Shilling","code":"UGW","number":800,"withdrawalDate":"1989 to 1990"}
+{"name":"Uganda Shilling","code":"UGX","number":800,"withdrawalDate":null}
+{"name":"US Dollar","code":"USD","number":840,"withdrawalDate":null}
+{"name":"US Dollar (Next day)","code":"USN","number":997,"withdrawalDate":null}
+{"name":"US Dollar (Same day)","code":"USS","number":998,"withdrawalDate":"2014-03"}
+{"name":"Uruguay Peso en Unidades Indexadas (UI)","code":"UYI","number":940,"withdrawalDate":null}
+{"name":"Old Uruguay Peso","code":"UYN","number":858,"withdrawalDate":"1989-12"}
+{"name":"Uruguayan Peso","code":"UYP","number":858,"withdrawalDate":"1993-03"}
+{"name":"Peso Uruguayo","code":"UYU","number":858,"withdrawalDate":null}
+{"name":"Unidad Previsional","code":"UYW","number":927,"withdrawalDate":null}
+{"name":"Uzbekistan Sum","code":"UZS","number":860,"withdrawalDate":null}
+{"name":"Bolivar","code":"VEB","number":862,"withdrawalDate":"2008-01"}
+{"name":"Bolivar","code":"VEF","number":937,"withdrawalDate":"2016-02"}
+{"name":"Bolivar Fuerte","code":"VEF","number":937,"withdrawalDate":"2011-12"}
+{"name":"Bolívar","code":"VEF","number":937,"withdrawalDate":"2018-08"}
+{"name":"Bolívar Soberano","code":"VES","number":928,"withdrawalDate":null}
+{"name":"Old Dong","code":"VNC","number":704,"withdrawalDate":"1989-1990"}
+{"name":"Dong","code":"VND","number":704,"withdrawalDate":null}
+{"name":"Vatu","code":"VUV","number":548,"withdrawalDate":null}
+{"name":"Tala","code":"WST","number":882,"withdrawalDate":null}
+{"name":"CFA Franc BEAC","code":"XAF","number":950,"withdrawalDate":null}
+{"name":"Silver","code":"XAG","number":961,"withdrawalDate":null}
+{"name":"Gold","code":"XAU","number":959,"withdrawalDate":null}
+{"name":"Bond Markets Unit European Composite Unit (EURCO)","code":"XBA","number":955,"withdrawalDate":null}
+{"name":"Bond Markets Unit European Monetary Unit (E.M.U.-6)","code":"XBB","number":956,"withdrawalDate":null}
+{"name":"Bond Markets Unit European Unit of Account 9 (E.U.A.-9)","code":"XBC","number":957,"withdrawalDate":null}
+{"name":"Bond Markets Unit European Unit of Account 17 (E.U.A.-17)","code":"XBD","number":958,"withdrawalDate":null}
+{"name":"East Caribbean Dollar","code":"XCD","number":951,"withdrawalDate":null}
+{"name":"SDR (Special Drawing Right)","code":"XDR","number":960,"withdrawalDate":null}
+{"name":"European Currency Unit (E.C.U)","code":"XEU","number":954,"withdrawalDate":"1999-01"}
+{"name":"CFA Franc BCEAO","code":"XOF","number":952,"withdrawalDate":null}
+{"name":"Palladium","code":"XPD","number":964,"withdrawalDate":null}
+{"name":"CFP Franc","code":"XPF","number":953,"withdrawalDate":null}
+{"name":"Platinum","code":"XPT","number":962,"withdrawalDate":null}
+{"name":"Sucre","code":"XSU","number":994,"withdrawalDate":null}
+{"name":"Codes specifically reserved for testing purposes","code":"XTS","number":963,"withdrawalDate":null}
+{"name":"ADB Unit of Account","code":"XUA","number":965,"withdrawalDate":null}
+{"name":"The codes assigned for transactions where no currency is involved","code":"XXX","number":999,"withdrawalDate":null}
+{"name":"Yemeni Dinar","code":"YDD","number":720,"withdrawalDate":"1991-09"}
+{"name":"Yemeni Rial","code":"YER","number":886,"withdrawalDate":null}
+{"name":"New Yugoslavian Dinar","code":"YUD","number":890,"withdrawalDate":"1990-01"}
+{"name":"New Dinar","code":"YUM","number":891,"withdrawalDate":"2003-07"}
+{"name":"Yugoslavian Dinar","code":"YUN","number":890,"withdrawalDate":"1995-11"}
+{"name":"Financial Rand","code":"ZAL","number":991,"withdrawalDate":"1995-03"}
+{"name":"Rand","code":"ZAR","number":710,"withdrawalDate":null}
+{"name":"Zambian Kwacha","code":"ZMK","number":894,"withdrawalDate":"2012-12"}
+{"name":"Zambian Kwacha","code":"ZMW","number":967,"withdrawalDate":null}
+{"name":"New Zaire","code":"ZRN","number":180,"withdrawalDate":"1999-06"}
+{"name":"Zaire","code":"ZRZ","number":180,"withdrawalDate":"1994-02"}
+{"name":"Rhodesian Dollar","code":"ZWC","number":716,"withdrawalDate":"1989-12"}
+{"name":"Zimbabwe Dollar","code":"ZWD","number":716,"withdrawalDate":"2008-08"}
+{"name":"Zimbabwe Dollar (old)","code":"ZWD","number":716,"withdrawalDate":"2006-08"}
+{"name":"Zimbabwe Dollar","code":"ZWL","number":932,"withdrawalDate":null}
+{"name":"Zimbabwe Dollar (new)","code":"ZWN","number":942,"withdrawalDate":"2006-09"}
+{"name":"Zimbabwe Dollar","code":"ZWR","number":935,"withdrawalDate":"2009-06"}
