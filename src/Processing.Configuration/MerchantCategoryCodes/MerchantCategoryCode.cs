@@ -8,7 +8,7 @@ public class MerchantCategoryCode : EntityBase
     { }
 
     internal MerchantCategoryCode(string title, int code) 
-        : base(Ids.Id.NewId("mcc").ToString())
+        : base(Identifiers.Id.NewId("mcc").ToString())
     {
         Title = title;
         Code = code;

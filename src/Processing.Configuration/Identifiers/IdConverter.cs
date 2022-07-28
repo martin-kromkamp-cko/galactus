@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.Globalization;
 
-namespace Processing.Configuration.Ids;
+namespace Processing.Configuration.Identifiers;
 
 internal class IdConverter : TypeConverter
 {

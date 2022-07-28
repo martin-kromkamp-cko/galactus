@@ -12,7 +12,7 @@ public class Currency : EntityBase
     { }
 
     public Currency(string name, string code, int number) 
-        : base(Ids.Id.NewId("curr").ToString())
+        : base(Identifiers.Id.NewId("curr").ToString())
     {
         Name = name;
         Code = code;

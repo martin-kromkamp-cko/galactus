@@ -8,7 +8,7 @@ public class CardScheme : EntityBase
     { }
 
     internal CardScheme(string scheme) 
-        : base(Ids.Id.NewId("cs").ToString())
+        : base(Identifiers.Id.NewId("cs").ToString())
     {
         Scheme = scheme;
     }

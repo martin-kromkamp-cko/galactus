@@ -11,7 +11,7 @@ public class Processor : EntityBase
     { }
 
     internal Processor(string acquirerId, string description, MerchantCategoryCode merchantCategoryCode, ICollection<Currency> currencies, ICollection<CardScheme> schemes, bool dynamicDescriptor, string dynamicDescriptorPrefix, ICollection<CkoService> services, string providerKey, string mode) 
-        : base(Ids.Id.NewId("pr").ToString())
+        : base(Identifiers.Id.NewId("pr").ToString())
     {
         AcquirerId = acquirerId;
         Description = description;

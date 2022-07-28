@@ -20,7 +20,7 @@
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Processing.Configuration.Ids;
+namespace Processing.Configuration.Identifiers;
 
 internal static class Base32
 {

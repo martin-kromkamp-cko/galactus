@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Processing.Configuration.Ids;
+namespace Processing.Configuration.Identifiers;
 
 /// <summary>
 ///     Represents a Base-32 encoded entity identifier
