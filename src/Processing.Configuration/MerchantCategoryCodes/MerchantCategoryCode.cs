@@ -4,7 +4,7 @@ namespace Processing.Configuration.MerchantCategoryCodes;
 
 public class MerchantCategoryCode : EntityBase
 {
-    internal MerchantCategoryCode()
+    public MerchantCategoryCode()
     { }
 
     internal MerchantCategoryCode(string title, int code) 

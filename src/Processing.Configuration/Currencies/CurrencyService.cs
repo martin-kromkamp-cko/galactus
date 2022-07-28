@@ -63,6 +63,6 @@ internal class CurrencyService : ICurrencyService
         currency.ToggleActive();
         var updatedCurrency = await _currencyRepository.UpdateAsync(currency, cancellationToken);
 
-        return ServiceResult<Currency>.FromResult(currency);
+        return ServiceResult<Currency>.FromResult(updatedCurrency);
     }
 }

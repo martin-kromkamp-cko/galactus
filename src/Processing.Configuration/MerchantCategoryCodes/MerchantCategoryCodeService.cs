@@ -39,8 +39,8 @@ public class MerchantCategoryCodeService : IMerchantCategoryCodeService
             return ServiceResult<MerchantCategoryCode>.FromResult(existingMcc);
         }
 
-        var newCardScheme = await _merchantCategoryCodeRepository.AddAsync(merchantCategoryCode, cancellationToken);
-        return ServiceResult<MerchantCategoryCode>.FromResult(newCardScheme);
+        var newMcc = await _merchantCategoryCodeRepository.AddAsync(merchantCategoryCode, cancellationToken);
+        return ServiceResult<MerchantCategoryCode>.FromResult(newMcc);
     }
 
     public async Task<ServiceResult<MerchantCategoryCode>> DisableAsync(MerchantCategoryCode merchantCategoryCode, CancellationToken cancellationToken)
@@ -49,8 +49,8 @@ public class MerchantCategoryCodeService : IMerchantCategoryCodeService
             return ServiceResult<MerchantCategoryCode>.FromResult(merchantCategoryCode);
         
         merchantCategoryCode.ToggleActive();
-        var updatedScheme = await _merchantCategoryCodeRepository.UpdateAsync(merchantCategoryCode, cancellationToken);
+        var updatedMcc = await _merchantCategoryCodeRepository.UpdateAsync(merchantCategoryCode, cancellationToken);
 
-        return ServiceResult<MerchantCategoryCode>.FromResult(updatedScheme);
+        return ServiceResult<MerchantCategoryCode>.FromResult(updatedMcc);
     }
 }
