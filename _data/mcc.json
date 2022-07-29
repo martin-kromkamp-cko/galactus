@@ -1,0 +1,981 @@
+{"Code":742,"Title":"Veterinary Services"}
+{"Code":763,"Title":"Agricultural Co-operatives"}
+{"Code":780,"Title":"Horticultural Services, Landscaping Services"}
+{"Code":1520,"Title":"General Contractors-Residential and Commercial"}
+{"Code":1711,"Title":"Air Conditioning Contractors – Sales and Installation, Heating Contractors – Sales, Service, Installation"}
+{"Code":1731,"Title":"Electrical Contractors"}
+{"Code":1740,"Title":"Insulation – Contractors, Masonry, Stonework Contractors, Plastering Contractors, Stonework and Masonry Contractors, Tile Settings Contractors"}
+{"Code":1750,"Title":"Carpentry Contractors"}
+{"Code":1761,"Title":"Roofing – Contractors, Sheet Metal Work – Contractors, Siding – Contractors"}
+{"Code":1771,"Title":"Contractors – Concrete Work"}
+{"Code":1799,"Title":"Contractors – Special Trade, Not Elsewhere Classified"}
+{"Code":2741,"Title":"Miscellaneous Publishing and Printing"}
+{"Code":2791,"Title":"Typesetting, Plate Making, & Related Services"}
+{"Code":2842,"Title":"Specialty Cleaning, Polishing, and Sanitation Preparations"}
+{"Code":3000,"Title":"UNITED AIRLINES"}
+{"Code":3001,"Title":"AMERICAN AIRLINES"}
+{"Code":3002,"Title":"PAN AMERICAN"}
+{"Code":3003,"Title":"Airlines"}
+{"Code":3004,"Title":"TRANS WORLD AIRLINES"}
+{"Code":3005,"Title":"BRITISH AIRWAYS"}
+{"Code":3006,"Title":"JAPAN AIRLINES"}
+{"Code":3007,"Title":"AIR FRANCE"}
+{"Code":3008,"Title":"LUFTHANSA"}
+{"Code":3009,"Title":"AIR CANADA"}
+{"Code":3010,"Title":"KLM (ROYAL DUTCH AIRLINES)"}
+{"Code":3011,"Title":"AEORFLOT"}
+{"Code":3012,"Title":"QANTAS"}
+{"Code":3013,"Title":"ALITALIA"}
+{"Code":3014,"Title":"SAUDIA ARABIAN AIRLINES"}
+{"Code":3015,"Title":"SWISSAIR"}
+{"Code":3016,"Title":"SAS"}
+{"Code":3017,"Title":"SOUTH AFRICAN AIRWAYS"}
+{"Code":3018,"Title":"VARIG (BRAZIL)"}
+{"Code":3019,"Title":"Airlines"}
+{"Code":3020,"Title":"AIR-INDIA"}
+{"Code":3021,"Title":"AIR ALGERIE"}
+{"Code":3022,"Title":"PHILIPPINE AIRLINES"}
+{"Code":3023,"Title":"MEXICANA"}
+{"Code":3024,"Title":"PAKISTAN INTERNATIONAL"}
+{"Code":3025,"Title":"AIR NEW ZEALAND"}
+{"Code":3026,"Title":"Airlines"}
+{"Code":3027,"Title":"UTA/INTERAIR"}
+{"Code":3028,"Title":"AIR MALTA"}
+{"Code":3029,"Title":"SABENA"}
+{"Code":3030,"Title":"AEROLINEAS ARGENTINAS"}
+{"Code":3031,"Title":"OLYMPIC AIRWAYS"}
+{"Code":3032,"Title":"EL AL"}
+{"Code":3033,"Title":"ANSETT AIRLINES"}
+{"Code":3034,"Title":"AUSTRAINLIAN AIRLINES"}
+{"Code":3035,"Title":"TAP (PORTUGAL)"}
+{"Code":3036,"Title":"VASP (BRAZIL)"}
+{"Code":3037,"Title":"EGYPTAIR"}
+{"Code":3038,"Title":"KUWAIT AIRLINES"}
+{"Code":3039,"Title":"AVIANCA"}
+{"Code":3040,"Title":"GULF AIR (BAHRAIN)"}
+{"Code":3041,"Title":"BALKAN-BULGARIAN AIRLINES"}
+{"Code":3042,"Title":"FINNAIR"}
+{"Code":3043,"Title":"AER LINGUS"}
+{"Code":3044,"Title":"AIR LANKA"}
+{"Code":3045,"Title":"NIGERIA AIRWAYS"}
+{"Code":3046,"Title":"CRUZEIRO DO SUL (BRAZIJ)"}
+{"Code":3047,"Title":"THY (TURKEY)"}
+{"Code":3048,"Title":"ROYAL AIR MAROC"}
+{"Code":3049,"Title":"TUNIS AIR"}
+{"Code":3050,"Title":"ICELANDAIR"}
+{"Code":3051,"Title":"AUSTRIAN AIRLINES"}
+{"Code":3052,"Title":"LANCHILE"}
+{"Code":3053,"Title":"AVIACO (SPAIN)"}
+{"Code":3054,"Title":"LADECO (CHILE)"}
+{"Code":3055,"Title":"LAB (BOLIVIA)"}
+{"Code":3056,"Title":"QUEBECAIRE"}
+{"Code":3057,"Title":"EASTWEST AIRLINES (AUSTRALIA)"}
+{"Code":3058,"Title":"DELTA"}
+{"Code":3059,"Title":"Airlines"}
+{"Code":3060,"Title":"NORTHWEST"}
+{"Code":3061,"Title":"CONTINENTAL"}
+{"Code":3062,"Title":"WESTERN"}
+{"Code":3063,"Title":"US AIR"}
+{"Code":3064,"Title":"Airlines"}
+{"Code":3065,"Title":"AIRINTER"}
+{"Code":3066,"Title":"SOUTHWEST"}
+{"Code":3067,"Title":"Airlines"}
+{"Code":3068,"Title":"Airlines"}
+{"Code":3069,"Title":"SUN COUNTRY AIRLINES"}
+{"Code":3070,"Title":"Airlines"}
+{"Code":3071,"Title":"AIR BRITISH COLUBIA"}
+{"Code":3072,"Title":"Airlines"}
+{"Code":3073,"Title":"Airlines"}
+{"Code":3074,"Title":"Airlines"}
+{"Code":3075,"Title":"SINGAPORE AIRLINES"}
+{"Code":3076,"Title":"AEROMEXICO"}
+{"Code":3077,"Title":"THAI AIRWAYS"}
+{"Code":3078,"Title":"CHINA AIRLINES"}
+{"Code":3079,"Title":"Airlines"}
+{"Code":3080,"Title":"Airlines"}
+{"Code":3081,"Title":"NORDAIR"}
+{"Code":3082,"Title":"KOREAN AIRLINES"}
+{"Code":3083,"Title":"AIR AFRIGUE"}
+{"Code":3084,"Title":"EVA AIRLINES"}
+{"Code":3085,"Title":"MIDWEST EXPRESS AIRLINES, INC."}
+{"Code":3086,"Title":"Airlines"}
+{"Code":3087,"Title":"METRO AIRLINES"}
+{"Code":3088,"Title":"CROATIA AIRLINES"}
+{"Code":3089,"Title":"TRANSAERO"}
+{"Code":3090,"Title":"Airlines"}
+{"Code":3091,"Title":"Airlines"}
+{"Code":3092,"Title":"Airlines"}
+{"Code":3093,"Title":"Airlines"}
+{"Code":3094,"Title":"ZAMBIA AIRWAYS"}
+{"Code":3095,"Title":"Airlines"}
+{"Code":3096,"Title":"AIR ZIMBABWE"}
+{"Code":3097,"Title":"Airlines"}
+{"Code":3098,"Title":"Airlines"}
+{"Code":3099,"Title":"CATHAY PACIFIC"}
+{"Code":3100,"Title":"MALAYSIAN AIRLINE SYSTEM"}
+{"Code":3101,"Title":"Airlines"}
+{"Code":3102,"Title":"IBERIA"}
+{"Code":3103,"Title":"GARUDA (INDONESIA)"}
+{"Code":3104,"Title":"Airlines"}
+{"Code":3105,"Title":"Airlines"}
+{"Code":3106,"Title":"BRAATHENS S.A.F.E. (NORWAY)"}
+{"Code":3107,"Title":"Airlines"}
+{"Code":3108,"Title":"Airlines"}
+{"Code":3109,"Title":"Airlines"}
+{"Code":3110,"Title":"WINGS AIRWAYS"}
+{"Code":3111,"Title":"BRITISH MIDLAND"}
+{"Code":3112,"Title":"WINDWARD ISLAND"}
+{"Code":3113,"Title":"Airlines"}
+{"Code":3114,"Title":"Airlines"}
+{"Code":3115,"Title":"Airlines"}
+{"Code":3116,"Title":"Airlines"}
+{"Code":3117,"Title":"VIASA"}
+{"Code":3118,"Title":"VALLEY AIRLINES"}
+{"Code":3119,"Title":"Airlines"}
+{"Code":3120,"Title":"Airlines"}
+{"Code":3121,"Title":"Airlines"}
+{"Code":3122,"Title":"Airlines"}
+{"Code":3123,"Title":"Airlines"}
+{"Code":3124,"Title":"Airlines"}
+{"Code":3125,"Title":"TAN"}
+{"Code":3126,"Title":"TALAIR"}
+{"Code":3127,"Title":"TACA INTERNATIONAL"}
+{"Code":3128,"Title":"Airlines"}
+{"Code":3129,"Title":"SURINAM AIRWAYS"}
+{"Code":3130,"Title":"SUN WORLD INTERNATIONAL"}
+{"Code":3131,"Title":"Airlines"}
+{"Code":3132,"Title":"Airlines"}
+{"Code":3133,"Title":"SUNBELT AIRLINES"}
+{"Code":3134,"Title":"Airlines"}
+{"Code":3135,"Title":"SUDAN AIRWAYS"}
+{"Code":3136,"Title":"Airlines"}
+{"Code":3137,"Title":"SINGLETON"}
+{"Code":3138,"Title":"SIMMONS AIRLINES"}
+{"Code":3139,"Title":"Airlines"}
+{"Code":3140,"Title":"Airlines"}
+{"Code":3141,"Title":"Airlines"}
+{"Code":3142,"Title":"Airlines"}
+{"Code":3143,"Title":"SCENIC AIRLINES"}
+{"Code":3144,"Title":"VIRGIN ATLANTIC"}
+{"Code":3145,"Title":"SAN JUAN AIRLINES"}
+{"Code":3146,"Title":"LUXAIR"}
+{"Code":3147,"Title":"Airlines"}
+{"Code":3148,"Title":"Airlines"}
+{"Code":3149,"Title":"Airlines"}
+{"Code":3150,"Title":"Airlines"}
+{"Code":3151,"Title":"AIR ZAIRE"}
+{"Code":3152,"Title":"Airlines"}
+{"Code":3153,"Title":"Airlines"}
+{"Code":3154,"Title":"PRINCEVILLE"}
+{"Code":3155,"Title":"Airlines"}
+{"Code":3156,"Title":"Airlines"}
+{"Code":3157,"Title":"Airlines"}
+{"Code":3158,"Title":"Airlines"}
+{"Code":3159,"Title":"PBA"}
+{"Code":3160,"Title":"Airlines"}
+{"Code":3161,"Title":"ALL NIPPON AIRWAYS"}
+{"Code":3162,"Title":"Airlines"}
+{"Code":3163,"Title":"Airlines"}
+{"Code":3164,"Title":"NORONTAIR"}
+{"Code":3165,"Title":"NEW YORK HELICOPTER"}
+{"Code":3166,"Title":"Airlines"}
+{"Code":3167,"Title":"Airlines"}
+{"Code":3168,"Title":"Airlines"}
+{"Code":3169,"Title":"Airlines"}
+{"Code":3170,"Title":"NOUNT COOK"}
+{"Code":3171,"Title":"CANADIAN AIRLINES INTERNATIONAL"}
+{"Code":3172,"Title":"NATIONAIR"}
+{"Code":3173,"Title":"Airlines"}
+{"Code":3174,"Title":"Airlines"}
+{"Code":3175,"Title":"Airlines"}
+{"Code":3176,"Title":"METROFLIGHT AIRLINES"}
+{"Code":3177,"Title":"Airlines"}
+{"Code":3178,"Title":"MESA AIR"}
+{"Code":3179,"Title":"Airlines"}
+{"Code":3180,"Title":"Airlines"}
+{"Code":3181,"Title":"MALEV"}
+{"Code":3182,"Title":"LOT (POLAND)"}
+{"Code":3183,"Title":"Airlines"}
+{"Code":3184,"Title":"LIAT"}
+{"Code":3185,"Title":"LAV (VENEZUELA)"}
+{"Code":3186,"Title":"LAP (PARAGUAY)"}
+{"Code":3187,"Title":"LACSA (COSTA RICA)"}
+{"Code":3188,"Title":"Airlines"}
+{"Code":3189,"Title":"Airlines"}
+{"Code":3190,"Title":"JUGOSLAV AIR"}
+{"Code":3191,"Title":"ISLAND AIRLINES"}
+{"Code":3192,"Title":"IRAN AIR"}
+{"Code":3193,"Title":"INDIAN AIRLINES"}
+{"Code":3194,"Title":"Airlines"}
+{"Code":3195,"Title":"Airlines"}
+{"Code":3196,"Title":"HAWAIIAN AIR"}
+{"Code":3197,"Title":"HAVASU AIRLINES"}
+{"Code":3198,"Title":"Airlines"}
+{"Code":3199,"Title":"Airlines"}
+{"Code":3200,"Title":"FUYANA AIRWAYS"}
+{"Code":3201,"Title":"Airlines"}
+{"Code":3202,"Title":"Airlines"}
+{"Code":3203,"Title":"GOLDEN PACIFIC AIR"}
+{"Code":3204,"Title":"FREEDOM AIR"}
+{"Code":3205,"Title":"Airlines"}
+{"Code":3206,"Title":"Airlines"}
+{"Code":3207,"Title":"Airlines"}
+{"Code":3208,"Title":"Airlines"}
+{"Code":3209,"Title":"Airlines"}
+{"Code":3210,"Title":"Airlines"}
+{"Code":3211,"Title":"Airlines"}
+{"Code":3212,"Title":"DOMINICANA"}
+{"Code":3213,"Title":"Airlines"}
+{"Code":3214,"Title":"Airlines"}
+{"Code":3215,"Title":"DAN AIR SERVICES"}
+{"Code":3216,"Title":"CUMBERLAND AIRLINES"}
+{"Code":3217,"Title":"CSA"}
+{"Code":3218,"Title":"CROWN AIR"}
+{"Code":3219,"Title":"COPA"}
+{"Code":3220,"Title":"COMPANIA FAUCETT"}
+{"Code":3221,"Title":"TRANSPORTES AEROS MILITARES ECCUATORANOS"}
+{"Code":3222,"Title":"COMMAND AIRWAYS"}
+{"Code":3223,"Title":"COMAIR"}
+{"Code":3224,"Title":"Airlines"}
+{"Code":3225,"Title":"Airlines"}
+{"Code":3226,"Title":"Airlines"}
+{"Code":3227,"Title":"Airlines"}
+{"Code":3228,"Title":"CAYMAN AIRWAYS"}
+{"Code":3229,"Title":"SAETA SOCIAEDAD ECUATORIANOS DE TRANSPORTES AEREOS"}
+{"Code":3230,"Title":"Airlines"}
+{"Code":3231,"Title":"SASHA SERVICIO AERO DE HONDURAS"}
+{"Code":3232,"Title":"Airlines"}
+{"Code":3233,"Title":"CAPITOL AIR"}
+{"Code":3234,"Title":"BWIA"}
+{"Code":3235,"Title":"BROKWAY AIR"}
+{"Code":3236,"Title":"Airlines"}
+{"Code":3237,"Title":"Airlines"}
+{"Code":3238,"Title":"BEMIDJI AIRLINES"}
+{"Code":3239,"Title":"BAR HARBOR AIRLINES"}
+{"Code":3240,"Title":"BAHAMASAIR"}
+{"Code":3241,"Title":"AVIATECA (GUATEMALA)"}
+{"Code":3242,"Title":"AVENSA"}
+{"Code":3243,"Title":"AUSTRIAN AIR SERVICE"}
+{"Code":3244,"Title":"Airlines"}
+{"Code":3245,"Title":"Airlines"}
+{"Code":3246,"Title":"Airlines"}
+{"Code":3247,"Title":"Airlines"}
+{"Code":3248,"Title":"Airlines"}
+{"Code":3249,"Title":"Airlines"}
+{"Code":3250,"Title":"Airlines"}
+{"Code":3251,"Title":"ALOHA AIRLINES"}
+{"Code":3252,"Title":"ALM"}
+{"Code":3253,"Title":"AMERICA WEST"}
+{"Code":3254,"Title":"TRUMP AIRLINE"}
+{"Code":3255,"Title":"Airlines"}
+{"Code":3256,"Title":"ALASKA AIRLINES"}
+{"Code":3257,"Title":"Airlines"}
+{"Code":3258,"Title":"Airlines"}
+{"Code":3259,"Title":"AMERICAN TRANS AIR"}
+{"Code":3260,"Title":"Airlines"}
+{"Code":3261,"Title":"AIR CHINA"}
+{"Code":3262,"Title":"RENO AIR, INC."}
+{"Code":3263,"Title":"Airlines"}
+{"Code":3264,"Title":"Airlines"}
+{"Code":3265,"Title":"Airlines"}
+{"Code":3266,"Title":"AIR SEYCHELLES"}
+{"Code":3267,"Title":"AIR PANAMA"}
+{"Code":3268,"Title":"Airlines"}
+{"Code":3269,"Title":"Airlines"}
+{"Code":3270,"Title":"Airlines"}
+{"Code":3271,"Title":"Airlines"}
+{"Code":3272,"Title":"Airlines"}
+{"Code":3273,"Title":"Airlines"}
+{"Code":3274,"Title":"Airlines"}
+{"Code":3275,"Title":"Airlines"}
+{"Code":3276,"Title":"Airlines"}
+{"Code":3277,"Title":"Airlines"}
+{"Code":3278,"Title":"Airlines"}
+{"Code":3279,"Title":"Airlines"}
+{"Code":3280,"Title":"AIR JAMAICA"}
+{"Code":3281,"Title":"Airlines"}
+{"Code":3282,"Title":"AIR DJIBOUTI"}
+{"Code":3283,"Title":"Airlines"}
+{"Code":3284,"Title":"AERO VIRGIN ISLANDS"}
+{"Code":3285,"Title":"AERO PERU"}
+{"Code":3286,"Title":"AEROLINEAS NICARAGUENSIS"}
+{"Code":3287,"Title":"AERO COACH AVAIATION"}
+{"Code":3288,"Title":"Airlines"}
+{"Code":3289,"Title":"Airlines"}
+{"Code":3290,"Title":"Airlines"}
+{"Code":3291,"Title":"ARIANA AFGHAN"}
+{"Code":3292,"Title":"CYPRUS AIRWAYS"}
+{"Code":3293,"Title":"ECUATORIANA"}
+{"Code":3294,"Title":"ETHIOPIAN AIRLINES"}
+{"Code":3295,"Title":"KENYA AIRLINES"}
+{"Code":3296,"Title":"Airlines"}
+{"Code":3297,"Title":"Airlines"}
+{"Code":3298,"Title":"AIR MAURITIUS"}
+{"Code":3299,"Title":"WIDERO’S FLYVESELSKAP"}
+{"Code":3351,"Title":"AFFILIATED AUTO RENTAL"}
+{"Code":3352,"Title":"AMERICAN INTL RENT-A-CAR"}
+{"Code":3353,"Title":"BROOKS RENT-A-CAR"}
+{"Code":3354,"Title":"ACTION AUTO RENTAL"}
+{"Code":3355,"Title":"Car Rental"}
+{"Code":3356,"Title":"Car Rental"}
+{"Code":3357,"Title":"HERTZ RENT-A-CAR"}
+{"Code":3358,"Title":"Car Rental"}
+{"Code":3359,"Title":"PAYLESS CAR RENTAL"}
+{"Code":3360,"Title":"SNAPPY CAR RENTAL"}
+{"Code":3361,"Title":"AIRWAYS RENT-A-CAR"}
+{"Code":3362,"Title":"ALTRA AUTO RENTAL"}
+{"Code":3363,"Title":"Car Rental"}
+{"Code":3364,"Title":"AGENCY RENT-A-CAR"}
+{"Code":3365,"Title":"Car Rental"}
+{"Code":3366,"Title":"BUDGET RENT-A-CAR"}
+{"Code":3367,"Title":"Car Rental"}
+{"Code":3368,"Title":"HOLIDAY RENT-A-WRECK"}
+{"Code":3369,"Title":"Car Rental"}
+{"Code":3370,"Title":"RENT-A-WRECK"}
+{"Code":3371,"Title":"Car Rental"}
+{"Code":3372,"Title":"Car Rental"}
+{"Code":3373,"Title":"Car Rental"}
+{"Code":3374,"Title":"Car Rental"}
+{"Code":3375,"Title":"Car Rental"}
+{"Code":3376,"Title":"AJAX RENT-A-CAR"}
+{"Code":3377,"Title":"Car Rental"}
+{"Code":3378,"Title":"Car Rental"}
+{"Code":3379,"Title":"Car Rental"}
+{"Code":3380,"Title":"Car Rental"}
+{"Code":3381,"Title":"EUROP CAR"}
+{"Code":3382,"Title":"Car Rental"}
+{"Code":3383,"Title":"Car Rental"}
+{"Code":3384,"Title":"Car Rental"}
+{"Code":3385,"Title":"TROPICAL RENT-A-CAR"}
+{"Code":3386,"Title":"SHOWCASE RENTAL CARS"}
+{"Code":3387,"Title":"ALAMO RENT-A-CAR"}
+{"Code":3388,"Title":"Car Rental"}
+{"Code":3389,"Title":"AVIS RENT-A-CAR"}
+{"Code":3390,"Title":"DOLLAR RENT-A-CAR"}
+{"Code":3391,"Title":"EUROPE BY CAR"}
+{"Code":3392,"Title":"Car Rental"}
+{"Code":3393,"Title":"NATIONAL CAR RENTAL"}
+{"Code":3394,"Title":"KEMWELL GROUP RENT-A-CAR"}
+{"Code":3395,"Title":"THRIFTY RENT-A-CAR"}
+{"Code":3396,"Title":"TILDEN TENT-A-CAR"}
+{"Code":3397,"Title":"Car Rental"}
+{"Code":3398,"Title":"ECONO-CAR RENT-A-CAR"}
+{"Code":3399,"Title":"Car Rental"}
+{"Code":3400,"Title":"AUTO HOST COST CAR RENTALS"}
+{"Code":3401,"Title":"Car Rental"}
+{"Code":3402,"Title":"Car Rental"}
+{"Code":3403,"Title":"Car Rental"}
+{"Code":3404,"Title":"Car Rental"}
+{"Code":3405,"Title":"ENTERPRISE RENT-A-CAR"}
+{"Code":3406,"Title":"Car Rental"}
+{"Code":3407,"Title":"Car Rental"}
+{"Code":3408,"Title":"Car Rental"}
+{"Code":3409,"Title":"GENERAL RENT-A-CAR"}
+{"Code":3410,"Title":"Car Rental"}
+{"Code":3411,"Title":"Car Rental"}
+{"Code":3412,"Title":"A-1 RENT-A-CAR"}
+{"Code":3413,"Title":"Car Rental"}
+{"Code":3414,"Title":"GODFREY NATL RENT-A-CAR"}
+{"Code":3415,"Title":"Car Rental"}
+{"Code":3416,"Title":"Car Rental"}
+{"Code":3417,"Title":"Car Rental"}
+{"Code":3418,"Title":"Car Rental"}
+{"Code":3419,"Title":"ALPHA RENT-A-CAR"}
+{"Code":3420,"Title":"ANSA INTL RENT-A-CAR"}
+{"Code":3421,"Title":"ALLSTAE RENT-A-CAR"}
+{"Code":3422,"Title":"Car Rental"}
+{"Code":3423,"Title":"AVCAR RENT-A-CAR"}
+{"Code":3424,"Title":"Car Rental"}
+{"Code":3425,"Title":"AUTOMATE RENT-A-CAR"}
+{"Code":3426,"Title":"Car Rental"}
+{"Code":3427,"Title":"AVON RENT-A-CAR"}
+{"Code":3428,"Title":"CAREY RENT-A-CAR"}
+{"Code":3429,"Title":"INSURANCE RENT-A-CAR"}
+{"Code":3430,"Title":"MAJOR RENT-A-CAR"}
+{"Code":3431,"Title":"REPLACEMENT RENT-A-CAR"}
+{"Code":3432,"Title":"RESERVE RENT-A-CAR"}
+{"Code":3433,"Title":"UGLY DUCKLING RENT-A-CAR"}
+{"Code":3434,"Title":"USA RENT-A-CAR"}
+{"Code":3435,"Title":"VALUE RENT-A-CAR"}
+{"Code":3436,"Title":"AUTOHANSA RENT-A-CAR"}
+{"Code":3437,"Title":"CITE RENT-A-CAR"}
+{"Code":3438,"Title":"INTERENT RENT-A-CAR"}
+{"Code":3439,"Title":"MILLEVILLE RENT-A-CAR"}
+{"Code":3440,"Title":"VIA ROUTE RENT-A-CAR"}
+{"Code":3441,"Title":"Car Rental"}
+{"Code":3501,"Title":"HOLIDAY INNS, HOLIDAY INN EXPRESS"}
+{"Code":3502,"Title":"BEST WESTERN HOTELS"}
+{"Code":3503,"Title":"SHERATON HOTELS"}
+{"Code":3504,"Title":"HILTON HOTELS"}
+{"Code":3505,"Title":"FORTE HOTELS"}
+{"Code":3506,"Title":"GOLDEN TULIP HOTELS"}
+{"Code":3507,"Title":"FRIENDSHIP INNS"}
+{"Code":3508,"Title":"QUALITY INNS, QUALITY SUITES"}
+{"Code":3509,"Title":"MARRIOTT HOTELS"}
+{"Code":3510,"Title":"DAYS INN, DAYSTOP"}
+{"Code":3511,"Title":"ARABELLA HOTELS"}
+{"Code":3512,"Title":"INTER-CONTINENTAL HOTELS"}
+{"Code":3513,"Title":"WESTIN HOTELS"}
+{"Code":3514,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3515,"Title":"RODEWAY INNS"}
+{"Code":3516,"Title":"LA QUINTA MOTOR INNS"}
+{"Code":3517,"Title":"AMERICANA HOTELS"}
+{"Code":3518,"Title":"SOL HOTELS"}
+{"Code":3519,"Title":"PULLMAN INTERNATIONAL HOTELS"}
+{"Code":3520,"Title":"MERIDIEN HOTELS"}
+{"Code":3521,"Title":"CREST HOTELS (see FORTE HOTELS)"}
+{"Code":3522,"Title":"TOKYO HOTEL"}
+{"Code":3523,"Title":"PENNSULA HOTEL"}
+{"Code":3524,"Title":"WELCOMGROUP HOTELS"}
+{"Code":3525,"Title":"DUNFEY HOTELS"}
+{"Code":3526,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3527,"Title":"DOWNTOWNER-PASSPORT HOTEL"}
+{"Code":3528,"Title":"RED LION HOTELS, RED LION INNS"}
+{"Code":3529,"Title":"CP HOTELS"}
+{"Code":3530,"Title":"RENAISSANCE HOTELS, STOUFFER HOTELS"}
+{"Code":3531,"Title":"ASTIR HOTELS"}
+{"Code":3532,"Title":"SUN ROUTE HOTELS"}
+{"Code":3533,"Title":"HOTEL IBIS"}
+{"Code":3534,"Title":"SOUTHERN PACIFIC HOTELS"}
+{"Code":3535,"Title":"HILTON INTERNATIONAL"}
+{"Code":3536,"Title":"AMFAC HOTELS"}
+{"Code":3537,"Title":"ANA HOTEL"}
+{"Code":3538,"Title":"CONCORDE HOTELS"}
+{"Code":3539,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3540,"Title":"IBEROTEL HOTELS"}
+{"Code":3541,"Title":"HOTEL OKURA"}
+{"Code":3542,"Title":"ROYAL HOTELS"}
+{"Code":3543,"Title":"FOUR SEASONS HOTELS"}
+{"Code":3544,"Title":"CIGA HOTELS"}
+{"Code":3545,"Title":"SHANGRI-LA INTERNATIONAL"}
+{"Code":3546,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3547,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3548,"Title":"HOTELES MELIA"}
+{"Code":3549,"Title":"AUBERGE DES GOVERNEURS"}
+{"Code":3550,"Title":"REGAL 8 INNS"}
+{"Code":3551,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3552,"Title":"COAST HOTELS"}
+{"Code":3553,"Title":"PARK INNS INTERNATIONAL"}
+{"Code":3554,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3555,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3556,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3557,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3558,"Title":"JOLLY HOTELS"}
+{"Code":3559,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3560,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3561,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3562,"Title":"COMFORT INNS"}
+{"Code":3563,"Title":"JOURNEY’S END MOTLS"}
+{"Code":3564,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3565,"Title":"RELAX INNS"}
+{"Code":3566,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3567,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3568,"Title":"LADBROKE HOTELS"}
+{"Code":3569,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3570,"Title":"FORUM HOTELS"}
+{"Code":3571,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3572,"Title":"MIYAKO HOTELS"}
+{"Code":3573,"Title":"SANDMAN HOTELS"}
+{"Code":3574,"Title":"VENTURE INNS"}
+{"Code":3575,"Title":"VAGABOND HOTELS"}
+{"Code":3576,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3577,"Title":"MANDARIN ORIENTAL HOTEL"}
+{"Code":3578,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3579,"Title":"HOTEL MERCURE"}
+{"Code":3580,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3581,"Title":"DELTA HOTEL"}
+{"Code":3582,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3583,"Title":"SAS HOTELS"}
+{"Code":3584,"Title":"PRINCESS HOTELS INTERNATIONAL"}
+{"Code":3585,"Title":"HUNGAR HOTELS"}
+{"Code":3586,"Title":"SOKOS HOTELS"}
+{"Code":3587,"Title":"DORAL HOTELS"}
+{"Code":3588,"Title":"HELMSLEY HOTELS"}
+{"Code":3589,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3590,"Title":"FAIRMONT HOTELS"}
+{"Code":3591,"Title":"SONESTA HOTELS"}
+{"Code":3592,"Title":"OMNI HOTELS"}
+{"Code":3593,"Title":"CUNARD HOTELS"}
+{"Code":3594,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3595,"Title":"HOSPITALITY INTERNATIONAL"}
+{"Code":3596,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3597,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3598,"Title":"REGENT INTERNATIONAL HOTELS"}
+{"Code":3599,"Title":"PANNONIA HOTELS"}
+{"Code":3600,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3601,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3602,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3603,"Title":"NOAH’S HOTELS"}
+{"Code":3604,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3605,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3606,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3607,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3608,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3609,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3610,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3611,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3612,"Title":"MOVENPICK HOTELS"}
+{"Code":3613,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3614,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3615,"Title":"TRAVELODGE"}
+{"Code":3616,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3617,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3618,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3619,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3620,"Title":"TELFORD INTERNATIONAL"}
+{"Code":3621,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3622,"Title":"MERLIN HOTELS"}
+{"Code":3623,"Title":"DORINT HOTELS"}
+{"Code":3624,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3625,"Title":"HOTLE UNIVERSALE"}
+{"Code":3626,"Title":"PRINCE HOTELS"}
+{"Code":3627,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3628,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3629,"Title":"DAN HOTELS"}
+{"Code":3630,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3631,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3632,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3633,"Title":"RANK HOTELS"}
+{"Code":3634,"Title":"SWISSOTEL"}
+{"Code":3635,"Title":"RESO HOTELS"}
+{"Code":3636,"Title":"SAROVA HOTELS"}
+{"Code":3637,"Title":"RAMADA INNS, RAMADA LIMITED"}
+{"Code":3638,"Title":"HO JO INN, HOWARD JOHNSON"}
+{"Code":3639,"Title":"MOUNT CHARLOTTE THISTLE"}
+{"Code":3640,"Title":"HYATT HOTEL"}
+{"Code":3641,"Title":"SOFITEL HOTELS"}
+{"Code":3642,"Title":"NOVOTEL HOTELS"}
+{"Code":3643,"Title":"STEIGENBERGER HOTELS"}
+{"Code":3644,"Title":"ECONO LODGES"}
+{"Code":3645,"Title":"QUEENS MOAT HOUSES"}
+{"Code":3646,"Title":"SWALLOW HOTELS"}
+{"Code":3647,"Title":"HUSA HOTELS"}
+{"Code":3648,"Title":"DE VERE HOTELS"}
+{"Code":3649,"Title":"RADISSON HOTELS"}
+{"Code":3650,"Title":"RED ROOK INNS"}
+{"Code":3651,"Title":"IMPERIAL LONDON HOTEL"}
+{"Code":3652,"Title":"EMBASSY HOTELS"}
+{"Code":3653,"Title":"PENTA HOTELS"}
+{"Code":3654,"Title":"LOEWS HOTELS"}
+{"Code":3655,"Title":"SCANDIC HOTELS"}
+{"Code":3656,"Title":"SARA HOTELS"}
+{"Code":3657,"Title":"OBEROI HOTELS"}
+{"Code":3658,"Title":"OTANI HOTELS"}
+{"Code":3659,"Title":"TAJ HOTELS INTERNATIONAL"}
+{"Code":3660,"Title":"KNIGHTS INNS"}
+{"Code":3661,"Title":"METROPOLE HOTELS"}
+{"Code":3662,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3663,"Title":"HOTELES EL PRESIDENTS"}
+{"Code":3664,"Title":"FLAG INN"}
+{"Code":3665,"Title":"HAMPTON INNS"}
+{"Code":3666,"Title":"STAKIS HOTELS"}
+{"Code":3667,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3668,"Title":"MARITIM HOTELS"}
+{"Code":3669,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3670,"Title":"ARCARD HOTELS"}
+{"Code":3671,"Title":"ARCTIA HOTELS"}
+{"Code":3672,"Title":"CAMPANIEL HOTELS"}
+{"Code":3673,"Title":"IBUSZ HOTELS"}
+{"Code":3674,"Title":"RANTASIPI HOTELS"}
+{"Code":3675,"Title":"INTERHOTEL CEDOK"}
+{"Code":3676,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3677,"Title":"CLIMAT DE FRANCE HOTELS"}
+{"Code":3678,"Title":"CUMULUS HOTELS"}
+{"Code":3679,"Title":"DANUBIUS HOTEL"}
+{"Code":3680,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3681,"Title":"ADAMS MARK HOTELS"}
+{"Code":3682,"Title":"ALLSTAR INNS"}
+{"Code":3683,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3684,"Title":"BUDGET HOST INNS"}
+{"Code":3685,"Title":"BUDGETEL HOTELS"}
+{"Code":3686,"Title":"SUISSE CHALETS"}
+{"Code":3687,"Title":"CLARION HOTELS"}
+{"Code":3688,"Title":"COMPRI HOTELS"}
+{"Code":3689,"Title":"CONSORT HOTELS"}
+{"Code":3690,"Title":"COURTYARD BY MARRIOTT"}
+{"Code":3691,"Title":"DILLION INNS"}
+{"Code":3692,"Title":"DOUBLETREE HOTELS"}
+{"Code":3693,"Title":"DRURY INNS"}
+{"Code":3694,"Title":"ECONOMY INNS OF AMERICA"}
+{"Code":3695,"Title":"EMBASSY SUITES"}
+{"Code":3696,"Title":"EXEL INNS"}
+{"Code":3697,"Title":"FARFIELD HOTELS"}
+{"Code":3698,"Title":"HARLEY HOTELS"}
+{"Code":3699,"Title":"MIDWAY MOTOR LODGE"}
+{"Code":3700,"Title":"MOTEL 6"}
+{"Code":3701,"Title":"GUEST QUARTERS (Formally PICKETT SUITE HOTELS)"}
+{"Code":3702,"Title":"THE REGISTRY HOTELS"}
+{"Code":3703,"Title":"RESIDENCE INNS"}
+{"Code":3704,"Title":"ROYCE HOTELS"}
+{"Code":3705,"Title":"SANDMAN INNS"}
+{"Code":3706,"Title":"SHILO INNS"}
+{"Code":3707,"Title":"SHONEY’S INNS"}
+{"Code":3708,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3709,"Title":"SUPER8 MOTELS"}
+{"Code":3710,"Title":"THE RITZ CARLTON HOTELS"}
+{"Code":3711,"Title":"FLAG INNS (AUSRALIA)"}
+{"Code":3712,"Title":"GOLDEN CHAIN HOTEL"}
+{"Code":3713,"Title":"QUALITY PACIFIC HOTEL"}
+{"Code":3714,"Title":"FOUR SEASONS HOTEL (AUSTRALIA)"}
+{"Code":3715,"Title":"FARIFIELD INN"}
+{"Code":3716,"Title":"CARLTON HOTELS"}
+{"Code":3717,"Title":"CITY LODGE HOTELS"}
+{"Code":3718,"Title":"KAROS HOTELS"}
+{"Code":3719,"Title":"PROTEA HOTELS"}
+{"Code":3720,"Title":"SOUTHERN SUN HOTELS"}
+{"Code":3721,"Title":"HILTON CONRAD"}
+{"Code":3722,"Title":"WYNDHAM HOTEL AND RESORTS"}
+{"Code":3723,"Title":"RICA HOTELS"}
+{"Code":3724,"Title":"INER NOR HOTELS"}
+{"Code":3725,"Title":"SEAINES PLANATION"}
+{"Code":3726,"Title":"RIO SUITES"}
+{"Code":3727,"Title":"BROADMOOR HOTEL"}
+{"Code":3728,"Title":"BALLY’S HOTEL AND CASINO"}
+{"Code":3729,"Title":"JOHN ASCUAGA’S NUGGET"}
+{"Code":3730,"Title":"MGM GRAND HOTEL"}
+{"Code":3731,"Title":"HARRAH’S HOTELS AND CASINOS"}
+{"Code":3732,"Title":"OPRYLAND HOTEL"}
+{"Code":3733,"Title":"BOCA RATON RESORT"}
+{"Code":3734,"Title":"HARVEY/BRISTOL HOTELS"}
+{"Code":3735,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3736,"Title":"COLORADO BELLE/EDGEWATER RESORT"}
+{"Code":3737,"Title":"RIVIERA HOTEL AND CASINO"}
+{"Code":3738,"Title":"TROPICANA RESORT AND CASINO"}
+{"Code":3739,"Title":"WOODSIDE HOTELS AND RESORTS"}
+{"Code":3740,"Title":"TOWNPLACE SUITES"}
+{"Code":3741,"Title":"MILLENIUM BROADWAY HOTEL"}
+{"Code":3742,"Title":"CLUB MED"}
+{"Code":3743,"Title":"BILTMORE HOTEL AND SUITES"}
+{"Code":3744,"Title":"CAREFREE RESORTS"}
+{"Code":3745,"Title":"ST. REGIS HOTEL"}
+{"Code":3746,"Title":"THE ELIOT HOTEL"}
+{"Code":3747,"Title":"CLUBCORP/CLUB RESORTS"}
+{"Code":3748,"Title":"WELESLEY INNS"}
+{"Code":3749,"Title":"THE BEVERLY HILLS HOTEL"}
+{"Code":3750,"Title":"CROWNE PLAZA HOTELS"}
+{"Code":3751,"Title":"HOMEWOOD SUITES"}
+{"Code":3752,"Title":"PEABODY HOTELS"}
+{"Code":3753,"Title":"GREENBRIAH RESORTS"}
+{"Code":3754,"Title":"AMELIA ISLAND PLANATION"}
+{"Code":3755,"Title":"THE HOMESTEAD"}
+{"Code":3756,"Title":"SOUTH SEAS RESORTS"}
+{"Code":3757,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3758,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3759,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3760,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3761,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3762,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3763,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3764,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3765,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3766,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3767,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3768,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3769,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3770,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3771,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3772,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3773,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3774,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3775,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3776,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3777,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3778,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3779,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3780,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3781,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3782,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3783,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3784,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3785,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3786,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3787,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3788,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3789,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3790,"Title":"Hotels/Motels/Inns/Resorts"}
+{"Code":3816,"Title":"Home2Suites"}
+{"Code":3835,"Title":"* MASTERS ECONOMY INNS"}
+{"Code":4011,"Title":"Railroads"}
+{"Code":4111,"Title":"Local/Suburban Commuter Passenger Transportation – Railroads, Feries, Local Water Transportation."}
+{"Code":4112,"Title":"Passenger Railways"}
+{"Code":4119,"Title":"Ambulance Services"}
+{"Code":4121,"Title":"Taxicabs and Limousines"}
+{"Code":4131,"Title":"Bus Lines, Including Charters, Tour Buses"}
+{"Code":4214,"Title":"Motor Freight Carriers, Moving and Storage Companies, Trucking – Local/Long Distance, Delivery Services – Local"}
+{"Code":4215,"Title":"Courier Services – Air or Ground, Freight forwarders"}
+{"Code":4225,"Title":"Public warehousing, Storage"}
+{"Code":4411,"Title":"Cruise and Steamship Lines"}
+{"Code":4457,"Title":"Boat Rentals and Leases"}
+{"Code":4468,"Title":"Marinas, Marine Service, and Supplies"}
+{"Code":4511,"Title":"Airlines, Air Carriers ( not listed elsewhere)"}
+{"Code":4582,"Title":"Airports, Airport Terminals, Flying Fields"}
+{"Code":4722,"Title":"Travel Agencies and Tour Operations"}
+{"Code":4723,"Title":"Package Tour Operators (For use in Germany only)"}
+{"Code":4784,"Title":"Toll and Bridge Fees"}
+{"Code":4789,"Title":"Transportation Services, Not elsewhere classified)"}
+{"Code":4812,"Title":"Telecommunications Equipment including telephone sales"}
+{"Code":4814,"Title":"Fax services, Telecommunication Services"}
+{"Code":4815,"Title":"VisaPhone"}
+{"Code":4816,"Title":"Computer Network Services"}
+{"Code":4821,"Title":"Telegraph services"}
+{"Code":4829,"Title":"Money Orders – Wire Transfer"}
+{"Code":4899,"Title":"Cable and other pay television (previously Cable Services)"}
+{"Code":4900,"Title":"Electric, Gas, Sanitary and Water Utilities"}
+{"Code":5013,"Title":"Motor vehicle supplies and new parts"}
+{"Code":5021,"Title":"Office and Commercial Furniture"}
+{"Code":5039,"Title":"Construction Materials, Not Elsewhere Classified"}
+{"Code":5044,"Title":"Office, Photographic, Photocopy, and Microfilm Equipment"}
+{"Code":5045,"Title":"Computers, Computer Peripheral Equipment, Software"}
+{"Code":5046,"Title":"Commercial Equipment, Not Elsewhere Classified"}
+{"Code":5047,"Title":"Medical, Dental Ophthalmic, Hospital Equipment and Supplies"}
+{"Code":5051,"Title":"Metal Service Centers and Offices"}
+{"Code":5065,"Title":"Electrical Parts and Equipment"}
+{"Code":5072,"Title":"Hardware Equipment and Supplies"}
+{"Code":5074,"Title":"Plumbing and Heating Equipment and Supplies"}
+{"Code":5085,"Title":"Industrial Supplies, Not Elsewhere Classified"}
+{"Code":5094,"Title":"Precious Stones and Metals, Watches and Jewelry"}
+{"Code":5099,"Title":"Durable Goods, Not Elsewhere Classified"}
+{"Code":5111,"Title":"Stationery, Office Supplies, Printing, and Writing Paper"}
+{"Code":5122,"Title":"Drugs, Drug Proprietors, and Druggist’s Sundries"}
+{"Code":5131,"Title":"Piece Goods, Notions, and Other Dry Goods"}
+{"Code":5137,"Title":"Men’s Women’s and Children’s Uniforms and Commercial Clothing"}
+{"Code":5139,"Title":"Commercial Footwear"}
+{"Code":5169,"Title":"Chemicals and Allied Products, Not Elsewhere Classified"}
+{"Code":5172,"Title":"Petroleum and Petroleum Products"}
+{"Code":5192,"Title":"Books, Periodicals, and Newspapers"}
+{"Code":5193,"Title":"Florists’ Supplies, Nursery Stock and Flowers"}
+{"Code":5198,"Title":"Paints, Varnishes, and Supplies"}
+{"Code":5199,"Title":"Non-durable Goods, Not Elsewhere Classified"}
+{"Code":5200,"Title":"Home Supply Warehouse Stores"}
+{"Code":5211,"Title":"Lumber and Building Materials Stores"}
+{"Code":5231,"Title":"Glass, Paint, and Wallpaper Stores"}
+{"Code":5251,"Title":"Hardware Stores"}
+{"Code":5261,"Title":"Nurseries – Lawn and Garden Supply Store"}
+{"Code":5271,"Title":"Mobile Home Dealers"}
+{"Code":5300,"Title":"Wholesale Clubs"}
+{"Code":5309,"Title":"Duty Free Store"}
+{"Code":5310,"Title":"Discount Stores"}
+{"Code":5311,"Title":"Department Stores"}
+{"Code":5331,"Title":"Variety Stores"}
+{"Code":5399,"Title":"Misc. General Merchandise"}
+{"Code":5411,"Title":"Grocery Stores, Supermarkets"}
+{"Code":5422,"Title":"Meat Provisioners – Freezer and Locker"}
+{"Code":5441,"Title":"Candy, Nut, and Confectionery Stores"}
+{"Code":5451,"Title":"Dairy Products Stores"}
+{"Code":5462,"Title":"Bakeries"}
+{"Code":5499,"Title":"Misc. Food Stores – Convenience Stores and Specialty Markets"}
+{"Code":5511,"Title":"Car and Truck Dealers (New and Used) Sales, Service, Repairs, Parts, and Leasing"}
+{"Code":5521,"Title":"Automobile and Truck Dealers (Used Only)"}
+{"Code":5531,"Title":"Automobile Supply Stores"}
+{"Code":5532,"Title":"Automotive Tire Stores"}
+{"Code":5533,"Title":"Automotive Parts, Accessories Stores"}
+{"Code":5541,"Title":"Service Stations ( with or without ancillary services)"}
+{"Code":5542,"Title":"Automated Fuel Dispensers"}
+{"Code":5551,"Title":"Boat Dealers"}
+{"Code":5561,"Title":"Recreational and Utility Trailers, Camp Dealers"}
+{"Code":5571,"Title":"Motorcycle Dealers"}
+{"Code":5592,"Title":"Motor Home Dealers"}
+{"Code":5598,"Title":"Snowmobile Dealers"}
+{"Code":5599,"Title":"Miscellaneous Auto Dealers "}
+{"Code":5611,"Title":"Men’s and Boy’s Clothing and Accessories Stores"}
+{"Code":5621,"Title":"Women’s Ready-to-Wear Stores"}
+{"Code":5631,"Title":"Women’s Accessory and Specialty Shops"}
+{"Code":5641,"Title":"Children’s and Infant’s Wear Stores"}
+{"Code":5651,"Title":"Family Clothing Stores"}
+{"Code":5655,"Title":"Sports Apparel, Riding Apparel Stores"}
+{"Code":5661,"Title":"Shoe Stores"}
+{"Code":5681,"Title":"Furriers and Fur Shops"}
+{"Code":5691,"Title":"Men’s and Women’s Clothing Stores"}
+{"Code":5697,"Title":"Tailors, Seamstress, Mending, and Alterations"}
+{"Code":5698,"Title":"Wig and Toupee Stores"}
+{"Code":5699,"Title":"Miscellaneous Apparel and Accessory Shops"}
+{"Code":5712,"Title":"Furniture, Home Furnishings, and Equipment Stores, ExceptAppliances"}
+{"Code":5713,"Title":"Floor Covering Stores"}
+{"Code":5714,"Title":"Drapery, Window Covering and Upholstery Stores"}
+{"Code":5718,"Title":"Fireplace, Fireplace Screens, and Accessories Stores"}
+{"Code":5719,"Title":"Miscellaneous Home Furnishing Specialty Stores"}
+{"Code":5722,"Title":"Household Appliance Stores"}
+{"Code":5732,"Title":"Electronic Sales"}
+{"Code":5733,"Title":"Music Stores, Musical Instruments, Piano Sheet Music"}
+{"Code":5734,"Title":"Computer Software Stores"}
+{"Code":5735,"Title":"Record Shops"}
+{"Code":5811,"Title":"Caterers"}
+{"Code":5812,"Title":"Eating places and Restaurants"}
+{"Code":5813,"Title":"Drinking Places (Alcoholic Beverages), Bars, Taverns, Cocktail lounges, Nightclubs and Discotheques"}
+{"Code":5814,"Title":"Fast Food Restaurants"}
+{"Code":5815,"Title":"Digital Goods: Media, Books, Movies, Music"}
+{"Code":5816,"Title":"Digital Goods: Games"}
+{"Code":5817,"Title":"Digital Goods: Applications (Excludes Games)"}
+{"Code":5818,"Title":"Digital Goods: Large Digital Goods Merchant"}
+{"Code":5832,"Title":"Antique Shops – Sales, Repairs, and Restoration Services"}
+{"Code":5912,"Title":"Drug Stores and Pharmacies"}
+{"Code":5921,"Title":"Package Stores – Beer, Wine, and Liquor"}
+{"Code":5931,"Title":"Used Merchandise and Secondhand Stores"}
+{"Code":5932,"Title":"Antique Shops"}
+{"Code":5933,"Title":"Pawn Shops and Salvage Yards"}
+{"Code":5935,"Title":"Wrecking and Salvage Yards"}
+{"Code":5937,"Title":"Antique Reproductions"}
+{"Code":5940,"Title":"Bicycle Shops – Sales and Service"}
+{"Code":5941,"Title":"Sporting Goods Stores"}
+{"Code":5942,"Title":"Book Stores"}
+{"Code":5943,"Title":"Stationery Stores, Office and School Supply Stores"}
+{"Code":5944,"Title":"Watch, Clock, Jewelry, and Silverware Stores"}
+{"Code":5945,"Title":"Hobby, Toy, and Game Shops"}
+{"Code":5946,"Title":"Camera and Photographic Supply Stores"}
+{"Code":5947,"Title":"Card Shops, Gift, Novelty, and Souvenir Shops"}
+{"Code":5948,"Title":"Leather Goods Stores"}
+{"Code":5949,"Title":"Sewing, Needle, Fabric, and Price Goods Stores"}
+{"Code":5950,"Title":"Glassware/Crystal Stores"}
+{"Code":5960,"Title":"Direct Marketing- Insurance Service"}
+{"Code":5961,"Title":"Mail Order Houses Including Catalog Order Stores, Book/Record Clubs (No longer permitted for U.S. original presentments)"}
+{"Code":5962,"Title":"Direct Marketing – Travel Related Arrangements Services"}
+{"Code":5963,"Title":"Door-to-Door Sales"}
+{"Code":5964,"Title":"Direct Marketing – Catalog Merchant"}
+{"Code":5965,"Title":"Direct Marketing – Catalog and Catalog and Retail Merchant"}
+{"Code":5966,"Title":"Direct Marketing- Outbound Telemarketing Merchant"}
+{"Code":5967,"Title":"Direct Marketing – Inbound Teleservices Merchant"}
+{"Code":5968,"Title":"Direct Marketing – Continuity/Subscription Merchant"}
+{"Code":5969,"Title":"Direct Marketing – Not Elsewhere Classified"}
+{"Code":5970,"Title":"Artist’s Supply and Craft Shops"}
+{"Code":5971,"Title":"Art Dealers and Galleries"}
+{"Code":5972,"Title":"Stamp and Coin Stores – Philatelic and Numismatic Supplies"}
+{"Code":5973,"Title":"Religious Goods Stores"}
+{"Code":5975,"Title":"Hearing Aids – Sales, Service, and Supply Stores"}
+{"Code":5976,"Title":"Orthopedic Goods Prosthetic Devices"}
+{"Code":5977,"Title":"Cosmetic Stores"}
+{"Code":5978,"Title":"Typewriter Stores – Sales, Rental, Service"}
+{"Code":5983,"Title":"Fuel – Fuel Oil, Wood, Coal, Liquefied Petroleum"}
+{"Code":5992,"Title":"Florists"}
+{"Code":5993,"Title":"Cigar Stores and Stands"}
+{"Code":5994,"Title":"News Dealers and Newsstands"}
+{"Code":5995,"Title":"Pet Shops, Pet Foods, and Supplies Stores"}
+{"Code":5996,"Title":"Swimming Pools – Sales, Service, and Supplies"}
+{"Code":5997,"Title":"Electric Razor Stores – Sales and Service"}
+{"Code":5998,"Title":"Tent and Awning Shops"}
+{"Code":5999,"Title":"Miscellaneous and Specialty Retail Stores"}
+{"Code":6010,"Title":"Financial Institutions – Manual Cash Disbursements"}
+{"Code":6011,"Title":"Financial Institutions – Manual Cash Disbursements"}
+{"Code":6012,"Title":"Financial Institutions – Merchandise and Services"}
+{"Code":6051,"Title":"Non-Financial Institutions – Foreign Currency, Money Orders (not wire transfer) and Travelers Cheques"}
+{"Code":6211,"Title":"Security Brokers/Dealers"}
+{"Code":6300,"Title":"Insurance Sales, Underwriting, and Premiums"}
+{"Code":6381,"Title":"Insurance Premiums, (no longer valid for first presentment work)"}
+{"Code":6399,"Title":"Insurance, Not Elsewhere Classified ( no longer valid forfirst presentment work)"}
+{"Code":6513,"Title":"Real Estate Agents and Managers - Rentals"}
+{"Code":7011,"Title":"Lodging – Hotels, Motels, Resorts, Central Reservation Services (not elsewhere classified)"}
+{"Code":7012,"Title":"Timeshares"}
+{"Code":7032,"Title":"Sporting and Recreational Camps"}
+{"Code":7033,"Title":"Trailer Parks and Camp Grounds"}
+{"Code":7210,"Title":"Laundry, Cleaning, and Garment Services"}
+{"Code":7211,"Title":"Laundry – Family and Commercial"}
+{"Code":7216,"Title":"Dry Cleaners"}
+{"Code":7217,"Title":"Carpet and Upholstery Cleaning"}
+{"Code":7221,"Title":"Photographic Studios"}
+{"Code":7230,"Title":"Barber and Beauty Shops"}
+{"Code":7251,"Title":"Shop Repair Shops and Shoe Shine Parlors, and Hat Cleaning Shops"}
+{"Code":7261,"Title":"Funeral Service and Crematories"}
+{"Code":7273,"Title":"Dating and Escort Services"}
+{"Code":7276,"Title":"Tax Preparation Service"}
+{"Code":7277,"Title":"Counseling Service – Debt, Marriage, Personal"}
+{"Code":7278,"Title":"Buying/Shopping Services, Clubs"}
+{"Code":7296,"Title":"Clothing Rental – Costumes, Formal Wear, Uniforms"}
+{"Code":7297,"Title":"Massage Parlors"}
+{"Code":7298,"Title":"Health and Beauty Shops"}
+{"Code":7299,"Title":"Miscellaneous Personal Services ( not elsewhere classifies)"}
+{"Code":7311,"Title":"Advertising Services"}
+{"Code":7321,"Title":"Consumer Credit Reporting Agencies"}
+{"Code":7332,"Title":"Blueprinting and Photocopying Services"}
+{"Code":7333,"Title":"Commercial Photography, Art and Graphics"}
+{"Code":7338,"Title":"Quick Copy, Reproduction and Blueprinting Services"}
+{"Code":7339,"Title":"Stenographic and Secretarial Support Services"}
+{"Code":7342,"Title":"Exterminating and Disinfecting Services"}
+{"Code":7349,"Title":"Cleaning and Maintenance, Janitorial Services"}
+{"Code":7361,"Title":"Employment Agencies, Temporary Help Services"}
+{"Code":7372,"Title":"Computer Programming, Integrated Systems Design and Data Processing Services"}
+{"Code":7375,"Title":"Information Retrieval Services"}
+{"Code":7379,"Title":"Computer Maintenance and Repair Services, Not Elsewhere Classified"}
+{"Code":7392,"Title":"Management, Consulting, and Public Relations Services"}
+{"Code":7393,"Title":"Protective and Security Services – Including Armored Carsand Guard Dogs"}
+{"Code":7394,"Title":"Equipment Rental and Leasing Services, Tool Rental, Furniture Rental, and Appliance Rental"}
+{"Code":7395,"Title":"Photofinishing Laboratories, Photo Developing"}
+{"Code":7399,"Title":"Business Services, Not Elsewhere Classified"}
+{"Code":7511,"Title":"Truck Stop"}
+{"Code":7512,"Title":"Car Rental Companies ( Not Listed Below)"}
+{"Code":7513,"Title":"Truck and Utility Trailer Rentals"}
+{"Code":7519,"Title":"Motor Home and Recreational Vehicle Rentals"}
+{"Code":7523,"Title":"Automobile Parking Lots and Garages"}
+{"Code":7531,"Title":"Automotive Body Repair Shops"}
+{"Code":7534,"Title":"Tire Re-treading and Repair Shops"}
+{"Code":7535,"Title":"Paint Shops – Automotive"}
+{"Code":7538,"Title":"Automotive Service Shops"}
+{"Code":7542,"Title":"Car Washes"}
+{"Code":7549,"Title":"Towing Services"}
+{"Code":7622,"Title":"Radio Repair Shops"}
+{"Code":7623,"Title":"Air Conditioning and Refrigeration Repair Shops"}
+{"Code":7629,"Title":"Electrical And Small Appliance Repair Shops"}
+{"Code":7631,"Title":"Watch, Clock, and Jewelry Repair"}
+{"Code":7641,"Title":"Furniture, Furniture Repair, and Furniture Refinishing"}
+{"Code":7692,"Title":"Welding Repair"}
+{"Code":7699,"Title":"Repair Shops and Related Services –Miscellaneous"}
+{"Code":7800,"Title":"Government-Owned Lotteries"}
+{"Code":7801,"Title":"Government-Licensed On-Line Casinos (On-Line Gambling)"}
+{"Code":7802,"Title":"Government-Licensed Horse/Dog Racing"}
+{"Code":7829,"Title":"Motion Pictures and Video Tape Production and Distribution"}
+{"Code":7832,"Title":"Motion Picture Theaters"}
+{"Code":7841,"Title":"Video Tape Rental Stores"}
+{"Code":7911,"Title":"Dance Halls, Studios and Schools"}
+{"Code":7922,"Title":"Theatrical Producers (Except Motion Pictures), Ticket Agencies"}
+{"Code":7929,"Title":"Bands, Orchestras, and Miscellaneous Entertainers (Not Elsewhere Classified)"}
+{"Code":7932,"Title":"Billiard and Pool Establishments"}
+{"Code":7933,"Title":"Bowling Alleys"}
+{"Code":7941,"Title":"Commercial Sports, Athletic Fields, Professional Sport Clubs, and Sport Promoters"}
+{"Code":7991,"Title":"Tourist Attractions and Exhibits"}
+{"Code":7992,"Title":"Golf Courses – Public"}
+{"Code":7993,"Title":"Video Amusement Game Supplies"}
+{"Code":7994,"Title":"Video Game Arcades/Establishments"}
+{"Code":7995,"Title":"Betting (including Lottery Tickets, Casino Gaming Chips, Off-track Betting and Wagers at Race Tracks)"}
+{"Code":7996,"Title":"Amusement Parks, Carnivals, Circuses, Fortune Tellers"}
+{"Code":7997,"Title":"Membership Clubs (Sports, Recreation, Athletic), Country Clubs, and Private Golf Courses"}
+{"Code":7998,"Title":"Aquariums, Sea-aquariums, Dolphinariums"}
+{"Code":7999,"Title":"Recreation Services (Not Elsewhere Classified)"}
+{"Code":8011,"Title":"Doctors and Physicians (Not Elsewhere Classified)"}
+{"Code":8021,"Title":"Dentists and Orthodontists"}
+{"Code":8031,"Title":"Osteopaths"}
+{"Code":8041,"Title":"Chiropractors"}
+{"Code":8042,"Title":"Optometrists and Ophthalmologists"}
+{"Code":8043,"Title":"Opticians, Opticians Goods and Eyeglasses"}
+{"Code":8044,"Title":"Opticians, Optical Goods, and Eyeglasses (no longer validfor first presentments)"}
+{"Code":8049,"Title":"Podiatrists and Chiropodists"}
+{"Code":8050,"Title":"Nursing and Personal Care Facilities"}
+{"Code":8062,"Title":"Hospitals"}
+{"Code":8071,"Title":"Medical and Dental Laboratories"}
+{"Code":8099,"Title":"Medical Services and Health Practitioners (Not Elsewhere Classified)"}
+{"Code":8111,"Title":"Legal Services and Attorneys"}
+{"Code":8211,"Title":"Elementary and Secondary Schools"}
+{"Code":8220,"Title":"Colleges, Junior Colleges, Universities, and ProfessionalSchools"}
+{"Code":8241,"Title":"Correspondence Schools"}
+{"Code":8244,"Title":"Business and Secretarial Schools"}
+{"Code":8249,"Title":"Vocational Schools and Trade Schools"}
+{"Code":8299,"Title":"Schools and Educational Services ( Not Elsewhere Classified)"}
+{"Code":8351,"Title":"Child Care Services"}
+{"Code":8398,"Title":"Charitable and Social Service Organizations"}
+{"Code":8641,"Title":"Civic, Fraternal, and Social Associations"}
+{"Code":8651,"Title":"Political Organizations"}
+{"Code":8661,"Title":"Religious Organizations"}
+{"Code":8675,"Title":"Automobile Associations"}
+{"Code":8699,"Title":"Membership Organizations ( Not Elsewhere Classified)"}
+{"Code":8734,"Title":"Testing Laboratories ( non-medical)"}
+{"Code":8911,"Title":"Architectural – Engineering and Surveying Services"}
+{"Code":8931,"Title":"Accounting, Auditing, and Bookkeeping Services"}
+{"Code":8999,"Title":"Professional Services ( Not Elsewhere Defined)"}
+{"Code":9211,"Title":"Court Costs, including Alimony and Child Support"}
+{"Code":9222,"Title":"Fines"}
+{"Code":9223,"Title":"Bail and Bond Payments"}
+{"Code":9311,"Title":"Tax Payments"}
+{"Code":9399,"Title":"Government Services ( Not Elsewhere Classified)"}
+{"Code":9402,"Title":"Postal Services – Government Only"}
+{"Code":9405,"Title":"Intra – Government Transactions"}
+{"Code":9700,"Title":"Automated Referral Service ( For Visa Only)"}
+{"Code":9701,"Title":"Visa Credential Service ( For Visa Only)"}
+{"Code":9702,"Title":"GCAS Emergency Services ( For Visa Only)"}
+{"Code":9950,"Title":"Intra – Company Purchases ( For Visa Only)"}
