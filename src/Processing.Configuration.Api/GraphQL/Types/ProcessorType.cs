@@ -55,5 +55,9 @@ public class ProcessorType : ObjectType<Processor>
         descriptor.Field(x => x.Mode)
             .Type<StringType>()
             .Name("mode");
+
+        descriptor.Field(x => x.ProcessingChannel)
+            .Type<ProcessingChannelType>()
+            .Name("processing_channel");
     }
 }
