@@ -8,6 +8,12 @@ public class ProcessingChannelService : IProcessingChannelService
     private readonly IValidator<ProcessingChannel> _validator;
     private readonly IEntityRepository<ProcessingChannel> _processingChannelRepository;
 
+    public ProcessingChannelService(IValidator<ProcessingChannel> validator, IEntityRepository<ProcessingChannel> processingChannelRepository)
+    {
+        _validator = validator;
+        _processingChannelRepository = processingChannelRepository;
+    }
+
     public Task<ProcessingChannel?> GetByExternalId(string externalId, CancellationToken cancellationToken)
     {
         return _processingChannelRepository.All()

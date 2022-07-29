@@ -25,7 +25,7 @@ builder.Services.AddGraphQLServer()
     {
         o.Complexity.Enable = true;
         o.Complexity.ApplyDefaults = true;
-        o.Complexity.MaximumAllowed = 150;
+        o.Complexity.MaximumAllowed = 300;
     });
 
 // Services

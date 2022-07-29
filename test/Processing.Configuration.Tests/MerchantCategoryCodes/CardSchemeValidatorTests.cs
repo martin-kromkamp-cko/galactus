@@ -14,7 +14,7 @@ public class MerchantCategoryCodeValidatorTests
     }
     
     [Theory]
-    [InlineData(-1, false)]
+    [InlineData(1, false)]
     [InlineData(999, false)]
     [InlineData(1000, true)]
     [InlineData(9999, true)]

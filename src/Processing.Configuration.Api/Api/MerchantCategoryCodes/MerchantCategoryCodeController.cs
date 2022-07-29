@@ -13,7 +13,7 @@ public class MerchantCategoryCodeController : ControllerBase
         _merchantCategoryCodeService = merchantCategoryCodeService;
     }
 
-    [HttpGet("{code:int}")]
+    [HttpGet("{code}")]
     public async Task<IActionResult> GetByCodeAsync(int code, CancellationToken cancellationToken)
     {
         var mcc = await _merchantCategoryCodeService.GetByCodeAsync(code, cancellationToken);
@@ -37,7 +37,7 @@ public class MerchantCategoryCodeController : ControllerBase
         };
     }
     
-    [HttpDelete("{code:int}")]
+    [HttpDelete("{code}")]
     public async Task<IActionResult> CreateMerchantCategoryCodeAsync(int code, CancellationToken cancellationToken)
     {
         var mcc = await _merchantCategoryCodeService.GetByCodeAsync(code, cancellationToken);

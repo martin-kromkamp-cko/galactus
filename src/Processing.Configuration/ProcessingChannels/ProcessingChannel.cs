@@ -4,7 +4,7 @@ namespace Processing.Configuration.ProcessingChannels;
 
 public class ProcessingChannel : EntityBase
 {
-    internal ProcessingChannel()
+    public ProcessingChannel()
     { }
 
     internal ProcessingChannel(string name, string? clientId, string? entityId, long? merchantAccountId, BusinessModel businessModel, ICollection<Processor> processors, ICollection<CkoService> services) 

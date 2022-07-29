@@ -7,12 +7,13 @@ namespace Processing.Configuration.Processors;
 
 public class Processor : EntityBase
 {
-    internal Processor()
+    public Processor()
     { }
 
-    internal Processor(string acquirerId, string description, MerchantCategoryCode merchantCategoryCode, ICollection<Currency> currencies, ICollection<CardScheme> schemes, bool dynamicDescriptor, string dynamicDescriptorPrefix, ICollection<CkoService> services, string providerKey, string mode) 
+    internal Processor(ProcessingChannel processingChannel, string acquirerId, string description, MerchantCategoryCode merchantCategoryCode, ICollection<Currency> currencies, ICollection<CardScheme> schemes, bool dynamicDescriptor, string dynamicDescriptorPrefix, ICollection<CkoService> services, string providerKey, string mode) 
         : base(Identifiers.Id.NewId("pr").ToString())
     {
+        ProcessingChannel = processingChannel;
         AcquirerId = acquirerId;
         Description = description;
         MerchantCategoryCode = merchantCategoryCode;
@@ -92,9 +93,10 @@ public class Processor : EntityBase
     /// </summary>
     public virtual ProcessingChannel ProcessingChannel { get; private set; }
     
-    public static Processor Create(string acquirerId, string description, MerchantCategoryCode merchantCategoryCode, ICollection<Currency> currencies, ICollection<CardScheme> schemes, bool dynamicDescriptor, string dynamicDescriptorPrefix, ICollection<CkoService> services, string providerKey, string mode)
+    public static Processor Create(ProcessingChannel processingChannel, string acquirerId, string description, MerchantCategoryCode merchantCategoryCode, ICollection<Currency> currencies, ICollection<CardScheme> schemes, bool dynamicDescriptor, string dynamicDescriptorPrefix, ICollection<CkoService> services, string providerKey, string mode)
     {
         return new Processor(
+            processingChannel: processingChannel,
             acquirerId: acquirerId, 
             description: description, 
             merchantCategoryCode: merchantCategoryCode,
