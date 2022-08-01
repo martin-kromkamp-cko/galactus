@@ -42,8 +42,7 @@ public class ProcessorValidator : AbstractValidator<Processor>
         
         RuleFor(x => x.Mode)
             .IsInEnum()
-            .WithErrorCode(Errors.ProcessorModeInvalid)
-            .When(x => !string.IsNullOrEmpty(x.Mode));
+            .WithErrorCode(Errors.ProcessorModeInvalid);
 
         // RuleFor(x => x.Features)
         //     .SetValidator(new FeaturesCollectionValidator(isProcessor: true))

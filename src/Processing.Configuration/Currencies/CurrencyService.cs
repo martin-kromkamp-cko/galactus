@@ -16,14 +16,18 @@ internal class CurrencyService : ICurrencyService
 
     public async Task<Currency?> GetByCodeAsync(string code, CancellationToken cancellationToken)
     {
-        var currency = await _currencyRepository.All().FirstOrDefaultAsync(x => x.Code == code, cancellationToken);
+        var currency = await _currencyRepository
+            .All()
+            .FirstOrDefaultAsync(x => x.Code == code, cancellationToken);
 
         return currency;
     }
 
     public async Task<Currency?> GetByExternalId(string externalId, CancellationToken cancellationToken)
     {
-        var currency = await _currencyRepository.All().FirstOrDefaultAsync(x => x.ExternalId == externalId, cancellationToken);
+        var currency = await _currencyRepository
+            .All()
+            .FirstOrDefaultAsync(x => x.ExternalId == externalId, cancellationToken);
 
         return currency;
     }
@@ -37,7 +41,10 @@ internal class CurrencyService : ICurrencyService
         }
 
         // If currency already exists but is inactive only activated it again
-        var existingCurrency = await _currencyRepository.All().FirstOrDefaultAsync(x => x.Code == currency.Code, cancellationToken);
+        var existingCurrency = await _currencyRepository
+            .All(includeDisabled: true)
+            .FirstOrDefaultAsync(x => x.Code == currency.Code, cancellationToken);
+        
         if (existingCurrency is not null)
         {
             if (existingCurrency.IsActive)
@@ -52,7 +59,7 @@ internal class CurrencyService : ICurrencyService
         }
         
         var newCurrency = await _currencyRepository.AddAsync(currency, cancellationToken);
-        return ServiceResult<Currency>.FromResult(currency);
+        return ServiceResult<Currency>.FromResult(newCurrency);
     }
 
     public async Task<ServiceResult<Currency>> DisableAsync(Currency currency, CancellationToken cancellationToken)

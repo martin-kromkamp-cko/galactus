@@ -53,7 +53,7 @@ public class ProcessorType : ObjectType<Processor>
             .Name("providerKey");
         
         descriptor.Field(x => x.Mode)
-            .Type<StringType>()
+            .Type<EnumType<ProcessingMode>>()
             .Name("mode");
 
         descriptor.Field(x => x.ProcessingChannel)

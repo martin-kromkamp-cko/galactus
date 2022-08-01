@@ -28,7 +28,8 @@ internal class CardSchemeService : ICardSchemeService
         if (!validationResults.IsValid)
             return ServiceResult<CardScheme>.FromValidationResult(validationResults);
         
-        var existingCardScheme = await _cardSchemeRepository.All()
+        var existingCardScheme = await _cardSchemeRepository
+            .All(includeDisabled: true)
             .FirstOrDefaultAsync(x => x.Scheme == cardScheme.Scheme, cancellationToken);
         
         if (existingCardScheme is not null && existingCardScheme.IsActive)

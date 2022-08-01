@@ -34,7 +34,7 @@ public class ProcessorResponse
             DynamicDescriptorPrefix = processor.DynamicDescriptorPrefix,
             Services = processor.Services.Select(CkoServiceResponse.From),
             ProviderKey = processor.ProviderKey,
-            Mode = processor.Mode,
+            Mode = processor.Mode.ToString(),
         };
     }
 }

@@ -9,7 +9,7 @@ public class CkoService : EntityBase
     { }
 
     internal CkoService(string type, string key, string version) 
-        : base(Identifiers.Id.NewId("pcs_").ToString())
+        : base(Identifiers.Id.NewId("pcs").ToString())
     {
         Type = type;
         Key = key;

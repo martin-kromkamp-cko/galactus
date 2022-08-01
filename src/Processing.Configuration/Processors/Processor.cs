@@ -10,7 +10,7 @@ public class Processor : EntityBase
     public Processor()
     { }
 
-    internal Processor(ProcessingChannel processingChannel, string acquirerId, string description, MerchantCategoryCode merchantCategoryCode, ICollection<Currency> currencies, ICollection<CardScheme> schemes, bool dynamicDescriptor, string dynamicDescriptorPrefix, ICollection<CkoService> services, string providerKey, string mode) 
+    internal Processor(ProcessingChannel processingChannel, string acquirerId, string description, MerchantCategoryCode merchantCategoryCode, ICollection<Currency> currencies, ICollection<CardScheme> schemes, bool dynamicDescriptor, string dynamicDescriptorPrefix, ICollection<CkoService> services, string providerKey, ProcessingMode mode) 
         : base(Identifiers.Id.NewId("pr").ToString())
     {
         ProcessingChannel = processingChannel;
@@ -81,7 +81,7 @@ public class Processor : EntityBase
     /// <summary>
     /// Gets the mode.
     /// </summary>
-    public string Mode { get; private set; }
+    public ProcessingMode Mode { get; private set; }
 
     /// <summary>
     /// Gets the features.
@@ -93,7 +93,7 @@ public class Processor : EntityBase
     /// </summary>
     public virtual ProcessingChannel ProcessingChannel { get; private set; }
     
-    public static Processor Create(ProcessingChannel processingChannel, string acquirerId, string description, MerchantCategoryCode merchantCategoryCode, ICollection<Currency> currencies, ICollection<CardScheme> schemes, bool dynamicDescriptor, string dynamicDescriptorPrefix, ICollection<CkoService> services, string providerKey, string mode)
+    public static Processor Create(ProcessingChannel processingChannel, string acquirerId, string description, MerchantCategoryCode merchantCategoryCode, ICollection<Currency> currencies, ICollection<CardScheme> schemes, bool dynamicDescriptor, string dynamicDescriptorPrefix, ICollection<CkoService> services, string providerKey, ProcessingMode mode)
     {
         return new Processor(
             processingChannel: processingChannel,

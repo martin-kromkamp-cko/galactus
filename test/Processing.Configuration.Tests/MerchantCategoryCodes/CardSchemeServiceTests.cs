@@ -54,7 +54,7 @@ public class MerchantCategoryCodeServiceTests
             .ReturnsAsync(new ValidationResult());
 
         Mock.Get(_merchantCategoryCodeRepository)
-            .Setup(x => x.All())
+            .Setup(x => x.All(true))
             .Returns(existingMccs);
 
         // When
@@ -80,7 +80,7 @@ public class MerchantCategoryCodeServiceTests
             .ReturnsAsync(new ValidationResult());
 
         Mock.Get(_merchantCategoryCodeRepository)
-            .Setup(x => x.All())
+            .Setup(x => x.All(true))
             .Returns(existingMccs);
 
         // When
@@ -105,7 +105,7 @@ public class MerchantCategoryCodeServiceTests
             .ReturnsAsync(new ValidationResult());
 
         Mock.Get(_merchantCategoryCodeRepository)
-            .Setup(x => x.All())
+            .Setup(x => x.All(true))
             .Returns(existingMccs);
 
         // When
@@ -134,7 +134,7 @@ public class MerchantCategoryCodeServiceTests
             .ReturnsAsync(new ValidationResult());
 
         Mock.Get(_merchantCategoryCodeRepository)
-            .Setup(x => x.All())
+            .Setup(x => x.All(false))
             .Returns(existingMccs);
 
         // When
@@ -161,7 +161,7 @@ public class MerchantCategoryCodeServiceTests
             .ReturnsAsync(new ValidationResult());
 
         Mock.Get(_merchantCategoryCodeRepository)
-            .Setup(x => x.All())
+            .Setup(x => x.All(false))
             .Returns(existingMccs);
 
         // When

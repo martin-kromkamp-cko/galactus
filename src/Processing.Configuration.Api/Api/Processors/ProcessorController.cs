@@ -13,21 +13,17 @@ public class ProcessorController : ControllerBase
     private readonly IProcessorService _processorService;
     private readonly IProcessingChannelService _processingChannelService;
 
-    private readonly ICurrencyService _currencyService;
-    private readonly ICardSchemeService _cardSchemeService;
-    private readonly IMerchantCategoryCodeService _merchantCategoryCodeService;
+    private readonly IProcessorMapper _processorMapper;
 
     public ProcessorController(IProcessorService processorService, 
         IProcessingChannelService processingChannelService, 
         ICurrencyService currencyService, 
         ICardSchemeService cardSchemeService,
-        IMerchantCategoryCodeService merchantCategoryCodeService)
+        IMerchantCategoryCodeService merchantCategoryCodeService, IProcessorMapper processorMapper)
     {
         _processorService = processorService;
         _processingChannelService = processingChannelService;
-        _currencyService = currencyService;
-        _cardSchemeService = cardSchemeService;
-        _merchantCategoryCodeService = merchantCategoryCodeService;
+        _processorMapper = processorMapper;
     }
 
     [HttpGet("{processorId}")]
@@ -48,12 +44,11 @@ public class ProcessorController : ControllerBase
         if (processingChannel is null)
             return NotFound();
 
-        var processor = await request.ToProcessorAsync(processingChannel, _currencyService, _cardSchemeService, _merchantCategoryCodeService, cancellationToken);
-        if (processor is null)
-            return BadRequest();
+        var result = await _processorMapper.MapToAsync(request, processingChannel, cancellationToken);
+        if (result.Errors.Any())
+            return BadRequest(result.Errors);
 
-        var newProcessor = await _processorService.AddAsync(processor, cancellationToken);
-
+        var newProcessor = await _processorService.AddAsync(result.Processor, cancellationToken);
         return newProcessor switch
         {
             ServiceResult<Processor>.Success success => Ok(ProcessorResponse.From(success.Result)),

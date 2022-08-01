@@ -54,7 +54,7 @@ public class CurrencyServiceTests
             .ReturnsAsync(new ValidationResult());
 
         Mock.Get(_currencyRepository)
-            .Setup(x => x.All())
+            .Setup(x => x.All(true))
             .Returns(existingCurrencies);
 
         // When
@@ -80,7 +80,7 @@ public class CurrencyServiceTests
             .ReturnsAsync(new ValidationResult());
 
         Mock.Get(_currencyRepository)
-            .Setup(x => x.All())
+            .Setup(x => x.All(true))
             .Returns(existingCurrencies);
 
         // When
@@ -105,7 +105,7 @@ public class CurrencyServiceTests
             .ReturnsAsync(new ValidationResult());
 
         Mock.Get(_currencyRepository)
-            .Setup(x => x.All())
+            .Setup(x => x.All(true))
             .Returns(existingCurrencies);
 
         // When
@@ -134,7 +134,7 @@ public class CurrencyServiceTests
             .ReturnsAsync(new ValidationResult());
 
         Mock.Get(_currencyRepository)
-            .Setup(x => x.All())
+            .Setup(x => x.All(false))
             .Returns(existingCurrencies);
 
         // When
@@ -161,7 +161,7 @@ public class CurrencyServiceTests
             .ReturnsAsync(new ValidationResult());
 
         Mock.Get(_currencyRepository)
-            .Setup(x => x.All())
+            .Setup(x => x.All(false))
             .Returns(existingCurrencies);
 
         // When

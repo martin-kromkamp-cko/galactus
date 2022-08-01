@@ -1,4 +1,5 @@
 using Processing.Configuration;
+using Processing.Configuration.Api.Api.Processors;
 using Processing.Configuration.Api.GraphQL;
 using Processing.Configuration.Api.GraphQL.Types;
 using Processing.Configuration.Infra;
@@ -10,6 +11,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Request mappers
+builder.Services.AddScoped<IProcessorMapper, ProcessorMapper>();
 
 // GraphQL
 builder.Services.AddGraphQLServer()

@@ -54,7 +54,7 @@ public class CardSchemeServiceTests
             .ReturnsAsync(new ValidationResult());
 
         Mock.Get(_cardSchemeRepository)
-            .Setup(x => x.All())
+            .Setup(x => x.All(true))
             .Returns(existingCardSchemes);
 
         // When
@@ -80,7 +80,7 @@ public class CardSchemeServiceTests
             .ReturnsAsync(new ValidationResult());
 
         Mock.Get(_cardSchemeRepository)
-            .Setup(x => x.All())
+            .Setup(x => x.All(true))
             .Returns(existingCardSchemes);
 
         // When
@@ -105,7 +105,7 @@ public class CardSchemeServiceTests
             .ReturnsAsync(new ValidationResult());
 
         Mock.Get(_cardSchemeRepository)
-            .Setup(x => x.All())
+            .Setup(x => x.All(true))
             .Returns(existingCardSchemes);
 
         // When
@@ -134,7 +134,7 @@ public class CardSchemeServiceTests
             .ReturnsAsync(new ValidationResult());
 
         Mock.Get(_cardSchemeRepository)
-            .Setup(x => x.All())
+            .Setup(x => x.All(false))
             .Returns(existingCardSchemes);
 
         // When
@@ -161,7 +161,7 @@ public class CardSchemeServiceTests
             .ReturnsAsync(new ValidationResult());
 
         Mock.Get(_cardSchemeRepository)
-            .Setup(x => x.All())
+            .Setup(x => x.All(false))
             .Returns(existingCardSchemes);
 
         // When

@@ -9,17 +9,20 @@ public class EntityRepository<TEntity> : IEntityRepository<TEntity> where TEntit
         _dbContext = dbContext;
     }
 
-    public IQueryable<TEntity> All()
+    public IQueryable<TEntity> All(bool includeDisabled = false)
     {
-        return _dbContext.Set<TEntity>().AsQueryable();
+        if (includeDisabled)
+            return _dbContext.Set<TEntity>().AsQueryable();
+        
+        return _dbContext.Set<TEntity>().Where(e => e.IsActive).AsQueryable();
     }
 
     public async Task<TEntity> AddAsync(TEntity entity, CancellationToken cancellationToken)
     {
-        var newCurrency = await _dbContext.AddAsync(entity, cancellationToken);
+        var newEntity = await _dbContext.AddAsync(entity, cancellationToken);
         await _dbContext.SaveChangesAsync(cancellationToken);
 
-        return newCurrency.Entity;
+        return newEntity.Entity;
     }
 
     public async Task<TEntity> UpdateAsync(TEntity entity, CancellationToken cancellationToken)

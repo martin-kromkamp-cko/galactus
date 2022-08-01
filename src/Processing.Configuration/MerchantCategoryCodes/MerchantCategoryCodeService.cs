@@ -25,7 +25,8 @@ public class MerchantCategoryCodeService : IMerchantCategoryCodeService
         if (!validationResults.IsValid)
             return ServiceResult<MerchantCategoryCode>.FromValidationResult(validationResults);
         
-        var existingMcc = await _merchantCategoryCodeRepository.All()
+        var existingMcc = await _merchantCategoryCodeRepository
+            .All(includeDisabled: true)
             .FirstOrDefaultAsync(x => x.Code == merchantCategoryCode.Code, cancellationToken);
         
         if (existingMcc is not null && existingMcc.IsActive)
