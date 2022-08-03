@@ -29,6 +29,10 @@ public class ProcessorConfig : IEntityTypeConfiguration<Processor>
 
         builder.HasMany(x => x.Currencies)
             .WithMany(x => x.Processors);
+        
+        builder.HasOne(x => x.Acceptor)
+            .WithOne(x => x.Processor)
+            .HasForeignKey<ProcessorAcceptor>(x => x.ProcessorId);
 
         builder.HasMany(x => x.Schemes)
             .WithMany(x => x.Processors);

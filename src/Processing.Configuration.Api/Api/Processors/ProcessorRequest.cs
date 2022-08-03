@@ -9,7 +9,7 @@ public class ProcessorRequest
     public string Description { get; set; }
     public string MerchantCategoryCode { get; set; }
     public IEnumerable<string> Currencies { get; set; }
-    // public ProcessorAcceptor Acceptor { get; set; }
+    public ProcessorAcceptorRequest Acceptor { get; set; }
     public IEnumerable<string> Schemes { get; set; }
     public bool DynamicDescriptor { get; set; }
     public string DynamicDescriptorPrefix { get; set; }

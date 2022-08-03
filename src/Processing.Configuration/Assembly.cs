@@ -1,3 +1,4 @@
 using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("Processing.Configuration.Tests")]
+[assembly: InternalsVisibleTo("Processing.Configuration.Tests"),
+           InternalsVisibleTo("Processing.Configuration.Infra")]

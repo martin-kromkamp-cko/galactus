@@ -69,6 +69,7 @@ public class ProcessorMapper : IProcessorMapper
                     request.Description,
                     mcc,
                     currencies,
+                    request.Acceptor.To(),
                     schemes,
                     request.DynamicDescriptor,
                     request.DynamicDescriptorPrefix,

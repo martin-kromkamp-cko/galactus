@@ -31,6 +31,10 @@ public class ProcessorType : ObjectType<Processor>
         descriptor.Field(x => x.Currencies)
             .Type<ListType<CurrencyType>>()
             .Name("currencies");
+
+        descriptor.Field(x => x.Acceptor)
+            .Type<ProcessorAcceptorType>()
+            .Name("acceptor");
         
         descriptor.Field(x => x.Schemes)
             .Type<ListType<CardSchemeType>>()

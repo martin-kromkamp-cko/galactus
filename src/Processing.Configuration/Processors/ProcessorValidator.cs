@@ -28,9 +28,9 @@ public class ProcessorValidator : AbstractValidator<Processor>
             .When(currency => currency is not null)
             .WithErrorCode(Errors.InvalidCurrencies);
 
-        // RuleFor(x => x.Acceptor)
-        //     .NotNull().WithErrorCode(ErrorCodes.AcceptorRequired)
-        //     .SetValidator(new ProcessorAcceptorValidator());
+        RuleFor(x => x.Acceptor)
+            .NotNull().WithErrorCode(Errors.AcceptorRequired)
+            .SetValidator(new ProcessorAcceptorValidator());
 
         RuleFor(x => x.Services)
             .Must(BeServiceUnique)
@@ -56,13 +56,14 @@ public class ProcessorValidator : AbstractValidator<Processor>
 
     public static class Errors
     {
-        public static string AcquirerIdRequired = "acquirer_id_required";
-        public static string InvalidAcquirer = "invalid_acquirer_id";
-        public static string MccRequired = "merchant_category_code_required";
-        public static string InvalidMcc = "invalid_merchant_category_code";
-        public static string CurrenciesRequired = "currencies_required";
-        public static string InvalidCurrencies = "invalid_currencies";
-        public static string DuplicateService = "duplicate_service";
-        public static string ProcessorModeInvalid = "processor_mode_invalid";
+        public static readonly string AcquirerIdRequired = "acquirer_id_required";
+        public static readonly string InvalidAcquirer = "invalid_acquirer_id";
+        public static readonly string AcceptorRequired = "acceptor_required";
+        public static readonly string MccRequired = "merchant_category_code_required";
+        public static readonly string InvalidMcc = "invalid_merchant_category_code";
+        public static readonly string CurrenciesRequired = "currencies_required";
+        public static readonly string InvalidCurrencies = "invalid_currencies";
+        public static readonly string DuplicateService = "duplicate_service";
+        public static readonly string ProcessorModeInvalid = "processor_mode_invalid";
     }
 }

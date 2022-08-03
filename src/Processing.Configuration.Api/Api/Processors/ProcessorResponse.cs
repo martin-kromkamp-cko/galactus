@@ -10,7 +10,7 @@ public class ProcessorResponse
     public string Description { get; set; }
     public string MerchantCategoryCode { get; set; }
     public IEnumerable<string> Currencies { get; set; }
-    // public ProcessorAcceptor Acceptor { get; set; }
+    public ProcessorAcceptorResponse Acceptor { get; set; }
     public IEnumerable<string> Schemes { get; set; }
     public bool DynamicDescriptor { get; set; }
     public string DynamicDescriptorPrefix { get; set; }
@@ -29,6 +29,7 @@ public class ProcessorResponse
             Description = processor.Description,
             MerchantCategoryCode = processor.MerchantCategoryCode.Code.ToString(),
             Currencies = processor.Currencies.Select(c => c.Code),
+            Acceptor = ProcessorAcceptorResponse.From(processor.Acceptor),
             Schemes = processor.Schemes.Select(s => s.Scheme),
             DynamicDescriptor = processor.DynamicDescriptor,
             DynamicDescriptorPrefix = processor.DynamicDescriptorPrefix,

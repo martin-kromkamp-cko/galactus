@@ -34,6 +34,7 @@ public class Query
         return dbContextFactory.CreateDbContext()
             .Processors
             .Include(x => x.MerchantCategoryCode)
+            .Include(x => x.Acceptor)
             .Include(x => x.Currencies)
             .AsSplitQuery()
             .Include(x => x.Schemes)

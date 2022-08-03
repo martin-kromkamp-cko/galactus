@@ -10,7 +10,7 @@ public class Processor : EntityBase
     public Processor()
     { }
 
-    internal Processor(ProcessingChannel processingChannel, string acquirerId, string description, MerchantCategoryCode merchantCategoryCode, ICollection<Currency> currencies, ICollection<CardScheme> schemes, bool dynamicDescriptor, string dynamicDescriptorPrefix, ICollection<CkoService> services, string providerKey, ProcessingMode mode) 
+    internal Processor(ProcessingChannel processingChannel, string acquirerId, string description, MerchantCategoryCode merchantCategoryCode, ICollection<Currency> currencies, ProcessorAcceptor acceptor, ICollection<CardScheme> schemes, bool dynamicDescriptor, string dynamicDescriptorPrefix, ICollection<CkoService> services, string providerKey, ProcessingMode mode) 
         : base(Identifiers.Id.NewId("pr").ToString())
     {
         ProcessingChannel = processingChannel;
@@ -18,6 +18,7 @@ public class Processor : EntityBase
         Description = description;
         MerchantCategoryCode = merchantCategoryCode;
         Currencies = currencies;
+        Acceptor = acceptor;
         Schemes = schemes;
         DynamicDescriptor = dynamicDescriptor;
         DynamicDescriptorPrefix = dynamicDescriptorPrefix;
@@ -49,7 +50,7 @@ public class Processor : EntityBase
     /// <summary>
     /// Gets the acceptor.
     /// </summary>
-    // public ProcessorAcceptor Acceptor { get; private set; }
+    public virtual ProcessorAcceptor Acceptor { get; private set; }
     
     /// <summary>
     /// Gets the <see cref="CardScheme"/>.
@@ -93,7 +94,7 @@ public class Processor : EntityBase
     /// </summary>
     public virtual ProcessingChannel ProcessingChannel { get; private set; }
     
-    public static Processor Create(ProcessingChannel processingChannel, string acquirerId, string description, MerchantCategoryCode merchantCategoryCode, ICollection<Currency> currencies, ICollection<CardScheme> schemes, bool dynamicDescriptor, string dynamicDescriptorPrefix, ICollection<CkoService> services, string providerKey, ProcessingMode mode)
+    public static Processor Create(ProcessingChannel processingChannel, string acquirerId, string description, MerchantCategoryCode merchantCategoryCode, ICollection<Currency> currencies, ProcessorAcceptor acceptor, ICollection<CardScheme> schemes, bool dynamicDescriptor, string dynamicDescriptorPrefix, ICollection<CkoService> services, string providerKey, ProcessingMode mode)
     {
         return new Processor(
             processingChannel: processingChannel,
@@ -101,6 +102,7 @@ public class Processor : EntityBase
             description: description, 
             merchantCategoryCode: merchantCategoryCode,
             currencies: currencies,
+            acceptor: acceptor,
             schemes: schemes,
             dynamicDescriptor: dynamicDescriptor,
             dynamicDescriptorPrefix: dynamicDescriptorPrefix,
