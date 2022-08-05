@@ -9,6 +9,14 @@ public interface ICurrencyService
     /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>The <see cref="Currency"/> if any, otherwise null.</returns>
     Task<Currency?> GetByCodeAsync(string code, CancellationToken cancellationToken);
+    
+    /// <summary>
+    /// Gets multiple <see cref="Currency"/> by code.
+    /// </summary>
+    /// <param name="codes">The codes.</param>
+    /// <param name="cancellationToken">The cancellation token.</param>
+    /// <returns>The <see cref="Currency"/> if any, otherwise null.</returns>
+    Task<IDictionary<string, Currency?>> GetByCodesAsync(IEnumerable<string> codes, CancellationToken cancellationToken);
 
     /// <summary>
     /// Gets a <see cref="Currency"/> by externalId.

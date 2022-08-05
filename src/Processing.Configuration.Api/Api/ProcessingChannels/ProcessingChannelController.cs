@@ -7,10 +7,12 @@ namespace Processing.Configuration.Api.Api.ProcessingChannels;
 public class ProcessingChannelController : ControllerBase
 {
     private readonly IProcessingChannelService _processingChannelService;
+    private readonly IProcessingChannelMapper _processingChannelMapper;
 
-    public ProcessingChannelController(IProcessingChannelService processingChannelService)
+    public ProcessingChannelController(IProcessingChannelService processingChannelService, IProcessingChannelMapper processingChannelMapper)
     {
         _processingChannelService = processingChannelService;
+        _processingChannelMapper = processingChannelMapper;
     }
 
     [HttpGet("{processingChannelId}")]
@@ -21,15 +23,18 @@ public class ProcessingChannelController : ControllerBase
 
         return processingChannel is null
             ? NotFound()
-            : Ok(processingChannel);
+            : Ok(ProcessingChannelResponse.From(processingChannel));
     }
 
     [HttpPost]
     public async Task<IActionResult> CreateProcessingChannelAsync([FromBody] ProcessingChannelRequest request,
         CancellationToken cancellationToken)
     {
-        var newProcessingChannel = await _processingChannelService.AddAsync(request.To(), cancellationToken);
-
+        var result = await _processingChannelMapper.MapAsync(request, cancellationToken);
+        if (result.Errors.Any())
+            return BadRequest(result.Errors);
+        
+        var newProcessingChannel = await _processingChannelService.AddAsync(result.ProcessingChannel!, cancellationToken);
         return newProcessingChannel switch
         {
             ServiceResult<ProcessingChannel>.Success success => Ok(ProcessingChannelResponse.From(success.Result)),

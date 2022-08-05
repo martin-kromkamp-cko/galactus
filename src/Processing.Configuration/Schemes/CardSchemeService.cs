@@ -17,7 +17,7 @@ internal class CardSchemeService : ICardSchemeService
     public Task<CardScheme?> GetBySchemeName(string schemeName, CancellationToken cancellationToken)
     {
         var cardScheme = _cardSchemeRepository.All()
-            .FirstOrDefaultAsync(x => x.Scheme == schemeName, cancellationToken);
+            .FirstOrDefaultAsync(x => x.Scheme.ToUpper() == schemeName.ToUpper(), cancellationToken);
 
         return cardScheme;
     }

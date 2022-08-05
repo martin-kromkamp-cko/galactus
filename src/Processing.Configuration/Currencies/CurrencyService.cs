@@ -23,6 +23,17 @@ internal class CurrencyService : ICurrencyService
         return currency;
     }
 
+    public async Task<IDictionary<string, Currency?>> GetByCodesAsync(IEnumerable<string> codes, CancellationToken cancellationToken)
+    {
+        var currencies = await _currencyRepository.All().Where(c => codes.Contains(c.Code))
+            .ToListAsync(cancellationToken);
+
+        return codes.ToDictionary(
+            key => key, 
+            value => currencies.FirstOrDefault(c => c.Code == value)
+        );
+    }
+
     public async Task<Currency?> GetByExternalId(string externalId, CancellationToken cancellationToken)
     {
         var currency = await _currencyRepository

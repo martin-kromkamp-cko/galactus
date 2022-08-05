@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using Processing.Configuration.Api.Api.Processors;
 using Processing.Configuration.ProcessingChannels;
 using Processing.Configuration.Processors;
@@ -7,16 +8,25 @@ namespace Processing.Configuration.Api.Api.ProcessingChannels;
 public class ProcessingChannelRequest
 {
     public string Name { get; set; }
+    
+    [JsonPropertyName("client_id")]
     public string ClientId { get; set; }
+    
+    [JsonPropertyName("entity_id")]
     public string EntityId { get; set; }
+    
+    [JsonPropertyName("merchant_account_id")]
     public long? MerchantAccountId { get; set; }
     public IEnumerable<ProcessorRequest> Processors { get; set; }
 
     public IEnumerable<CkoServiceRequest> Services { get; set; }
 
-    // public IEnumerable<ApiKey> ApiKeys { get; set; }
-    // public IEnumerable<ProcessingChannelUrl> Urls { get; set; }
+    // TODO: public IEnumerable<ApiKey> ApiKeys { get; set; }
+    // TODO: public IEnumerable<ProcessingChannelUrl> Urls { get; set; }
+    
+    [JsonPropertyName("business_model")]
     public string BusinessModel { get; set; }
+    
     public IDictionary<string, string[]?>? Features { get; set; }
 
     public ProcessingChannel To()

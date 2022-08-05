@@ -1,9 +1,11 @@
+using System.Text.Json.Serialization;
 using Processing.Configuration.Processors;
 
 namespace Processing.Configuration.Api.Api.Processors;
 
 public class ProcessorAcceptorRequest
 {
+    [JsonPropertyName("scheme_merchant_id")]
     public string SchemeMerchantId { get; set; }
     public string Name { get; set; }
     public string City { get; set; }

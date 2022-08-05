@@ -65,7 +65,7 @@ public class Processor : EntityBase
     /// <summary>
     /// Gets the dynamic descriptor prefix.
     /// </summary>
-    public string DynamicDescriptorPrefix { get; private set; }
+    public string? DynamicDescriptorPrefix { get; private set; }
     
     // public IDictionary<string, object> Settings { get; private set; }
     

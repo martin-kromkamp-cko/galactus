@@ -36,17 +36,9 @@ public class ProcessorMapper : IProcessorMapper
         if (mcc is null)
             errors.Add("mcc_not_found");
 
-        List<Currency> currencies = new List<Currency>();
-        foreach (var currencyCode in request.Currencies)
-        {
-            var c = await _currencyService.GetByCodeAsync(currencyCode, cancellationToken);
-            
-            if (c is not null)
-                currencies.Add(c);
-            else
-                errors.Add($"currency_{currencyCode}_not_found");
-        }
-        
+        var currencies = await _currencyService.GetByCodesAsync(request.Currencies, cancellationToken);
+        errors.AddRange(currencies.Where(c => c.Value is null).Select(c => $"currency_{c}_not)_found"));
+
         List<CardScheme> schemes = new List<CardScheme>();
         foreach (var scheme in request.Schemes)
         {
@@ -55,7 +47,7 @@ public class ProcessorMapper : IProcessorMapper
             if (s is not null)
                 schemes.Add(s);
             else
-                errors.Add($"currency_{scheme}_not_found");
+                errors.Add($"scheme_{scheme}_not_found");
         }
         
         var services = request.Services?.Select(s => s.To()).ToList();
@@ -68,7 +60,7 @@ public class ProcessorMapper : IProcessorMapper
                     request.AcquirerId,
                     request.Description,
                     mcc,
-                    currencies,
+                    currencies.Where(c => c.Value is not null).Select(c => c.Value!).ToList(),
                     request.Acceptor.To(),
                     schemes,
                     request.DynamicDescriptor,

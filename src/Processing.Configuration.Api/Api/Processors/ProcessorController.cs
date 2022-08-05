@@ -1,13 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using Processing.Configuration.Currencies;
-using Processing.Configuration.MerchantCategoryCodes;
 using Processing.Configuration.ProcessingChannels;
 using Processing.Configuration.Processors;
-using Processing.Configuration.Schemes;
 
 namespace Processing.Configuration.Api.Api.Processors;
 
-[Route("api/processors")]
 public class ProcessorController : ControllerBase
 {
     private readonly IProcessorService _processorService;
@@ -16,17 +12,15 @@ public class ProcessorController : ControllerBase
     private readonly IProcessorMapper _processorMapper;
 
     public ProcessorController(IProcessorService processorService, 
-        IProcessingChannelService processingChannelService, 
-        ICurrencyService currencyService, 
-        ICardSchemeService cardSchemeService,
-        IMerchantCategoryCodeService merchantCategoryCodeService, IProcessorMapper processorMapper)
+        IProcessingChannelService processingChannelService,
+        IProcessorMapper processorMapper)
     {
         _processorService = processorService;
         _processingChannelService = processingChannelService;
         _processorMapper = processorMapper;
     }
 
-    [HttpGet("{processorId}")]
+    [HttpGet("api/processors/{processorId}")]
     public async Task<IActionResult> GetProcessorById(string processorId, CancellationToken cancellationToken)
     {
         var processor = await _processorService.GetByExternalId(processorId, cancellationToken);
@@ -36,7 +30,7 @@ public class ProcessorController : ControllerBase
             : Ok(ProcessorResponse.From(processor));
     }
 
-    [HttpPost, Route("api/processing-channels/{processingChannelId}/processors")]
+    [HttpPost("api/processing-channels/{processingChannelId}/processors")]
     public async Task<IActionResult> CreateProcessorForProcessingChannel([FromRoute] string processingChannelId, [FromBody] ProcessorRequest request,
         CancellationToken cancellationToken)
     {
@@ -52,7 +46,7 @@ public class ProcessorController : ControllerBase
         return newProcessor switch
         {
             ServiceResult<Processor>.Success success => Ok(ProcessorResponse.From(success.Result)),
-            ServiceResult<Processor>.ValidationError error => BadRequest(error.Errors.ToList()),
+            ServiceResult<Processor>.ValidationError validation => BadRequest(validation.Errors.Select(e => e.Error)),
             ServiceResult<Processor>.InternalError => new StatusCodeResult(500),
         };
     }

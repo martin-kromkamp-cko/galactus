@@ -1,4 +1,5 @@
 using Processing.Configuration;
+using Processing.Configuration.Api.Api.ProcessingChannels;
 using Processing.Configuration.Api.Api.Processors;
 using Processing.Configuration.Api.GraphQL;
 using Processing.Configuration.Api.GraphQL.Types;
@@ -13,6 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Request mappers
+builder.Services.AddScoped<IProcessingChannelMapper, ProcessingChannelMapper>();
 builder.Services.AddScoped<IProcessorMapper, ProcessorMapper>();
 
 // GraphQL
@@ -29,7 +31,7 @@ builder.Services.AddGraphQLServer()
     {
         o.Complexity.Enable = true;
         o.Complexity.ApplyDefaults = true;
-        o.Complexity.MaximumAllowed = 300;
+        o.Complexity.MaximumAllowed = 3000;
     });
 
 // Services
