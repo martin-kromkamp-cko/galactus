@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using Processing.Configuration.Currencies;
-using Processing.Configuration.Infra.Data;
 using Processing.Configuration.Infra.Data.Processing;
 using Processing.Configuration.MerchantCategoryCodes;
 using Processing.Configuration.ProcessingChannels;
@@ -16,7 +15,7 @@ public class Query
         return dbContextFactory.CreateDbContext()
             .Currencies
             .Include(x => x.Processors)
-            .AsSplitQuery();
+                .ThenInclude(x => x.ProcessingChannel);
     }
     
     public IQueryable<CardScheme> CardSchemes([Service] IDbContextFactory<ProcessingContext> dbContextFactory)
@@ -53,5 +52,17 @@ public class Query
             .AsSplitQuery()
             .Include(x => x.Services)
             .AsSplitQuery();
+    }
+    
+    public ProcessingChannel? ProcessingChannelById([Service] IDbContextFactory<ProcessingContext> dbContextFactory, string processingChannelId, CancellationToken cancellationToken)
+    {
+        if (string.IsNullOrWhiteSpace(processingChannelId))
+            return null;
+
+        return dbContextFactory.CreateDbContext()
+            .ProcessingChannels
+            .Include(x => x.Processors)
+            .ThenInclude(x => x.Currencies)
+            .FirstOrDefault(x => x.ExternalId == processingChannelId);
     }
 }

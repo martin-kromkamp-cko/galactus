@@ -1,5 +1,3 @@
-using System.Diagnostics;
-
 namespace Processing.Configuration.ProcessingChannels;
 
 public interface IProcessingChannelService

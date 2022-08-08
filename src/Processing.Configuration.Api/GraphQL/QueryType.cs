@@ -1,6 +1,4 @@
-using Microsoft.Extensions.Options;
 using Processing.Configuration.Api.GraphQL.Types;
-using Processing.Configuration.ProcessingChannels;
 
 namespace Processing.Configuration.Api.GraphQL;
 
@@ -42,5 +40,9 @@ public class QueryType : ObjectType<Query>
             .UsePaging(options: new() { DefaultPageSize = 10, MaxPageSize = 50 })
             .UseFiltering()
             .UseSorting();
+
+        descriptor
+            .Field(f => f.ProcessingChannelById(default!, default!, default!))
+            .Type<ProcessingChannelType?>();
     }
 }

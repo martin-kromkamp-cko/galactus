@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace Processing.Configuration.Infra.Data.Processing;
 
 public class EntityRepository<TEntity> : IEntityRepository<TEntity> where TEntity : EntityBase
@@ -11,10 +13,9 @@ public class EntityRepository<TEntity> : IEntityRepository<TEntity> where TEntit
 
     public IQueryable<TEntity> All(bool includeDisabled = false)
     {
-        if (includeDisabled)
-            return _dbContext.Set<TEntity>().AsQueryable();
-        
-        return _dbContext.Set<TEntity>().Where(e => e.IsActive).AsQueryable();
+        return includeDisabled 
+            ? _dbContext.Set<TEntity>().IgnoreQueryFilters() 
+            : _dbContext.Set<TEntity>();
     }
 
     public async Task<TEntity> AddAsync(TEntity entity, CancellationToken cancellationToken)

@@ -1,6 +1,4 @@
-using Microsoft.AspNetCore.Components.Server;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Diagnostics;
 using Processing.Configuration.Currencies;
 
 namespace Processing.Configuration.Api.Api.Currencies;

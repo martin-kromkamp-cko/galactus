@@ -9,6 +9,7 @@ public class CurrencyConfig : IEntityTypeConfiguration<Currency>
     public void Configure(EntityTypeBuilder<Currency> builder)
     {
         builder.ToTable("currency");
+        builder.HasQueryFilter(x => x.IsActive);
         
         builder.HasKey(x => x.Id);
 

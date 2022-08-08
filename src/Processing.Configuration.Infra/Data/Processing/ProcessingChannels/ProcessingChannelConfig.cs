@@ -9,6 +9,7 @@ public class ProcessingChannelConfig : IEntityTypeConfiguration<ProcessingChanne
     public void Configure(EntityTypeBuilder<ProcessingChannel> builder)
     {
         builder.ToTable("processing_channel");
+        builder.HasQueryFilter(x => x.IsActive);
         
         builder.HasKey(x => x.Id);
 

@@ -9,6 +9,7 @@ public class MerchantCategoryCodeConfig : IEntityTypeConfiguration<MerchantCateg
     public void Configure(EntityTypeBuilder<MerchantCategoryCode> builder)
     {
         builder.ToTable("merchant_category_code");
+        builder.HasQueryFilter(x => x.IsActive);
         
         builder.HasKey(x => x.Id);
 

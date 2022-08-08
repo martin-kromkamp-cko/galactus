@@ -9,6 +9,7 @@ public class CardSchemeConfig : IEntityTypeConfiguration<CardScheme>
     public void Configure(EntityTypeBuilder<CardScheme> builder)
     {
         builder.ToTable("card_scheme");
+        builder.HasQueryFilter(x => x.IsActive);
         
         builder.HasKey(x => x.Id);
         

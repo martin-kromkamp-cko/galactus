@@ -1,7 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Processing.Configuration.Currencies;
-using Processing.Configuration.MerchantCategoryCodes;
 using Processing.Configuration.Processors;
 
 namespace Processing.Configuration.Infra.Data.Processing.Processors;
@@ -11,6 +9,7 @@ public class ProcessorAcceptorConfig : IEntityTypeConfiguration<ProcessorAccepto
     public void Configure(EntityTypeBuilder<ProcessorAcceptor> builder)
     {
         builder.ToTable("processor_acceptor");
+        builder.HasQueryFilter(x => x.IsActive);
         
         builder.HasKey(x => x.Id);
 

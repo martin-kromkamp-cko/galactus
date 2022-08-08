@@ -9,6 +9,7 @@ public class CkoServiceConfig : IEntityTypeConfiguration<CkoService>
     public void Configure(EntityTypeBuilder<CkoService> builder)
     {
         builder.ToTable("cko_service");
+        builder.HasQueryFilter(x => x.IsActive);
         
         builder.HasKey(x => x.Id);
 

@@ -1,5 +1,3 @@
-using System.Data.Common;
-
 namespace Processing.Configuration;
 
 public class EntityBase
