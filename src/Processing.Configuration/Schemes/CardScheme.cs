@@ -2,7 +2,7 @@ using Processing.Configuration.Processors;
 
 namespace Processing.Configuration.Schemes;
 
-public class CardScheme : EntityBase
+public class CardScheme : ConfigurationItemBase
 {
     public CardScheme()
     { }

@@ -10,13 +10,13 @@ namespace Processing.Configuration.Tests.MerchantCategoryCodes;
 public class MerchantCategoryCodeServiceTests
 {
     private readonly IValidator<MerchantCategoryCode> _merchantCategoryCodeValidator;
-    private readonly IEntityRepository<MerchantCategoryCode> _merchantCategoryCodeRepository;
+    private readonly IConfigurationItemRepository<MerchantCategoryCode> _merchantCategoryCodeRepository;
 
     private readonly IMerchantCategoryCodeService _merchantCategoryCodeService;
 
     public MerchantCategoryCodeServiceTests()
     {
-        _merchantCategoryCodeRepository = Mock.Of<IEntityRepository<MerchantCategoryCode>>();
+        _merchantCategoryCodeRepository = Mock.Of<IConfigurationItemRepository<MerchantCategoryCode>>();
         _merchantCategoryCodeValidator = Mock.Of<IValidator<MerchantCategoryCode>>();
 
         _merchantCategoryCodeService = new MerchantCategoryCodeService(_merchantCategoryCodeValidator, _merchantCategoryCodeRepository);

@@ -2,7 +2,7 @@ using Processing.Configuration.Processors;
 
 namespace Processing.Configuration.ProcessingChannels;
 
-public class ProcessingChannel : EntityBase
+public class ProcessingChannel : ConfigurationItemBase
 {
     public ProcessingChannel()
     { }

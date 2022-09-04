@@ -1,6 +1,6 @@
 namespace Processing.Configuration.Features;
 
-public class FeatureGroup : EntityBase
+public class FeatureGroup : ConfigurationItemBase
 {
     /// <summary>
     /// Gets the name of the <see cref="FeatureGroup"/>.

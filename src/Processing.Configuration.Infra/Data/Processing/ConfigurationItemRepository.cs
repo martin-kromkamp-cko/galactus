@@ -2,11 +2,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Processing.Configuration.Infra.Data.Processing;
 
-public class EntityRepository<TEntity> : IEntityRepository<TEntity> where TEntity : EntityBase
+public class ConfigurationItemRepository<TEntity> : IConfigurationItemRepository<TEntity> where TEntity : ConfigurationItemBase
 {
     private readonly ProcessingContext _dbContext;
 
-    public EntityRepository(ProcessingContext dbContext)
+    public ConfigurationItemRepository(ProcessingContext dbContext)
     {
         _dbContext = dbContext;
     }

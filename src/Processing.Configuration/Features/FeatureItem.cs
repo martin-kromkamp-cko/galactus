@@ -1,6 +1,6 @@
 namespace Processing.Configuration.Features;
 
-public class FeatureItem : EntityBase
+public class FeatureItem : ConfigurationItemBase
 {
     
 }

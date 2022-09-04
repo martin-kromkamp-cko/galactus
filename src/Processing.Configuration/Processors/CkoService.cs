@@ -3,7 +3,7 @@ namespace Processing.Configuration.Processors;
 /// <summary>
 /// Represents an internal service at Checkout
 /// </summary>
-public class CkoService : EntityBase
+public class CkoService : ConfigurationItemBase
 {
     internal CkoService()
     { }

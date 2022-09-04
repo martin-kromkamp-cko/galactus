@@ -10,13 +10,13 @@ namespace Processing.Configuration.Tests.Currencies;
 public class CurrencyServiceTests
 {
     private readonly IValidator<Currency> _currencyValidator;
-    private readonly IEntityRepository<Currency> _currencyRepository;
+    private readonly IConfigurationItemRepository<Currency> _currencyRepository;
 
     private readonly ICurrencyService _currencyService;
 
     public CurrencyServiceTests()
     {
-        _currencyRepository = Mock.Of<IEntityRepository<Currency>>();
+        _currencyRepository = Mock.Of<IConfigurationItemRepository<Currency>>();
         _currencyValidator = Mock.Of<IValidator<Currency>>();
 
         _currencyService = new CurrencyService(_currencyRepository, _currencyValidator);

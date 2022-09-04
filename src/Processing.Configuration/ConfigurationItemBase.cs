@@ -1,10 +1,10 @@
 namespace Processing.Configuration;
 
-public class EntityBase
+public class ConfigurationItemBase
 {
-    internal EntityBase() { }
+    internal ConfigurationItemBase() { }
 
-    internal EntityBase(string externalId)
+    internal ConfigurationItemBase(string externalId)
     {
         ExternalId = externalId;
         CreatedOn = DateTimeOffset.UtcNow;

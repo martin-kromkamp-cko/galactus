@@ -1,6 +1,6 @@
 namespace Processing.Configuration.Processors;
 
-public class ProcessorAcceptor : EntityBase
+public class ProcessorAcceptor : ConfigurationItemBase
 {
     public ProcessorAcceptor()
     { }

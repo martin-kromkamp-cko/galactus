@@ -1,6 +1,6 @@
 namespace Processing.Configuration;
 
-public interface IEntityRepository<TEntity> where TEntity : EntityBase
+public interface IConfigurationItemRepository<TEntity> where TEntity : ConfigurationItemBase
 {
     IQueryable<TEntity> All(bool includeDisabled = false);
 

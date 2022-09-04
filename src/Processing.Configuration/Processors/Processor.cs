@@ -5,7 +5,7 @@ using Processing.Configuration.Schemes;
 
 namespace Processing.Configuration.Processors;
 
-public class Processor : EntityBase
+public class Processor : ConfigurationItemBase
 {
     public Processor()
     { }

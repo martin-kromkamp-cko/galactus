@@ -6,7 +6,7 @@ namespace Processing.Configuration.Currencies;
 /// Represents an iso-4217 currency code
 /// https://www.iso.org/iso-4217-currency-codes.html
 /// </summary>
-public class Currency : EntityBase
+public class Currency : ConfigurationItemBase
 {
     public Currency()
     { }

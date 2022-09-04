@@ -30,7 +30,7 @@ public static class IServiceCollectionExtensions
 
         services.AddScoped(svc => svc.GetRequiredService<IDbContextFactory<ProcessingContext>>().CreateDbContext());
 
-        services.AddScoped(typeof(IEntityRepository<>), typeof(EntityRepository<>));
+        services.AddScoped(typeof(IConfigurationItemRepository<>), typeof(ConfigurationItemRepository<>));
 
         return services;
     }

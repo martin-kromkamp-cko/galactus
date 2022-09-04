@@ -6,9 +6,9 @@ namespace Processing.Configuration.Processors;
 public class ProcessorService : IProcessorService
 {
     private readonly IValidator<Processor> _validator;
-    private readonly IEntityRepository<Processor> _processorRepository;
+    private readonly IConfigurationItemRepository<Processor> _processorRepository;
 
-    public ProcessorService(IValidator<Processor> validator, IEntityRepository<Processor> processorRepository)
+    public ProcessorService(IValidator<Processor> validator, IConfigurationItemRepository<Processor> processorRepository)
     {
         _validator = validator;
         _processorRepository = processorRepository;

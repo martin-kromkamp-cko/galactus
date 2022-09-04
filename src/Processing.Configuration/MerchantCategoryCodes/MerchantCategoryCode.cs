@@ -2,7 +2,7 @@ using Processing.Configuration.Processors;
 
 namespace Processing.Configuration.MerchantCategoryCodes;
 
-public class MerchantCategoryCode : EntityBase
+public class MerchantCategoryCode : ConfigurationItemBase
 {
     public MerchantCategoryCode()
     { }
